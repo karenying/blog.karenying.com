@@ -2,10 +2,10 @@
 @import '../../assets/scss/mixins';
 
 .post {
-  &__footer {
+  &__tags {
     max-width: $layout-post-width;
     margin: 0 auto;
-    padding: 0 15px 20px 15px;
+    padding: 0 15px 15px 15px;
     border-bottom: 1px solid $color-yellow;
   }
 

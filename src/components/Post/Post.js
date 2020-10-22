@@ -21,11 +21,14 @@ const Post = ({ post }) => {
         </div>
       </Link>
       <div className={styles['post__content']}>
-        <Content body={html} title={title} />
+        <Content body={html} title={title} date={date}/>
       </div>
 
-      <div className={styles['post__footer']}>
+      <div className={styles['post__tags']}>
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
+      </div>
+      <div>
+
       </div>
     </div>
   );
