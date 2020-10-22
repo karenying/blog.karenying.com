@@ -27,7 +27,8 @@
 
     &:hover,
     &:focus {
-      color: $color-yellow;
+      color: $color-white-almost;
+      border-bottom: 1px solid $color-white-almost;
     }
   }
 }
