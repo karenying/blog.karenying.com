@@ -3,12 +3,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
+import SmallHeader from '../components/SmallHeader';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import Header from '../components/Header';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
+
 
 type Props = {
   data: AllMarkdownRemark,
@@ -33,6 +35,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
     <Layout title={pageTitle} description={siteSubtitle}>
       {/* <Header /> */}
       <Sidebar isIndex />
+      <SmallHeader />
       <Page>
         <Feed edges={edges} />
         <Pagination

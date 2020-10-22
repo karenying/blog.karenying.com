@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styles from './Feed.module.scss';
 import moment from 'moment';
 
-const Tags = ({ tags, tagSlugs }) => (
+export const Tags = ({ tags, tagSlugs }) => (
   <div className={styles['feed__item-tags-container']}>
     {tagSlugs && tagSlugs.map((slug, i) => (
       <Link to={slug} className={styles['feed__item-tags-link']} key={tags[i]}>{tags[i]} </Link>
