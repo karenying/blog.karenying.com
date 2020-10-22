@@ -8,7 +8,13 @@ type Props = {
 
 const Copyright = ({ copyright }: Props) => (
   <div className={styles['copyright']}>
-    {copyright}
+    <span className="dark-pink-text">©</span>
+    {' '}
+    <span className="light-pink-text">karen ying</span>
+    {' '}
+    <span className="light-gray-text">•</span>
+    {' '}
+    <span className="blue-text">all rights reserved</span>
   </div>
 );
 

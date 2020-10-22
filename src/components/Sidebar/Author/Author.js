@@ -18,22 +18,37 @@ const Author = ({ author, isIndex }: Props) => (
       <img
         src={withPrefix(author.photo)}
         className={styles['author__photo']}
-        width="75"
-        height="75"
+        width="150"
+        height="150"
         alt={author.name}
       />
     </Link>
+    <div className={styles['author__tagline']}>
+        i
+        {' '}
+        <span className="blue-text">beep boop</span>
+        {' '}
+        <span className="light-pink-text">&amp;&amp;</span>
+        <br />
+        share
+        {' '}
+        <span className="dark-pink-text">opinions</span>
+      </div>
 
-    { isIndex === true ? (
-      <h1 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-      </h1>
-    ) : (
-      <h2 className={styles['author__title']}>
-        <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-      </h2>
-    )}
-    <p className={styles['author__subtitle']}>{author.bio}</p>
+      <div  className={styles['author__creds']}>
+        cs
+        {' '}
+        <span className="yellow-text">@</span>
+        {' '}
+        princeton
+        <br />
+
+        swe
+        {' '}
+        <span className="yellow-text">@</span>
+        {' '}
+        wellsheet
+      </div>
   </div>
 );
 

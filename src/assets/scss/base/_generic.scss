@@ -21,6 +21,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $color-gray-dark;
 }
 
 h1,
@@ -176,4 +177,24 @@ figcaption {
   .float-left {
     float: left;
   }
+}
+
+.blue-text {
+  color: $color-blue;
+}
+
+.light-pink-text {
+  color: $color-pink-light;
+}
+
+.dark-pink-text {
+  color: $color-pink-dark;
+}
+
+.yellow-text {
+  color: $color-yellow;
+}
+
+.light-gray-text {
+  color: $color-gray-light;
 }

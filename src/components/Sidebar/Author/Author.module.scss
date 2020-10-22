@@ -6,31 +6,43 @@
     display: inline-block;
     margin-bottom: 0;
     border-radius: 50%;
-    background-clip: padding-box
+    background-clip: padding-box;
   }
 
   &__title {
     font-size: $typographic-base-font-size * 1.125;
     font-weight: 600;
     @include line-height(1.125);
-    @include margin(.5, 0, .5, 0);
+    @include margin(0.5, 0, 0.5, 0);
 
     &-link {
       color: $color-base;
 
       &:hover,
       &:focus {
-        color: $color-base
+        color: $color-base;
       }
-
     }
-
   }
 
   &__subtitle {
     color: $color-gray;
     @include line-height(1);
-    @include margin-bottom(1)
+    @include margin-bottom(1);
   }
 
+  &__tagline {
+    font-family: $typographic-font-mono;
+    color: $color-white-almost;
+    font-size: 20px;
+    margin: 2rem 0rem 3rem;
+  }
+
+  &__creds {
+    font-family: $typographic-font-basic;
+    color: $color-gray-medium;
+    margin-bottom: 3rem;
+    font-size: 18px;
+    text-align: center;
+  }
 }
