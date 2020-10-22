@@ -9,9 +9,9 @@ type Props = {
 const Page = ({ title, children }: Props) => {
   const pageRef = useRef();
 
-  useEffect(() => {
+/*   useEffect(() => {
     pageRef.current.scrollIntoView();
-  });
+  }); */
 
   return (
     <div ref={pageRef} className={styles['page']}>

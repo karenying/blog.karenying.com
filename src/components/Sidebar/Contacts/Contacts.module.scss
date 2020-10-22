@@ -2,7 +2,7 @@
 @import '../../../assets/scss/mixins';
 
 .contacts {
-  @include margin-bottom(1);
+  @include margin-bottom(0.5);
 
   display: flex;
   width: 100%;
