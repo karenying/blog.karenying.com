@@ -3,6 +3,14 @@ import { Link } from 'gatsby';
 import styles from './Feed.module.scss';
 import moment from 'moment';
 
+const Tags = ({ tags, tagSlugs }) => (
+  <div className={styles['feed__item-tags-container']}>
+    {tagSlugs && tagSlugs.map((slug, i) => (
+      <Link to={slug} className={styles['feed__item-tags-link']} key={tags[i]}>{tags[i]} </Link>
+    ))}
+  </div>
+);
+
 const Feed = ({ edges }) => (
   <div className={styles['feed']}>
     {edges.map((edge) => (
@@ -22,12 +30,7 @@ const Feed = ({ edges }) => (
             <span className="blue-text">x min read</span>
           </p>
         </div>
-
-        <div className={styles['feed__item-meta']}>
-          <span className={styles['feed__item-meta-category']}>
-            <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
-          </span>
-        </div>
+        {edge.node.frontmatter.tags && edge.node.fields.tagSlugs && <Tags tags={edge.node.frontmatter.tags} tagSlugs={edge.node.fields.tagSlugs} />}
       </div>
     ))}
   </div>

@@ -15,16 +15,11 @@
   }
 
   &__home-button {
+    color: $color-white-almost;
+    font-family: $typographic-font-basic;
     display: block;
-    max-width: 90px;
-    height: $button-height;
-    padding: 0 24px;
-    line-height: $button-height;
     text-align: center;
-    color: $color-base;
-    border: 1px solid $color-gray-border;
-    border-radius: $button-border-radius;
-    font-size: $typographic-base-font-size;
+    font-size: 20px;
     font-weight: normal;
     margin-left: auto;
     margin-right: auto;
@@ -32,11 +27,9 @@
 
     &:hover,
     &:focus {
-      color: $color-primary;
+      color: $color-yellow;
     }
-
   }
-
 }
 
 @include breakpoint-md {
@@ -54,9 +47,7 @@
       max-width: auto;
       margin: 0;
       top: 30px;
-      left: 30px
+      left: 30px;
     }
-
   }
-
 }
