@@ -38,40 +38,41 @@
     }
 
     &-meta {
-      &-time {
-        font-size: $typographic-small-font-size;
-        color: $color-base;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
-
-      &-divider {
-        margin: 0 5px;
-      }
-
       &-category {
         &-link {
-          font-size: $typographic-small-font-size;
-          color: $color-secondary;
-          font-weight: 600;
-          text-transform: uppercase;
+          font-size: 12px;
+          color: $color-pink-light;
+          text-transform: lowercase;
+          font-family: $typographic-font-mono;
+          border: 1px solid $color-pink-light;
+          border-radius: 20px;
+          padding: 5px 10px;
+          font-weight: bold;
 
           &:hover,
           &:focus {
-            color: $color-primary;
+            color: $color-pink-light;
           }
         }
       }
     }
 
-    &-readmore {
-      font-size: $typographic-base-font-size;
-      color: $color-primary;
+    &-details {
+      p {
+        font-family: $typographic-font-mono;
+        margin-bottom: 10px;
+      }
 
-      &:hover,
-      &:focus {
-        color: $color-primary;
-        border-bottom: 1px solid $color-primary;
+      &-date {
+        color: var(--dark-pink);
+      }
+
+      &-dot {
+        padding: 0rem 0.5rem;
+      }
+
+      &-read {
+        color: var(--blue);
       }
     }
   }
