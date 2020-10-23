@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './SmallHeader.module.scss';
 
 import { useSiteMetadata } from '../../hooks';
-import { withPrefix, Link } from 'gatsby';
+import { withPrefix } from 'gatsby';
 
-const SmallHeader = ({ isIndex }) => {
+const SmallHeader = () => {
   const { author } = useSiteMetadata();
 
   return (
@@ -20,13 +20,13 @@ const SmallHeader = ({ isIndex }) => {
           />
 
           <div className={styles['menubar__inner-right-details']}>
-            <Link className={styles['menubar__inner-right-details-home']} to="/">
+            <div className={styles['menubar__inner-right-details-home']} to="/">
                 blog
                 <span className="dark-pink-text">.</span>
                 karenying
                 <span className="blue-text">.</span>
                 com
-            </Link>
+            </div>
             <div className={styles['menubar__inner-right-details-tagline']}>
               i
               {' '}

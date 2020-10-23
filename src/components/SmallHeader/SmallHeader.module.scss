@@ -27,6 +27,11 @@
           font-family: $typographic-font-basic;
           color: $color-white-almost;
           font-size: 25px;
+
+          &:hover,
+          &:focus {
+            color: $color-white-almost;
+          }
         }
 
         &-tagline {
