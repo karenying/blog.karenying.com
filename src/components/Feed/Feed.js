@@ -26,7 +26,7 @@ const Feed = ({ edges }) => (
             <span className="dark-pink-text">
               { moment(new Date(edge.node.frontmatter.date)).format('MMM D') }
             </span>
-            <span className={`${styles['feed__item-details-dot']} light-gray-text`}>•</span>
+            <span className={`${styles['feed__item-details-dot']} yellow-text`}>•</span>
             <span className="blue-text">{edge.node.frontmatter.minutes} min read</span>
           </p>
         </div>

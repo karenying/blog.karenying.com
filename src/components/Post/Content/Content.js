@@ -12,7 +12,7 @@ const Content = ({ body, title, date, minutes}) => (
         <span className="dark-pink-text">
           { moment(new Date(date)).format('MMM D, YYYY') }
         </span>
-        <span className={`${feedStyles['feed__item-details-dot']} light-gray-text`}>•</span>
+        <span className={`${feedStyles['feed__item-details-dot']} yellow-text`}>•</span>
         <span className="blue-text">{minutes} min read</span>
       </p>
     </div>
