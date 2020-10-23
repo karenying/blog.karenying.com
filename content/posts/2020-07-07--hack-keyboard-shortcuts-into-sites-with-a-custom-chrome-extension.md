@@ -5,9 +5,10 @@ template: 'post'
 draft: false
 slug: 'hack-keyboard-shortcuts-into-sites-with-a-custom-chrome-extension'
 tags:
-  - 'Chrome Extensions'
+  - 'Chrome Extension'
   - 'Productivity'
   - 'Web Dev'
+  - 'Tutorial'
 description: 'Increase productivity by adding custom keyboard shortcuts to your favorite sites'
 socialImage: '/media/gutenberg.jpg'
 minutes: '6'

@@ -8,6 +8,7 @@ tags:
   - 'Web Dev'
   - 'HTML'
   - 'Front End'
+  - 'Tutorial'
 description: 'Examining a trendy store’s mysteriously blurry rating stars and proposing a solution'
 socialImage: '/media/gutenberg.jpg'
 minutes: '4'

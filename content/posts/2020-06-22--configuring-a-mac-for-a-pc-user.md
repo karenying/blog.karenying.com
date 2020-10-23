@@ -6,6 +6,8 @@ draft: false
 slug: 'configuring-a-mac-for-a-pc-user'
 tags:
   - 'Productivity'
+  - 'Apps'
+  - 'Tutorial'
 description: 'How to finally take the plunge and configure your new Mac as a former average PC user'
 socialImage: '/media/gutenberg.jpg'
 minutes: '6'

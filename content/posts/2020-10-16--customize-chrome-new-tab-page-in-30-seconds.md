@@ -5,9 +5,10 @@ template: 'post'
 draft: false
 slug: 'customize-chrome-new-tab-page-in-30-seconds'
 tags:
-  - 'Chrome Extensions'
+  - 'Chrome Extension'
   - 'Productivity'
   - 'Web Dev'
+  - 'Tutorial'
 description: 'Override Chrome’s new tab page to create a more personalized browsing experience'
 socialImage: '/media/gutenberg.jpg'
 minutes: '4'

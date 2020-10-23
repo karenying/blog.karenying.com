@@ -8,6 +8,7 @@ tags:
   - 'UI/UX'
   - 'Opinion'
   - 'Front End'
+  - 'Apps'
 description: 'An analysis on emoji usage in the popular app Notion'
 socialImage: '/media/gutenberg.jpg'
 minutes: '5'
