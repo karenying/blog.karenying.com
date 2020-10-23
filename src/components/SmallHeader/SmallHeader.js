@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './SmallHeader.module.scss';
 
 import { useSiteMetadata } from '../../hooks';
-import { withPrefix } from 'gatsby';
+import { withPrefix, Link } from 'gatsby';
 
 const SmallHeader = () => {
   const { author } = useSiteMetadata();
@@ -20,13 +20,13 @@ const SmallHeader = () => {
           />
 
           <div className={styles['smallheader__inner-right-details']}>
-            <div className={styles['smallheader__inner-right-details-home']}>
+            <Link className={styles['smallheader__inner-right-details-home']} to="/">
                 blog
                 <span className="dark-pink-text">.</span>
                 karenying
                 <span className="blue-text">.</span>
                 com
-            </div>
+            </Link>
             <div className={styles['smallheader__inner-right-details-tagline']}>
               i
               {' '}

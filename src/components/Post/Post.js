@@ -8,6 +8,15 @@ import { withPrefix } from 'gatsby';
 import Copyright from '../Sidebar/Copyright'
 import Contacts from '../Sidebar/Contacts'
 
+export const CopyrightFooter = () => (
+  <div className={styles['post__copyright']}>
+    <Copyright />
+    <div className={styles['post__copyright-contacts']}>
+      <Contacts /> 
+    </div>
+  </div>
+)
+
 const Post = ({ post }) => {
   const { html } = post;
   const { tagSlugs } = post.fields;
@@ -68,9 +77,7 @@ const Post = ({ post }) => {
           <Contacts />
         </div>
       </div>
-      <div className={styles['post__copyright']}>
-        <Copyright />
-      </div>
+      <CopyrightFooter />
     </div>
   );
 };

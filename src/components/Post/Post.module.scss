@@ -91,9 +91,15 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     padding-bottom: 20px;
     padding-right: 10px;
+
+    &-contacts {
+      margin: 10px 0px 0px 5px;
+      width: 150px;
+    }
   }
 }
 
@@ -115,6 +121,12 @@
 
 @media screen and (max-width: $layout-breakpoint-sm) {
   .post__footer-contacts {
+    display: none;
+  }
+}
+
+@include breakpoint-sm {
+  .post__copyright-contacts {
     display: none;
   }
 }

@@ -62,8 +62,10 @@ Let’s go back to your production build on your local machine. When you run npm
 
 But have you ever tried serving your app with Python’s [http.server](https://docs.python.org/3.0/library/http.server.html)? It requires an index.html file so we can run it in your prod build folder:
 
-    $ cd /build
-    $ python3 -m http.server
+```bash
+$ cd /build
+$ python3 -m http.server
+```
 
 Head over to [http://localhost:8000/](http://localhost:8000/). Enter a path that you specified in React Router or click on a relative link and hit refresh. You should experience deja vu and see this 404 error message:
 
@@ -79,9 +81,11 @@ What can you do about this?
 
 ### The Solution
 
-Luckily, you can use Netlify’s [Redirect options](https://docs.netlify.com/routing/redirects/). To implement this, Netlify requires a file titled \_redirects in the root directory. This one liner is where the magic happens:
+Luckily, you can use Netlify’s [Redirect options](https://docs.netlify.com/routing/redirects/). To implement this, Netlify requires a file titled `\redirects` in the root directory. This one liner is where the magic happens:
 
-    /* /index.html 200
+```
+/* /index.html 200
+```
 
 This rule specifies that all paths (/\*) redirect to /index.html [without changing the URL in the browser address bar](https://docs.netlify.com/routing/redirects/redirect-options/) (200).
 
@@ -91,7 +95,7 @@ You can **either**
 
 **OR**
 
-- add && echo ‘/\* /index.html 200’ | cat >build/\_redirects to your build script in package.json. If you check the deployment logs, Netlify runs npm build before every deploy. This way, Netlify manually creates the \_redirects file in the root directory every time.
+- add `&& echo ‘/* /index.html 200’ | cat >build/_redirects` to your build script in package.json. If you check the deployment logs, Netlify runs npm build before every deploy. This way, Netlify manually creates the \_redirects file in the root directory every time.
 
 With the addition of the \_redirects file, we’ve replicated what Webpack does on your local machine.
 

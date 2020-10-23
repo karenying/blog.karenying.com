@@ -6,6 +6,8 @@ import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
+import { CopyrightFooter } from '../components/Post/Post'
+import SmallHeader from '../components/SmallHeader';
 import { useSiteMetadata } from '../hooks';
 import Header from '../components/Header';
 import type { AllMarkdownRemark, PageContext } from '../types';
@@ -35,6 +37,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
       <Header />
       <Layout title={pageTitle} description={siteSubtitle}>
         <Sidebar />
+        <SmallHeader />
         <Page title={tag}>
           <Feed edges={edges} />
           <Pagination
@@ -43,6 +46,9 @@ const TagTemplate = ({ data, pageContext }: Props) => {
             hasPrevPage={hasPrevPage}
             hasNextPage={hasNextPage}
           />
+          <div className="copyright-footer-wrapper">
+            <CopyrightFooter />
+          </div>
         </Page>
       </Layout>
     </>

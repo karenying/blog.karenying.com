@@ -86,12 +86,13 @@ img {
 
 a {
   color: $typographic-link-p-font-color;
-  text-decoration: none;
+  text-decoration: none !important;
 
   &:hover,
   &:focus,
   &:active {
     color: $typographic-link-s-font-color;
+    text-decoration: underline !important;
   }
 }
 
@@ -201,4 +202,14 @@ figcaption {
 
 .light-gray-text {
   color: $color-gray-light;
+}
+
+.copyright-footer-wrapper {
+  margin-top: 20px;
+}
+
+@include breakpoint-sm {
+  .copyright-footer-wrapper {
+    display: none;
+  }
 }

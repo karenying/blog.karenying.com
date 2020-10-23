@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar';
 import SmallHeader from '../components/SmallHeader';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
+import { CopyrightFooter } from '../components/Post/Post'
 import Pagination from '../components/Pagination';
 import Header from '../components/Header';
 import { useSiteMetadata } from '../hooks';
@@ -45,6 +46,9 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
             hasPrevPage={hasPrevPage}
             hasNextPage={hasNextPage}
           />
+          <div className="copyright-footer-wrapper">
+            <CopyrightFooter />
+          </div>
         </Page>
       </Layout>
     </>

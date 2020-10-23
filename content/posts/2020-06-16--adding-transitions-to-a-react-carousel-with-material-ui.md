@@ -34,14 +34,18 @@ This tutorial assumes you have some knowledge of React, function components, and
 
 We’ll use [Create React App](https://create-react-app.dev/docs/getting-started/) to create, bundle, and run the project:
 
-    $ npx create-react-app react-carousel
-      $ cd react-carousel
-    $ npm start
+```bash
+$ npx create-react-app react-carousel
+$ cd react-carousel
+$ npm start
+```
 
 …and add some dependencies — Material-UI for the transitions, and [React Icons](https://www.npmjs.com/package/react-icons) for the cute arrows:
 
-    $ npm install @material-ui/core
-    $ npm install react-icons
+```bash
+$ npm install @material-ui/core
+$ npm install react-icons
+```
 
 Before we start creating components, we need to update `App.css` to use CSS Flexbox to format our page:
 

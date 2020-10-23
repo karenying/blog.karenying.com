@@ -1,8 +1,8 @@
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #657b83;
+  color: #d9d9d9;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: 1em;
+  font-size: 1rem;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -16,18 +16,19 @@ pre[class*='language-'] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  text-shadow: none;
 }
 code[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 pre[class*='language-'] ::-moz-selection,
 pre[class*='language-']::-moz-selection {
-  background: #073642;
+  background: #bdbdbd;
 }
 code[class*='language-'] ::selection,
 code[class*='language-']::selection,
 pre[class*='language-'] ::selection,
 pre[class*='language-']::selection {
-  background: #073642;
+  background: #bdbdbd;
 }
 pre[class*='language-'] {
   padding: 1em;
@@ -37,7 +38,7 @@ pre[class*='language-'] {
 }
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background-color: #fdf6e3;
+  background-color: black;
 }
 :not(pre) > code[class*='language-'] {
   padding: 0.1em;
@@ -50,7 +51,7 @@ pre[class*='language-'] {
   color: #93a1a1;
 }
 .token.punctuation {
-  color: #586e75;
+  color: #d9d9d9;
 }
 .namespace {
   opacity: 0.7;

@@ -26,31 +26,31 @@ I was curious about the dark mode apps and sites I use. Through inspecting eleme
 
 To talk about colors, we should start with how colors can be represented digitally.
 
-The RGB color space is one of the most popular models. Each color is a combined weight of the three colors red, green, and blue. The weight ranges from 0 (least) to 255 (most) and is usually displayed in a triplet: (red weight, green weight, blue weight). For example, red would be (255, 0, 0) since pure red has no traces of green or blue. A deep eggplant purple is (128, 0, 128) with equal parts red and blue. We also have black which is a lack of color: (0, 0, 0) and white, all the colors: (255, 255, 255).
+The RGB color space is one of the most popular models. Each color is a combined weight of the three colors red, green, and blue. The weight ranges from 0 (least) to 255 (most) and is usually displayed in a triplet: `(red weight, green weight, blue weight)`. For example, red would be `(255, 0, 0)` since pure red has no traces of green or blue. A deep eggplant purple is `(128, 0, 128)` with equal parts red and blue. We also have black which is a lack of color: `(0, 0, 0)` and white, all the colors: (255, 255, 255).
 
 We can also visualize the RGB color space as a cube with red, green, and blue as the axis. Every color can be “plotted” in this cube.
 
-What we’re interested in are the colors along and around the _grayscale_ line. In this RGB cube, the grayscale line extends from black to white. Every color on this line has the same value for red, green, and blue. For example, medium gray is (127, 127, 127) and is the midpoint of the grayscale line. The closer to 0 the values are, the darker the shade of gray since black is (0, 0, 0).
+What we’re interested in are the colors along and around the _grayscale_ line. In this RGB cube, the grayscale line extends from black to white. Every color on this line has the same value for red, green, and blue. For example, medium gray is `(127, 127, 127)` and is the midpoint of the grayscale line. The closer to 0 the values are, the darker the shade of gray since black is `(0, 0, 0)`.
 
 ![Grayscale line from black to white](https://cdn-images-1.medium.com/max/2000/1*gdo4D1JR1_gjWB8x833mvA.png)_Grayscale line from black to white_
 
-Colors that surround the grayscale line are not pure gray, but rather slightly tinted. For example, Twitter uses (25, 39, 52). Notice how even though the values are close to each other, the blue value is the largest. Thus, this shade of gray is a bit blue.
+Colors that surround the grayscale line are not pure gray, but rather slightly tinted. For example, Twitter uses `(25, 39, 52)`. Notice how even though the values are close to each other, the blue value is the largest. Thus, this shade of gray is a bit blue.
 
 ### HEX Codes
 
 To digitize this RGB triplet, we have HTML (Hex) color codes. HTML, CSS, SVGs, and more use hex codes to represent colors. The name comes from how Hex codes are just the concatenation of RGB values in *hex*adecimal. Sometimes we precede a Hex code with a pound sign. If we convert the aforementioned colors to Hex, we have:
 
-- Red: (255, 0, 0) → #ff0000
+- Red: `(255, 0, 0) → #ff0000`
 
-- Eggplant purple: (128, 0, 128) → #800080
+- Eggplant purple: `(128, 0, 128) → #800080`
 
-- Black: (0, 0, 0) → #000000
+- Black: `(0, 0, 0) → #000000`
 
-- Medium gray: (127, 127, 127) → #7f7f7f
+- Medium gray: `(127, 127, 127) → #7f7f7f`
 
-- White: (255, 255, 255) → #ffffff
+- White: `(255, 255, 255) → #ffffff`
 
-- Twitter blue-gray: (25, 39, 52) → #192734
+- Twitter blue-gray: `(25, 39, 52) → #192734`
 
 Now that we know a bit about RGB and Hex representations, we can explore the world of dark mode.
 
@@ -96,7 +96,7 @@ These are some characteristics many modern dark mode apps share! Now we’ll exa
 
 ## Spotify (macOS App)
 
-![**From left to right**: background, menu bar, top gradient, bottom gradient, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*REIGFIDNH176z5nuHYq0bw.png)**\*From left to right**: background, menu bar, top gradient, bottom gradient, primary text, secondary text\*
+![**From left to right**: background, menu bar, top gradient, bottom gradient, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*REIGFIDNH176z5nuHYq0bw.png)_**From left to right**: background, menu bar, top gradient, bottom gradient, primary text, secondary text_
 
 Spotify is the earliest app I remember that _only_ had dark mode. It didn’t start out this way. After undergoing a major redesign in 2014, the streaming service forced the dark theme on all its users. The argument for the switch was as [such](https://www.fastcompany.com/3028603/inside-the-redesign-why-spotify-went-black): the dark background allows for colorful album art to pop, akin to theaters dimming their lights for shows.
 
@@ -104,7 +104,7 @@ Indeed, the colorful album covers contrast with the dark app, and make them appe
 
 ![Bright colors pop](https://cdn-images-1.medium.com/max/5760/1*qAEfIaZPHlv-OfJ3CjRLZw.png)_Bright colors pop_
 
-Spotify is also the only app I’ve noticed that uses a gradient for the main background. Referencing the palette, the background ranges from #404040, a much lighter gray, to #181818, almost black. My theory is also that users spend the most time looking at playlist pages:
+Spotify is also the only app I’ve noticed that uses a gradient for the main background. Referencing the palette, the background ranges from `#404040`, a much lighter gray, to `#181818`, almost black. My theory is also that users spend the most time looking at playlist pages:
 
 ![](https://cdn-images-1.medium.com/max/5760/1*kd7jnKDPQgDPC3O3wnVgQg.png)
 
@@ -120,7 +120,7 @@ Here, the gradient makes sense for a long list of items, almost imitating motion
 
 ## Twitter (Web)
 
-![**From left to right**: background, card, hover color, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*TgOyjdMfWNNwUhpUnyBacw.png)**\*From left to right**: background, card, hover color, primary text, secondary text\*
+![**From left to right**: background, card, hover color, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*TgOyjdMfWNNwUhpUnyBacw.png)_**From left to right**: background, card, hover color, primary text, secondary text_
 
 Right off the bat, just by looking at the RGB values, Twitter heavily favors blue for its dark mode. For each of the shades, the blue value is the highest.
 
@@ -142,7 +142,7 @@ Since its logo/accent color is blue, the blue-ness of the dark mode isn’t surp
 
 ## Facebook (Web)
 
-![**From left to right**: background, card, hover color, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*KpFb5QLv0xVXIe_JoEC4Yw.png)**\*From left to right**: background, card, hover color, primary text, secondary text\*
+![**From left to right**: background, card, hover color, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*KpFb5QLv0xVXIe_JoEC4Yw.png)_**From left to right**: background, card, hover color, primary text, secondary text_
 
 Facebook’s dark mode color decisions are interesting. If you look at the Hex codes, none of the colors are on the grayscale line. Instead, each RGB value is close to each other, slightly increasing from red to green to blue. It’s so subtle that it’s virtually unnoticeable when using the app:
 
@@ -162,7 +162,7 @@ The colors might as well be grayscale colors.
 
 ## Youtube (Web)
 
-![**From left to right**: background, menu , hover color, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*x5G_3WgfxAitZoA8vWdLbQ.png)**\*From left to right**: background, menu , hover color, primary text, secondary text\*
+![**From left to right**: background, menu , hover color, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*x5G_3WgfxAitZoA8vWdLbQ.png)_**From left to right**: background, menu , hover color, primary text, secondary text_
 
 The dark mode palette used by YouTube is almost uninteresting. Each shade of gray is exactly on the grayscale lines. Unlike the apps above, there doesn’t seem to be an accent color. You don’t see the YouTube red anywhere in the app except the logo in the top left.
 
@@ -170,9 +170,9 @@ The dark mode palette used by YouTube is almost uninteresting. Each shade of gra
 
 ## Medium (iOS App)
 
-![**From left to right**: background, menu bars, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*uoKXzDK9xoYAGD_y_ZFYYw.png)**\*From left to right**: background, menu bars, primary text, secondary text\*
+![**From left to right**: background, menu bars, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*uoKXzDK9xoYAGD_y_ZFYYw.png)_**From left to right**: background, menu bars, primary text, secondary text_
 
-If Medium didn’t have dark mode, I most definitely wouldn’t use the app every night before bed 😅 Much like its plain logo of black and white, Medium’s iOS app’s dark mode colors are super simple. In my opinion, this simplicity works well for a publishing platform — it’s reminiscent of old-fashioned newspapers.
+If Medium didn’t have dark mode, I most definitely wouldn’t use the app every night before bed 😅 &nbsp; Much like its plain logo of black and white, Medium’s iOS app’s dark mode colors are super simple. In my opinion, this simplicity works well for a publishing platform — it’s reminiscent of old-fashioned newspapers.
 
 **Additional comments**:
 
@@ -184,7 +184,7 @@ If Medium didn’t have dark mode, I most definitely wouldn’t use the app ever
 
 ### iPhone
 
-![**From left to right**: background, card (Settings), card (iMessage), primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*T1ciD3movz8SRG3ocSkxpw.png)**\*From left to right**: background, card (Settings), card (iMessage), primary text, secondary text\*
+![**From left to right**: background, card (Settings), card (iMessage), primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*T1ciD3movz8SRG3ocSkxpw.png)_**From left to right**: background, card (Settings), card (iMessage), primary text, secondary text_
 
 Dark mode for the iPhone can be seen in the native Apple apps such as Settings, iMessage, Notes, Photos, etc. Apps that you download can also recognize that you’ve set your iPhone to dark mode and adjust their theme automatically.
 
@@ -207,3 +207,5 @@ If you ever thought that all dark mode apps are starting to look the same, you�
 That being said, there are still ways to slightly deviate from this template. We saw Spotify’s gradient, Twitter’s blue-hued shades, and MacOS’s opaque background. If you’re designing a dark mode app, I encourage you to find ways to subtly stand out. After all, we could use some variety…and more shades of gray.
 
 Thanks for reading!
+
+<i>Orginally [published](https://codeburst.io/50-shades-of-dark-mode-gray-d3e9907b1194?source=friends_link&sk=d35c650a88a71baef133e66323fa8220) in [codeburst](https://codeburst.io/) on Medium<i>.
