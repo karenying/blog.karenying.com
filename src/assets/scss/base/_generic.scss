@@ -162,6 +162,10 @@ figcaption {
   padding-right: 14px !important;
 }
 
+.anchor svg {
+  fill: $color-white-almost;
+}
+
 @include breakpoint-sm {
   figure.float-left,
   figure.float-right {
