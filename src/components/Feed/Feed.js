@@ -27,7 +27,7 @@ const Feed = ({ edges }) => (
               { moment(new Date(edge.node.frontmatter.date)).format('MMM D') }
             </span>
             <span className={`${styles['feed__item-details-dot']} light-gray-text`}>•</span>
-            <span className="blue-text">x min read</span>
+            <span className="blue-text">{edge.node.frontmatter.minutes} min read</span>
           </p>
         </div>
         {edge.node.frontmatter.tags && edge.node.fields.tagSlugs && <Tags tags={edge.node.frontmatter.tags} tagSlugs={edge.node.fields.tagSlugs} />}

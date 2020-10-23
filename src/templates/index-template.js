@@ -70,6 +70,7 @@ export const query = graphql`
             category
             description
             tags
+            minutes
           }
         }
       }

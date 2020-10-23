@@ -29,8 +29,8 @@
 
     &:hover,
     &:focus {
+      text-decoration: underline;
       color: $color-white-almost;
-      border-bottom: 1px solid $color-white-almost;
     }
   }
 

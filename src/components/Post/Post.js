@@ -11,7 +11,7 @@ import Contacts from '../Sidebar/Contacts'
 const Post = ({ post }) => {
   const { html } = post;
   const { tagSlugs } = post.fields;
-  const { tags, title, date } = post.frontmatter;
+  const { tags, title, date, minutes } = post.frontmatter;
   const { author } = useSiteMetadata();
 
   return (
@@ -26,7 +26,7 @@ const Post = ({ post }) => {
         </div>
       </Link>
       <div className={styles['post__content']}>
-        <Content body={html} title={title} date={date}/>
+        <Content body={html} title={title} date={date} minutes={minutes}/>
       </div>
 
       <div className={styles['post__tags']}>
