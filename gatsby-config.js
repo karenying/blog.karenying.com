@@ -102,6 +102,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          "gatsby-remark-embed-gist",
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-katex',

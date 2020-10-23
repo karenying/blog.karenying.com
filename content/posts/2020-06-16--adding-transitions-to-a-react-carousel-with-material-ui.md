@@ -35,7 +35,7 @@ This tutorial assumes you have some knowledge of React, function components, and
 We’ll use [Create React App](https://create-react-app.dev/docs/getting-started/) to create, bundle, and run the project:
 
     $ npx create-react-app react-carousel
-    $ cd react-carousel
+      $ cd react-carousel
     $ npm start
 
 …and add some dependencies — Material-UI for the transitions, and [React Icons](https://www.npmjs.com/package/react-icons) for the cute arrows:
@@ -43,9 +43,9 @@ We’ll use [Create React App](https://create-react-app.dev/docs/getting-started
     $ npm install @material-ui/core
     $ npm install react-icons
 
-Before we start creating components, we need to update App.css to use CSS Flexbox to format our page:
+Before we start creating components, we need to update `App.css` to use CSS Flexbox to format our page:
 
-<iframe src="https://medium.com/media/15657186c97ac1aa83f9eb72f45726e9" frameborder=0></iframe>
+`gist:karenying/1d2f22d1a00e7f7922dcb47e9736bf4c/app-css`
 
 Yay let’s write some React components!
 
@@ -59,11 +59,11 @@ We’re also using Material-UI’s [Card](https://material-ui.com/components/car
 
 Here’s the code for CarouselSlide.js:
 
-<iframe src="https://medium.com/media/d0d10034a772e681cf234d2c0261560d" frameborder=0></iframe>
+`gist:karenying/ef9aa2d89cb7097e65ee3c1a5fa35d56/carouselslide-js`
 
 To get the slide to render, we’ll create some props for content and update App.js:
 
-<iframe src="https://medium.com/media/f9b498651cd36ef0f836c45b5ec602d4" frameborder=0></iframe>
+`gist:karenying/d30029b8b0004f535970c2fcf357e3c1/app-js`
 
 Okay! After running npm start, we should see something like this on [http://localhost:3000/](http://localhost:3000/):
 
@@ -75,11 +75,11 @@ Super super simple. Now let’s add some more content to iterate through in our 
 
 We’re gonna put all our slide info in a new file called constants.js. It’ll take the shape of an array of objects that have the same structure as the content prop we worked with above:
 
-<iframe src="https://medium.com/media/678310b958fc3520f990c60228fddbd8" frameborder=0></iframe>
+`gist:karenying/4bbb25dc3f545417086a1c658b1ca554/constants-js`
 
 With constants.js, we can refactor App.js to import and index into SLIDE_INFO:
 
-<iframe src="https://medium.com/media/65013150c622bb9ddb47cadc8eae25c9" frameborder=0></iframe>
+`gist:karenying/7961078e3ce798986f42082832f1cb02/app-js`
 
 Since we indexed into the 4th item, the rendered slide should be yellow with the title “Slide 4”:
 
@@ -91,7 +91,7 @@ Time to add some arrows.
 
 We’re just gonna create a super simple Arrow function component that takes in a direction and click function. We’ll use some arrow SVGs from React-Icon. Adding it to App.js:
 
-<iframe src="https://medium.com/media/1baf5dd5bfd02caf1a41b07c1c039bd0" frameborder=0></iframe>
+`gist:karenying/d3f932b9d433a8ed61bf58838d168b7b/app-js `
 
 Next, we need to implement the click handler.
 
@@ -103,17 +103,17 @@ Instead of handling the two directions separately, like the Arrow component abov
 
 onArrowClick takes in a direction and updates index appropriately:
 
-<iframe src="https://medium.com/media/0ead5060f50baac96f0c9f3d19bd1465" frameborder=0></iframe>
+`gist:karenying/e2886659c1de3a51226626c3f6c59cb7/app-js`
 
 Note: in **line 7** above, we add numSlides to the sum of index and increment and mod it by numSlides. This ensures that we always be within the range of 0 and numSlides — 1 to stay in bounds.
 
 Finally, we update the return statement of App.js to render the arrows:
 
-<iframe src="https://medium.com/media/c905dc79da64900b578e273ce0c5913c" frameborder=0></iframe>
+`gist:karenying/1cfda17b3fab2bb6f1ca703250bca3ca/app-js`
 
 and style the arrow SVGs in App.css:
 
-<iframe src="https://medium.com/media/a904fd35aae0b233dac7579cb7c03d7e" frameborder=0></iframe>
+`gist:karenying/e9426c28ccc93433b747e1add8a49363/app-css`
 
 After this step, we have a working carousel:
 
@@ -133,13 +133,13 @@ We also need to use setTimeout so that the previous slide has time to exit befor
 
 After updating slideIn and slideDirection in onArrowClick, we’ve added:
 
-<iframe src="https://medium.com/media/432246aca16fbd98d176bfd89f5658f5" frameborder=0></iframe>
+`gist:karenying/848371ea8cad01eb5689bb552a31f59a/app-js`
 
 Note: in **line 2**,\*\* \*\*we set the initial value of slideDirection to ‘down’ so the carousel slides down on the first render.
 
 Finally, we want to wrap our CarouselSlide component with an extra div since Material-UI’s Slide’s child “[needs to be able to hold a ref](https://material-ui.com/guides/composition/#caveat-with-refs).” Then we pass in our state variables into Slide and our updated return statement now looks like:
 
-<iframe src="https://medium.com/media/30882a1092091c317cb8cae6a2d0961e" frameborder=0></iframe>
+`gist:karenying/4ea450cb71eff46428cff24e9e12c2c4/app-js`
 
 Yay 🎉
 
@@ -159,7 +159,7 @@ We just have to add a keydown event listener and call onArrowClick for the appro
 
 We can put all the key handling logic in useEffect:
 
-<iframe src="https://medium.com/media/d0fb6f4cbac9ca9fd293210ee7d3b184" frameborder=0></iframe>
+`gist:karenying/67192e644c76dcb4621a37e737f005b2/app-js`
 
 Woohoo! We’re officially done 🙂
 
