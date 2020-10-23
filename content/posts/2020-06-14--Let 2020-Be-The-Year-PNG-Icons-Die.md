@@ -33,7 +33,7 @@ Clicking on the [image url](https://yotpo-editor-production.s3.amazonaws.com/b7v
 
 ![Tiny, low quality PNG](https://cdn-images-1.medium.com/max/2000/1*f1W84jxyYTlOoNDI8BY5cA.png)_Tiny, low quality PNG_
 
-Named _sprite-sheet.png_, this tiny 5kb, 216x45 image is how [Yotpo](https://www.yotpo.com/), Marine Layer’s site creator, is rendering every single rating star. They “crop” this larger image that shows all the possible combinations of size and fill of stars and use it as the background-image property of the star’s <span> tag’s CSS.
+Named _sprite-sheet.png_, this tiny 5kb, 216x45 image is how [Yotpo](https://www.yotpo.com/), Marine Layer’s site creator, is rendering every single rating star. They “crop” this larger image that shows all the possible combinations of size and fill of stars and use it as the `background-image` property of the star’s `<span>` tag’s CSS.
 
 The problem here is that the image is so small and low quality to begin with, that it will always appear blurry at their displayed size.
 
@@ -45,23 +45,23 @@ Coding a simple star like this from scratch is quite easy.
 
 HTML’s `<svg>` tag acts as a container for SVGs, allowing the graphics to be rendered on a page. The following lines of code define a half-filled star in the form of an SVG:
 
-    <svg width="5cm" height="5cm" viewBox="0 0 500 500"
-        <defs>
-            <linearGradient id="half_fill">
-                <stop offset="50%" stop-color="#646b73"/>
-                <stop offset="50%" stop-opacity="0" />
-            </linearGradient>
-        </defs>
-        <polygon fill="url(#half_fill)" stroke="#646b73" stroke-width="10" points="350,75 379,161 469,161 397,215 423,301 350,250 277,301 303,215 231,161 321,161" />
-    </svg>
+```html
+<svg width="5cm" height="5cm" viewBox="0 0 500 500"
+    <defs>
+        <linearGradient id="half_fill">
+            <stop offset="50%" stop-color="#646b73"/>
+            <stop offset="50%" stop-opacity="0" />
+        </linearGradient>
+    </defs>
+    <polygon fill="url(#half_fill)" stroke="#646b73" stroke-width="10" points="350,75 379,161 469,161 397,215 423,301 350,250 277,301 303,215 231,161 321,161" />
+</svg>
+```
 
 First, we use a “gradient” to create the half-filled look. Then the polygon element draws the star, using the gradient fill we defined earlier and the points as coordinates. This is the final product:
 
 ![Half star created as an SVG but converted to PNG format](https://cdn-images-1.medium.com/max/2000/1*PdyTnMz4nf_GblPuRHhqDA.png)_Half star created as an SVG but converted to PNG format_
 
-_Medium doesn’t support uploading SVGs so I converted it to PNG to display in this article. Hence, this star above doesn’t have the infinite resolution properties of the SVG we coded._
-
-To generate the empty star or filled star, we can just replace the fill property of the polygon tag with the gray color: "#646b73", or “none”.
+To generate the empty star or filled star, we can just replace the `fill` property of the polygon tag with the gray color: `"#646b73"`, or `"none"`.
 
 Feel free to fiddle around with the SVG code in this [online viewer](https://www.freecodeformat.com/svg-editor.php).
 
@@ -72,3 +72,5 @@ SVGs should be used over PNGs for small icons such as rating stars on a shopping
 Small details like blurry icons can really expose the lack of attention to detail to a site. Akin to typos, it just looks unprofessional and careless. To avoid such a blunder, use SVGs! You can either create your own, or utilize one of the multiple available SVG [libraries](https://www.webdesignerdepot.com/2018/02/8-best-free-libraries-for-svg/).
 
 Thanks for reading. Happy hacking!
+
+<i>Orginally [published](https://medium.com/frontend-digest/let-2020-be-the-year-png-icons-die-aeb898263180?source=friends_link&sk=d48411e6b94be910e63410e8244ea887) in [Frontend Digest](https://medium.com/frontend-digest) on Medium<i>.

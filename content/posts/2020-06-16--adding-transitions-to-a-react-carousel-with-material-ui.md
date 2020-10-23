@@ -22,7 +22,7 @@ Interested in jazzing up a boring React carousel? In this post, we use [Material
 
 If you are only interested in the transitions, skip ahead to **step 4**, else we’re coding this carousel from scratch. There are already a bunch of [npm packages](https://www.npmjs.com/search?q=react%20carousel) for React carousels, but implementing it ourselves gives us more customization flexibility. It’s also fun and pretty simple!
 
-The **GitHub repo** for all the code below can be found [\*\*here](https://github.com/karenying/react-carousel)**. See the deployed version [**here](https://react-carousel-with-transitions.netlify.app/)\*\*.
+The **GitHub repo** for all the code below can be found [**here**](https://github.com/karenying/react-carousel). See the deployed version [**here**](https://react-carousel-with-transitions.netlify.app/).
 
 ### Prereqs
 
@@ -55,21 +55,21 @@ Yay let’s write some React components!
 
 ### 1. Setting up slide component
 
-In a new file, CarouselSlide.js, we’re going to create our slide component which takes in a single prop, content.
+In a new file, `CarouselSlide.js`, we’re going to create our slide component which takes in a single prop, `content`.
 
-content will be a JS object with the properties backgroundColor, and title which will determine the background color and the title of the current slide respectively (obviously 😛).
+`content` will be a JS object with the properties `backgroundColor`, and `title` which will determine the background color and the title of the current slide respectively (obviously 😛).
 
-We’re also using Material-UI’s [Card](https://material-ui.com/components/cards/) component and makeStyles hook to style the slide. More info on Material-UI custom styling can be found [here](https://material-ui.com/styles/basics/).
+We’re also using Material-UI’s [Card](https://material-ui.com/components/cards/) component and `makeStyles` hook to style the slide. More info on Material-UI custom styling can be found [here](https://material-ui.com/styles/basics/).
 
-Here’s the code for CarouselSlide.js:
+Here’s the code for `CarouselSlide.js`:
 
 `gist:karenying/ef9aa2d89cb7097e65ee3c1a5fa35d56/carouselslide-js`
 
-To get the slide to render, we’ll create some props for content and update App.js:
+To get the slide to render, we’ll create some props for `content` and update `App.js`:
 
 `gist:karenying/d30029b8b0004f535970c2fcf357e3c1/app-js`
 
-Okay! After running npm start, we should see something like this on [http://localhost:3000/](http://localhost:3000/):
+Okay! After running `npm start`, we should see something like this on http://localhost:3000/:
 
 ![](https://cdn-images-1.medium.com/max/3950/1*SH6tdc5wzNrklOiCrvYllA.png)
 
@@ -77,11 +77,11 @@ Super super simple. Now let’s add some more content to iterate through in our 
 
 ### 2. Generating slide content
 
-We’re gonna put all our slide info in a new file called constants.js. It’ll take the shape of an array of objects that have the same structure as the content prop we worked with above:
+We’re gonna put all our slide info in a new file called `constants.js`. It’ll take the shape of an array of objects that have the same structure as the `content` prop we worked with above:
 
 `gist:karenying/4bbb25dc3f545417086a1c658b1ca554/constants-js`
 
-With constants.js, we can refactor App.js to import and index into SLIDE_INFO:
+With `constants.js`, we can refactor `App.js` to import and index into `SLIDE_INFO`:
 
 `gist:karenying/7961078e3ce798986f42082832f1cb02/app-js`
 
@@ -93,29 +93,29 @@ Since we indexed into the 4th item, the rendered slide should be yellow with the
 
 Time to add some arrows.
 
-We’re just gonna create a super simple Arrow function component that takes in a direction and click function. We’ll use some arrow SVGs from React-Icon. Adding it to App.js:
+We’re just gonna create a super simple `Arrow` function component that takes in a direction and click function. We’ll use some arrow SVGs from React-Icon. Adding it to `App.js`:
 
 `gist:karenying/d3f932b9d433a8ed61bf58838d168b7b/app-js `
 
 Next, we need to implement the click handler.
 
-We’ll use the useState hook to keep track of which slide we’re currently on with the state variable index. Then we use this state variable to index into SLIDE_INFO.
+We’ll use the `useState` hook to keep track of which slide we’re currently on with the state variable `index`. Then we use this state variable to index into `SLIDE_INFO`.
 
-The right and left click handlers need to increment and decrement index respectively to change the currently rendered slide.
+The right and left click handlers need to increment and decrement `index` respectively to change the currently rendered slide.
 
-Instead of handling the two directions separately, like the Arrow component above, we’ll combine the logic in one function called onArrowClick.
+Instead of handling the two directions separately, like the `Arrow` component above, we’ll combine the logic in one function called `onArrowClick`.
 
-onArrowClick takes in a direction and updates index appropriately:
+`onArrowClick` takes in a direction and updates `index` appropriately:
 
 `gist:karenying/e2886659c1de3a51226626c3f6c59cb7/app-js`
 
-Note: in **line 7** above, we add numSlides to the sum of index and increment and mod it by numSlides. This ensures that we always be within the range of 0 and numSlides — 1 to stay in bounds.
+Note: in **line 7** above, we add `numSlides` to the sum of `index` and `increment`, and mod it by `numSlides`. This ensures that we always be within the range of `0` and `numSlides — 1` to stay in bounds.
 
-Finally, we update the return statement of App.js to render the arrows:
+Finally, we update the return statement of `App.js` to render the arrows:
 
 `gist:karenying/1cfda17b3fab2bb6f1ca703250bca3ca/app-js`
 
-and style the arrow SVGs in App.css:
+and style the arrow SVGs in `App.css`:
 
 `gist:karenying/e9426c28ccc93433b747e1add8a49363/app-css`
 
@@ -127,21 +127,21 @@ After this step, we have a working carousel:
 
 ### 4. Adding transitions with Material-UI
 
-The transition we’re using is Material-UI’s [Slide API](https://material-ui.com/api/slide/). We’ll have to create two new state variables: slideIn, and slideDirection to correspond with Slide’s in and direction props respectively.
+The transition we’re using is Material-UI’s [Slide API](https://material-ui.com/api/slide/). We’ll have to create two new state variables: `slideIn`, and `slideDirection` to correspond with Slide’s `in` and `direction` props respectively.
 
-in dictates when the component appears if true, and when the component exits if false.
+`in` dictates when the component appears if true, and when the component exits if `false`.
 
-direction dictates where the component _enters from_. This means that without changing direction, the component enters and exits from the same direction. This is not the desired effect we want for a carousel! The slides must enter and exit from opposite directions to give the appearance of moving left or right across the page. Thus, we need to change direction in between setting in from false to true.
+`direction` dictates where the component _enters from_. This means that without changing direction, the component enters and exits from the same `direction`. This is not the desired effect we want for a carousel! The slides must enter and exit from opposite directions to give the appearance of moving left or right across the page. Thus, we need to change `direction` in between setting `in` from `false` to `true`.
 
-We also need to use setTimeout so that the previous slide has time to exit before the next slide enters.
+We also need to use `setTimeout` so that the previous slide has time to exit before the next slide enters.
 
-After updating slideIn and slideDirection in onArrowClick, we’ve added:
+After updating `slideIn` and `slideDirection` in `onArrowClick`, we’ve added:
 
 `gist:karenying/848371ea8cad01eb5689bb552a31f59a/app-js`
 
-Note: in **line 2**,\*\* \*\*we set the initial value of slideDirection to ‘down’ so the carousel slides down on the first render.
+Note: in **line 2**, we set the initial value of `slideDirection` to `'down'` so the carousel slides down on the first render.
 
-Finally, we want to wrap our CarouselSlide component with an extra div since Material-UI’s Slide’s child “[needs to be able to hold a ref](https://material-ui.com/guides/composition/#caveat-with-refs).” Then we pass in our state variables into Slide and our updated return statement now looks like:
+Finally, we want to wrap our `CarouselSlide` component with an extra `div` since Material-UI’s Slide’s child “[needs to be able to hold a ref](https://material-ui.com/guides/composition/#caveat-with-refs).” Then we pass in our state variables into `Slide` and our updated return statement now looks like:
 
 `gist:karenying/4ea450cb71eff46428cff24e9e12c2c4/app-js`
 
@@ -159,15 +159,15 @@ But how nice would it be if you could navigate through the carousel with just **
 
 ### 5. Binding arrow keys for navigation
 
-We just have to add a keydown event listener and call onArrowClick for the appropriate direction. Remember to cleanup the event listener when the component unmounts!
+We just have to add a `keydown` event listener and call `onArrowClick` for the appropriate direction. Remember to cleanup the event listener when the component unmounts!
 
-We can put all the key handling logic in useEffect:
+We can put all the key handling logic in `useEffect`:
 
 `gist:karenying/67192e644c76dcb4621a37e737f005b2/app-js`
 
 Woohoo! We’re officially done 🙂
 
-If you got lost along the way, here’s the [\*\*GitHub repo](https://github.com/karenying/react-carousel)**. The commits correspond with each of the steps listed above. You can also play with the [**deployed version](https://react-carousel-with-transitions.netlify.app/)\*\*.
+If you got lost along the way, here’s the [**GitHub repo**](https://github.com/karenying/react-carousel). The commits correspond with each of the steps listed above. You can also play with the [**deployed version**](https://react-carousel-with-transitions.netlify.app/).
 
 ## Extensions
 
@@ -186,3 +186,5 @@ In this tutorial, we implemented a React carousel from scratch. Then we added sl
 Carousels look great on personal sites, blogs, and product sites. Jazzing it up makes them more interesting and interactive.
 
 Thanks for reading. Happy hacking!
+
+<i>Orginally [published](https://levelup.gitconnected.com/adding-transitions-to-a-react-carousel-with-material-ui-b95825653c1b?source=friends_link&sk=4e012ba17cb0e2297c526ce142c6e7fc) in [Level Up Coding](https://levelup.gitconnected.com/) on Medium<i>.

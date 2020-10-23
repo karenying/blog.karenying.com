@@ -63,9 +63,9 @@ Next, I have a-many bones to pick with the founder bios underneath:
 
 ![Public Comps founder bios](https://cdn-images-1.medium.com/max/2000/1*MLguEKzi3zHg_aYiF1i0aA.png)_Public Comps founder bios_
 
-Hey, what’s up people that use emojis as periods 👋🏼 You know what’s a better ✅ and natural 🌱 delimiter that doesn’t take me twice 👯‍♀️ as long to read 📚 a paragraph because I’m pausing 🛑 every couple of words to skip over a colorful 🎨 emoji? **A SPACE or a PERIOD.**
+Hey, what’s up people that use emojis as periods 👋🏼 &nbsp; You know what’s a better ✅ &nbsp; and natural 🌱 &nbsp; delimiter that doesn’t take me twice 👯‍♀️ &nbsp; as long to read 📚 &nbsp; a paragraph because I’m pausing 🛑 &nbsp; every couple of words to skip over a colorful 🎨 &nbsp; emoji? **A SPACE or a PERIOD.**
 
-Again, what’s that weird looking paper next to “Salesforce”? Apparently, it’s the [receipt](https://emojipedia.org/receipt/) emoji. Sales…receipts… ha ha ha 🤦🏻‍♀️ And I guess Groupon is a corporate company and thus the buildings? Not entirely making the connection here and it detracts, instead of adds, to the accompanying text.
+Again, what’s that weird looking paper next to “Salesforce”? Apparently, it’s the [receipt](https://emojipedia.org/receipt/) emoji. Sales…receipts… ha ha ha 🤦🏻‍♀️ &nbsp; And I guess Groupon is a corporate company and thus the buildings? Not entirely making the connection here and it detracts, instead of adds, to the accompanying text.
 
 Jon and Howard are not the only ones! This emoji overuse unfortunately reminds me of the vulgar holiday copy pasta texts and middle schooler Instagram bios. You can find all sorts of The Bad and The Ugly by browsing through Notion’s template [gallery](https://www.notion.so/Notion-Template-Gallery-181e961aeb5c4ee6915307c0dfd5156d).
 
@@ -87,7 +87,7 @@ If I know the associated emojis, I can quickly skim the commits and understand w
 
 ### Slack
 
-Love love love emoji reactions on Slack. It allows for a wider range of “replies” to a message while saving space. For example, instead of replying “ok” to a message and notifying everyone in the channel, you can just 👍🏼 or 👌🏼 react. Emojis also make work interactions a little more personal and fun.
+Love love love emoji reactions on Slack. It allows for a wider range of “replies” to a message while saving space. For example, instead of replying “ok” to a message and notifying everyone in the channel, you can just 👍🏼 &nbsp; or 👌🏼 &nbsp; react. Emojis also make work interactions a little more personal and fun.
 
 ## Conclusion
 
@@ -98,3 +98,5 @@ However, emojis can be used tastefully, if they have a purpose other than delimi
 Next time, save the emoji overload for your texts to your 👵🏻
 
 Thanks for reading!
+
+<i>Orginally [published](https://medium.com/frontend-digest/im-a-gen-z-er-and-i-want-you-to-stop-using-emojis-2efa40fad3a3?source=friends_link&sk=8495a8932613489fbc7176a23762612b) in [Frontend Digest](https://medium.com/frontend-digest) on Medium<i>.

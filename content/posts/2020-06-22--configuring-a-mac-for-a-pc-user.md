@@ -16,7 +16,7 @@ category: 'lol'
 
 ![](https://miro.medium.com/max/1917/1*5Wx0SGRV6Xdg067eJGiEpA.jpeg)_16-inch MacBook Pro_
 
-**\*Disclaimer**: this article reflects my PC experience with mainly using a [Lenovo Thinkpad X250](https://www.lenovo.com/us/en/laptops/thinkpad/x-series/x250/) which may not be the universal PC experience!\*
+_**Disclaimer**: this article reflects my PC experience with mainly using a [Lenovo Thinkpad X250](https://www.lenovo.com/us/en/laptops/thinkpad/x-series/x250/) which may not be the universal PC experience!_
 
 A couple of months ago my mom received the newest 16-inch MacBook Pro from her company as her “upgraded” work laptop. Yet almost half a year later, she still hasn’t set it up, still hanging on to her Lenovo Thinkpad [T460s](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/ThinkPad-T460s/p/22TP2TT460S). **She claims the learning curve of switching from a PC to a Mac is too steep.**
 
@@ -44,7 +44,7 @@ Download instructions are on their [homepage](https://www.mowglii.com/itsycal/).
 
 ### Right-click
 
-Mac keyboards lack the physical right click. ⌃(control) + click, or tap with two fingers are the default equivalent. But you can also configure your trackpad’s bottom right corner be the right click area.
+Mac keyboards lack the physical right click. `⌃(control) + click`, or tap with two fingers are the default equivalent. But you can also configure your trackpad’s bottom right corner be the right click area.
 
 Go to System Preferences > Trackpad > Point & Click. Then under “Secondary Click”, choose “Click in bottom right corner”.
 
@@ -122,7 +122,7 @@ Additionally, these are some of the most common Mac shortcuts I use:
 
 **⌘ + delete**: Delete selected files
 
-**⌘ + **⇧** + 3 / 4 / 5**: Screenshot entire desktop / select screenshot area / screen record entire desktop
+**⌘ + ⇧ + 3 / 4 / 5**: Screenshot entire desktop / select screenshot area / screen record entire desktop
 
 **⌘ + ⌃ + space**: Open emoji keyboard while typing
 
@@ -138,7 +138,7 @@ We’ve mentioned a few gestures above but here are the ones I use the most ofte
 
 **3+ fingers swipe right and left**: Swipe between desktops (uses Apple “natural” direction and cannot be changed)
 
-**3+ fingers swipe up: **Launch Mission Control
+**3+ fingers swipe up**: Launch Mission Control
 
 **Top right two finger swipe left**: Show Notification Center
 
@@ -148,19 +148,19 @@ Of course there’s also the two finger pinch and zoom. All available gestures c
 
 Finally, I’m gonna cover a couple of handy Chrome/browser specific shortcuts.
 
-**⌘ +(**⇧**) +T**: Open new tab / (reopen most recently closed tab)
+**⌘ +(⇧) +T**: Open new tab / (reopen most recently closed tab)
 
-**⌘ + (**⇧**) + N**: Open new (incognito) window
+**⌘ + (⇧) + N**: Open new (incognito) window
 
 **⌘ + L**: Jump to the address bar
 
-**⌘ + (**⇧**) + R**: (Hard) refresh
+**⌘ + (⇧) + R**: (Hard) refresh
 
-**⌘ + **⇧** + B**: Hide / Show bookmarks bar
+**⌘ + ⇧ + B**: Hide / Show bookmarks bar
 
 **⌃ + tab**: Switch to the tab immediately to the right
 
-**⌃ + **⇧** + [ / ]: **Switch left and right between tabs
+**⌃ + ⇧ + [ / ]**: Switch left and right between tabs
 
 **Trackpad swipe right and left with two fingers**: Navigate forward and backward in browsing history
 
@@ -171,3 +171,5 @@ The full list of available Chrome specific shortcuts can be viewed [here](https:
 There are so many ways to configure your MacBook. These are just a couple of suggestions and shortcuts that work for me. Keep in mind I’m a singular Chrome window + <10 tabs, permanently empty Desktop/Trash, Inbox Zero type of person 😝
 
 Hope this post gets you excited about your induction into the MacBook cult 🎉 while also improving your workflow! Feel free to comment which ones worked for you and if I’m missing anything. Thanks for reading!
+
+<i>Orginally [published](https://medium.com/macoclock/configuring-a-mac-for-a-pc-user-708677345415?source=friends_link&sk=8e3dfa7cbb662e21fec06defb186af68) in [Mac O'Clock](https://medium.com/macoclock) on Medium<i>.
