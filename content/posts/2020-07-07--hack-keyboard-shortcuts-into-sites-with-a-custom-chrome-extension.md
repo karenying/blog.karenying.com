@@ -33,13 +33,13 @@ This tutorial assumes you have some knowledge of Javascript and how the DOM work
 
 Creating a Chrome extension from scratch is actually ridiculously simple. Much like how every npm project requires a package.json, every Chrome extension needs a manifest.json for important information. This file goes in the root directory. We’ll add some bare-bones details first:
 
-<iframe src="https://medium.com/media/fd63901b51d111aa9261012bbf8e013c" frameborder=0></iframe>
+`gist:karenying/3d994edec02babf8421b9c6102d705c2/manifest-json`
 
 Chrome [recommends](https://developer.chrome.com/extensions/manifest/manifest_version) that developers put 2 for the manifest_version so that’s what we’ll do.
 
 Next, choose an icon for your extension! I just downloaded the GCal icon and put it in a folder called assets. While you should have a different sized icon for each of the specified dimensions, for now, we’ll just use the same icon for all. We’ll also add some permissions. We only want the extension to run on pages prefixed with https://calendar.google.com so:
 
-<iframe src="https://medium.com/media/462f79efe8fcbd72e6689eecef604fc3" frameborder=0></iframe>
+`gist:karenying/c9a7e27bb4c94c6a0d553eb3077962d5/manifest-json`
 
 With our manifest.json, we can set up the development environment.
 
@@ -61,7 +61,7 @@ Content scripts interact with the DOM. In this case, we want the content script 
 
 Under a new folder called js, create a new file called contentScript.js. We need to register this file in manifest.json. Under the “content_scripts” key, we also need to specify "matches" which determines what pages the content script is allowed to run on:
 
-<iframe src="https://medium.com/media/062b6fbbd912db82b6958bae952c8dba" frameborder=0></iframe>
+`gist:karenying/575e0248a881cffdbdf9b42cd2c0af8b/manifest-json`
 
 Cool. We can now investigate the GCal DOM. By opening Inspect Element, we find that the two arrows are wrapped in divs with 7 classes…It looks like it’d be cleaner to access the parent div which only has 2 classes and iterate through the children.
 
@@ -69,7 +69,7 @@ Cool. We can now investigate the GCal DOM. By opening Inspect Element, we find t
 
 We can use getElementsByClassName and access the parent container’s 2nd and 3rd children which are the arrow divs that we want:
 
-<iframe src="https://medium.com/media/27785ac4ccf41d29aed7f5b26c35c2ad" frameborder=0></iframe>
+`gist:karenying/3bcfd013653e3776324148f2d39a19eb/contentscript-js`
 
 Our content script looks good for now. We gotta hook up some other stuff before we can click these arrow divs.
 
@@ -79,7 +79,7 @@ For security reasons we can’t just add document.addEventListener('keydown', ha
 
 Instead, we’ll be using Chrome’s [commands API](https://developer.chrome.com/apps/commands). This allows us to register keyboard shortcuts with our extension. All we gotta do is add to our manifest.json:
 
-<iframe src="https://medium.com/media/53cd138897796b5643cf3dbaf9fe28d8" frameborder=0></iframe>
+`gist:karenying/d76427db485ed9910297e2143cac153c/manifest-json`
 
 A couple of notes:
 
@@ -101,13 +101,13 @@ Background scripts run in…well, the background of the extension. In this case,
 
 Create a file under the js folder called background.js and let’s register it in manifest.json:
 
-<iframe src="https://medium.com/media/534c22ffe082d88de493b3015c103b4f" frameborder=0></iframe>
+`gist:karenying/b213d18dcced60613d0903fb96a160ad/manifest-json`
 
 Chrome documentation [says](https://developer.chrome.com/extensions/background_pages#manifest) that "persistent" should almost always be set to false so we’ll oblige.
 
 Next, we’re adding a command listener and parsing which direction the command is specifying:
 
-<iframe src="https://medium.com/media/99d4399d8bf26306433276d3937d5eca" frameborder=0></iframe>
+`gist:karenying/905cdf5242253a1995c0abd789ee9afc/background-js`
 
 Every time Alt + Left or Alt + Right is pressed while in GCal, the background script grabs the direction entered.
 
@@ -117,13 +117,13 @@ In this extension, the background script listens to command shortcuts from the k
 
 So in our command listener, we use chrome.tabs to send a message with the key direction that stores the direction we grabbed from the command name:
 
-<iframe src="https://medium.com/media/dedf21d6639bb63c99169fce3a21b50b" frameborder=0></iframe>
+`gist:karenying/fcd96d97bc59da3ce6c8356c1f82ba7a/background-js`
 
 The chrome.tabs API documentation can be found [here](https://developer.chrome.com/extensions/tabs). All that header basically ensures that the background script is sending a message to the currently open and active GCal window.
 
 Now, we have to receive the message in the content script. We’ll use chrome.runtime here:
 
-<iframe src="https://medium.com/media/42dceaf63d01105ba41b987d0cacfb7c" frameborder=0></iframe>
+`gist:karenying/1e50d39b6914cdd0f8f7fe42ea85a9a8/contentscript-js`
 
 Based on the direction received, we’ll tell the content script to click the corresponding div!
 
@@ -137,7 +137,7 @@ Extensions can have a popup when clicked.
 
 Create a popup.html file in the root directory and add this to manifest.json:
 
-<iframe src="https://medium.com/media/296eb089072b74648227895c0bc6ed2c" frameborder=0></iframe>
+`gist:karenying/4fc9744728c2c59086b1e2a125f14753/manifest-json`
 
 The popup is just plain HTML. This is what I made:
 

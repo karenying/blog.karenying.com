@@ -113,4 +113,4 @@ Netlify isn’t alone! As we saw above, Python’s http.server is another culpri
 
 - [Solution with hash routing](https://itnext.io/why-using-hash-based-urls-in-your-react-spa-will-save-you-more-time-than-you-think-a21e2c560879)
 
-Thanks for reading. Happy coding!
+Thanks for reading. Happy hacking!

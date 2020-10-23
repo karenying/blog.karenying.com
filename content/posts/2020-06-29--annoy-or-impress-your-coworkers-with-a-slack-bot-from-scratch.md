@@ -49,7 +49,7 @@ Now head over to your Slack workspace: [your-workspace-name].slack.com. On the l
 
 Awesome, we’re done with this Slack setup for now. Onto the coding part.
 
-## Coding
+## Implementation
 
 ### Getting set up
 
@@ -75,13 +75,13 @@ Next, create a filed name .env. Here, we’re gonna store our Slack app’s auth
 
 In .env, create the environment variable:
 
-<iframe src="https://medium.com/media/66006aab1a0ace69c5c0bd92749a28a3" frameborder=0></iframe>
+`gist:karenying/0470798a4cd3cfa62029da37a6c558f1/env`
 
 Since we’re pushing this project to GitHub, it’s good practice to keep your authorization tokens safe! The dotenv npm package allows us to work with our environment variable 🙂
 
 Finally, let’s create an index.js and set up our packages. This is where all our bot’s logic will live.
 
-<iframe src="https://medium.com/media/3a479d301fb90d84d60a8e14dc80bc4e" frameborder=0></iframe>
+`gist:karenying/719eb55f44db5736a44feba6e865bfe3/index-js`
 
 Add the start script to package.json under "scripts":
 
@@ -95,13 +95,13 @@ We’ll be using the npm package slackbots. While you can build a Slack bot by u
 
 To initiate the bot:
 
-<iframe src="https://medium.com/media/6fab5a26337bb57de70c8c6b0318bd40" frameborder=0></iframe>
+`gist:karenying/106e1bc5ab2b317507e90b3efb132e3f/index-js`
 
 Make sure the name attribute **exactly matches your registered app name **(not the bot user name), including case.
 
 Let’s have the bot notify us when it starts:
 
-<iframe src="https://medium.com/media/01e1d0da1b653b5229a16785658c185b" frameborder=0></iframe>
+`gist:karenying/a4f6a637250e64cc40f9ac14e90c0a61/index-js`
 
 Now if you run npm start you should get notified that your bot is starting! Get used to this because you’ll be see this message a whole lot 😅
 
@@ -113,13 +113,13 @@ Now, we want to schedule our bot to send a message at a specific time. You can c
 
 To ensure the message gets sent at the right time, we’ll be using the node-cron npm packge. The scheduler syntax can be found [here](https://www.npmjs.com/package/node-cron). I modularized this logic into another function called createJob. This is what I ended up added for my bot:
 
-<iframe src="https://medium.com/media/35d611d5cad35dd9dd7aa7dc8102236f" frameborder=0></iframe>
+`gist:karenying/ceacd5a74a04b5a63136b382db211e12/index-js`
 
 '32 12 \* \* 1–5' means that this message will be sent every weekday at 12:32 PM, right in time for lunch! Make sure you add your timezone because without this configuration, node-crone operates in UTC. [This](https://raw.githubusercontent.com/node-cron/tz-offset/master/generated/offsets.json) is a list of all the valid timezone strings node-code accepts.
 
 The last piece is to call createJob when the bot starts:
 
-<iframe src="https://medium.com/media/c89fc314a427355183f5e1933205f909" frameborder=0></iframe>
+`gist:karenying/d7f01d0fbce4ac241a1ddc16b8a09b71/index-js`
 
 That’s it! You’ve just created your own slack bot in less than 30 lines of code 🎉 You can mess around with when the messages should get sent/to whom for more testing and experimenting if you want. When you’re ready, push your code to a GitHub repo and let’s deploy to Heroku!
 
@@ -181,4 +181,4 @@ In this post we used a couple of npm packages to slap together a Slack bot in le
 
 That’s all I have for you. Go forth and annoy (or impress) your coworkers 😛
 
-Thanks for reading. Happy coding!
+Thanks for reading. Happy hacking!

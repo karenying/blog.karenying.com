@@ -181,4 +181,4 @@ In this tutorial, we implemented a React carousel from scratch. Then we added sl
 
 Carousels look great on personal sites, blogs, and product sites. Jazzing it up makes them more interesting and interactive.
 
-Thanks for reading. Happy coding!
+Thanks for reading. Happy hacking!

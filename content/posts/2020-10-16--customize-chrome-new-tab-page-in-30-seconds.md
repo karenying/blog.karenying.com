@@ -35,7 +35,7 @@ This tutorial assumes you have some knowledge of Javascript and HTML/CSS. All go
 
 Much like how every npm project requires a package.json, every Chrome extension needs a manifest.json for important information. This file goes in the root directory. This is all we need initially:
 
-<iframe src="https://medium.com/media/0fefb658761dc38026808fd02c3c33ba" frameborder=0></iframe>
+`gist:karenying/be79110206415e17be3cfd7bb8881ed6/manifest-json`
 
 Chrome [recommends](https://developer.chrome.com/extensions/manifest/manifest_version) that developers put 2 for the manifest_version so that’s what we’ll do.
 
@@ -45,7 +45,7 @@ The last line is the crucial part, we’ll be creating an index.html as our home
 
 In the root directory, create an index.html file. Here’s a super bare bones template:
 
-<iframe src="https://medium.com/media/2f55593176d7b7781d4b678d2e33e21a" frameborder=0></iframe>
+`gist:karenying/035a3ee24482972e0b9d4145b1bc72a7/index-html`
 
 Make sure you fill out the title tag or you’ll see an ugly “chrome://newtab”.
 
@@ -89,7 +89,7 @@ All this takes is Javascript’s Date [API](https://developer.mozilla.org/en-US/
 
 In script.js, we’ll chain some if statements to determine what time of day it is:
 
-<iframe src="https://medium.com/media/7ad82645b625a81451ab86467952dd10" frameborder=0></iframe>
+`gist:karenying/fb0c0be4fb6c3d1e1b7b594b03d0bba8/script-js`
 
 And we have ourselves a greeting!
 
@@ -97,9 +97,9 @@ And we have ourselves a greeting!
 
 In a similar vein, we can add the current date:
 
-<iframe src="https://medium.com/media/618326e788d2e3c5f0e0a4b5f4ef770d" frameborder=0></iframe>
+`gist:karenying/74d0fb34737fa95a3e8b87d3cb30c8f5/index-html`
 
-<iframe src="https://medium.com/media/989cc69a90bee2a9837329864f97d61d" frameborder=0></iframe>
+`gist:karenying/b89b52b168547d63a8cc56d6c4dc01e0/script-js`
 
 With the help of the Date API, our page knows the current time, timeframe, and date!
 

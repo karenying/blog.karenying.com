@@ -71,4 +71,4 @@ SVGs should be used over PNGs for small icons such as rating stars on a shopping
 
 Small details like blurry icons can really expose the lack of attention to detail to a site. Akin to typos, it just looks unprofessional and careless. To avoid such a blunder, use SVGs! You can either create your own, or utilize one of the multiple available SVG [libraries](https://www.webdesignerdepot.com/2018/02/8-best-free-libraries-for-svg/).
 
-Thanks for reading. Happy coding!
+Thanks for reading. Happy hacking!
