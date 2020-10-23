@@ -58,9 +58,9 @@ const Post = ({ post }) => {
               {' '}
               <span className="light-pink-text">&amp;&amp;</span>
               {' '}
-              share
+              <span className="dark-pink-text">write</span>
               {' '}
-              <span className="dark-pink-text">opinions</span>
+              about it
             </div>
           </div>
         </div>

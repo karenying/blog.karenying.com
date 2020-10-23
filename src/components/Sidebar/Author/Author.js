@@ -30,9 +30,9 @@ const Author = ({ author, isIndex }: Props) => (
         {' '}
         <span className="light-pink-text">&amp;&amp;</span>
         <br />
-        share
+        <span className="dark-pink-text">write</span>
         {' '}
-        <span className="dark-pink-text">opinions</span>
+        about it
       </div>
 
       <div  className={styles['author__creds']}>

@@ -1,7 +1,30 @@
 @import '../../assets/scss/variables';
 
 .header {
-  font-size: 2.2rem;
-  font-family: $typographic-font-basic;
-  color: $color-white-almost;
+  max-width: $layout-post-width + 200px;
+  margin: 20px auto 0px;
+
+  &__link {
+    font-size: 2.7rem;
+    font-family: $typographic-font-basic;
+    color: $color-white-almost;
+
+    &:hover,
+    &:focus {
+      color: $color-white-almost;
+      text-decoration: underline;
+    }
+  }
+
+  &__no-link {
+    font-size: 2.7rem;
+    font-family: $typographic-font-basic;
+    color: $color-white-almost;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-sm) {
+  .header {
+    display: none;
+  }
 }
