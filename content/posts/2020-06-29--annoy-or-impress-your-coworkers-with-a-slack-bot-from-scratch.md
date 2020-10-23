@@ -8,7 +8,7 @@ tags:
   - 'Tutorial'
   - 'Productivity'
 description: 'I made a Slack bot in under 30 lines of code to remind my coworker to eat lunch'
-socialImage: '/media/gutenberg.jpg'
+socialImage: '/media/socialImages/annoy-or-impress-your-coworkers-with-a-slack-bot-from-scratch.jpeg'
 minutes: '8'
 category: 'lol'
 ---

@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://karenying.com',
   pathPrefix: '/',
   title: 'blog.karenying.com',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  subtitle: 'I beep boop and write about it',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'Karen Ying',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'I beep boop and write about it',
     contacts: {
       email: '',
       facebook: '#',

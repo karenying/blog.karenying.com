@@ -10,7 +10,7 @@ tags:
   - 'Front End'
   - 'Apps'
 description: 'An analysis on emoji usage in the popular app Notion'
-socialImage: '/media/gutenberg.jpg'
+socialImage: '/media/socialImages/i’m-a-gen-z-er-and-i-want-you-to-stop-using-emojis.png'
 minutes: '5'
 category: 'lol'
 ---

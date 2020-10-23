@@ -9,7 +9,7 @@ tags:
   - 'Dark Mode'
   - 'Apps'
 description: 'Deep dive into Spotify, Twitter, Facebook’s dark mode palettes by analyzing Hex codes'
-socialImage: '/media/gutenberg.jpg'
+socialImage: '/media/socialImages/50-shades-of-dark-mode-gray.jpeg'
 minutes: '8'
 category: 'lol'
 ---

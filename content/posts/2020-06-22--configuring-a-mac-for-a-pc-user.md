@@ -9,7 +9,7 @@ tags:
   - 'Apps'
   - 'Tutorial'
 description: 'How to finally take the plunge and configure your new Mac as a former average PC user'
-socialImage: '/media/gutenberg.jpg'
+socialImage: '/media/socialImages/configuring-a-mac-for-a-pc-user.jpeg'
 minutes: '6'
 category: 'lol'
 ---

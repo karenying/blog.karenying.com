@@ -10,7 +10,7 @@ tags:
   - 'Web Dev'
   - 'Tutorial'
 description: 'Override Chrome’s new tab page to create a more personalized browsing experience'
-socialImage: '/media/gutenberg.jpg'
+socialImage: '/media/socialImages/customize-chrome-new-tab-page-in-30-seconds.gif'
 minutes: '4'
 category: 'lol'
 ---
