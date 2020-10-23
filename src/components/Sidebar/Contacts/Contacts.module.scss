@@ -4,7 +4,7 @@
 .contacts {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 150px;
 
   a {
@@ -13,11 +13,18 @@
 
   &__link {
     cursor: pointer;
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
   }
 
-  &__code:hover svg,
+  &__about:hover svg,
   &__twitter:hover svg {
     color: $color-yellow !important;
+  }
+
+  &__github {
+    margin-top: -1px;
   }
 
   &__github:hover svg {

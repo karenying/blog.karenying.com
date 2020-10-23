@@ -3,23 +3,24 @@ import { getContactHref, getIcon } from '../../../utils';
 import Icon from '../../Icon';
 import styles from './Contacts.module.scss';
 
-import { FaLinkedin, FaCode } from 'react-icons/fa';
+import { FaLinkedin, FaInfoCircle } from 'react-icons/fa';
 import { AiFillTwitterCircle, AiFillMediumCircle } from 'react-icons/ai';
 import { GoMarkGithub } from 'react-icons/go';
 import { IoMdMail } from 'react-icons/io';
+import { MdInfo } from 'react-icons/md';
 import Tooltip from '@material-ui/core/Tooltip';
 
 
 const Contacts = () => (
   <div className={styles['contacts']}>
-    <div className={`${styles['contacts__code']} ${styles['contacts__link']}`}>
-      <Tooltip title="Site source code" aria-label="site source code" placement="top">
+    <div className={`${styles['contacts__about']} ${styles['contacts__link']}`}>
+      <Tooltip title="About me" aria-label="about me" placement="top">
         <a
-          href='https://github.com/karenying/blog.karenying.com'
+          href='http://karenying.com/'
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FaCode />
+          <FaInfoCircle size='1.05rem'/>
         </a>
       </Tooltip>
 
@@ -53,7 +54,7 @@ const Contacts = () => (
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FaLinkedin size='1.1rem'/>
+          <FaLinkedin size='1.04rem'/>
         </a>
       </Tooltip>
     </div>
@@ -64,7 +65,7 @@ const Contacts = () => (
           target='_blank'
           rel='noopener noreferrer'
         >
-          <AiFillTwitterCircle size='1.2rem'/>
+          <AiFillTwitterCircle size='1.15rem'/>
         </a>
       </Tooltip>
     </div>
