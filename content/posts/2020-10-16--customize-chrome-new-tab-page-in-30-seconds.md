@@ -5,12 +5,13 @@ template: 'post'
 draft: false
 slug: 'customize-chrome-new-tab-page-in-30-seconds'
 tags:
-  - 'chrome extensions'
-  - 'productivity'
-  - 'web dev'
+  - 'Chrome Extensions'
+  - 'Productivity'
+  - 'Web Dev'
 description: 'Override Chrome’s new tab page to create a more personalized browsing experience'
 socialImage: '/media/gutenberg.jpg'
 minutes: '4'
+category: 'lol'
 ---
 
 ![](https://cdn-images-1.medium.com/max/1600/1*FA6i6sE1USTsXdZHJkOSzA.gif)_My custom new tab [page](https://karenying.github.io/chromepage/). Theme consistent with my personal [site](https://karenying.com)._

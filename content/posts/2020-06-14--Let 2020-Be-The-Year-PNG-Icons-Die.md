@@ -1,6 +1,6 @@
 ---
 title: 'Let 2020 be the year PNG icons die'
-date: '2020-07-16T22:12:03.284Z'
+date: '2020-06-14T22:12:03.284Z'
 template: 'post'
 draft: false
 slug: 'let-2020-be-the-year-png-icons-die'
@@ -11,6 +11,7 @@ tags:
 description: 'Examining a trendy store’s mysteriously blurry rating stars and proposing a solution'
 socialImage: '/media/gutenberg.jpg'
 minutes: '4'
+category: 'lol'
 ---
 
 ![](https://miro.medium.com/max/4800/1*1NsyodtGxXetMW1l647hrQ.png)_Marine Layer website_
