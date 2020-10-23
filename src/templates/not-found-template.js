@@ -3,6 +3,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
+import SmallHeader from '../components/SmallHeader';
 import { useSiteMetadata } from '../hooks';
 
 const NotFoundTemplate = () => {
@@ -11,8 +12,14 @@ const NotFoundTemplate = () => {
   return (
     <Layout title={`Not Found - ${title}`} description={subtitle}>
       <Sidebar />
+      <SmallHeader />
       <Page title="NOT FOUND">
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <p className="light-gray-text">
+          oops, something went wrong{' '}
+          <span role='img' aria-label='confused'>
+            😨
+          </span>
+        </p>
       </Page>
     </Layout>
   );
