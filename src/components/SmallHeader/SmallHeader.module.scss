@@ -1,7 +1,7 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
 
-.menubar {
+.smallheader {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,13 +52,7 @@
 }
 
 @include breakpoint-sm {
-  .menubar {
+  .smallheader {
     display: none;
-  }
-}
-
-@media screen and (max-width: $layout-breakpoint-sm) {
-  .menubar .contacts {
-    display: none !important;
   }
 }

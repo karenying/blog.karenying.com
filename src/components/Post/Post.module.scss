@@ -5,8 +5,9 @@
   &__tags {
     max-width: $layout-post-width;
     margin: 0 auto;
-    padding: 0 15px 15px 15px;
+    padding: 0px 15px 15px 10px;
     border-bottom: 1px solid $color-yellow;
+    box-sizing: border-box;
   }
 
   &__comments {
@@ -32,6 +33,68 @@
       border-bottom: 1px solid $color-white-almost;
     }
   }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $layout-post-width;
+
+    &-contacts {
+      margin-top: 7px;
+      width: 150px;
+    }
+
+    &-right {
+      margin: 15px 15px 10px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+
+      &-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-home {
+          font-family: $typographic-font-basic;
+          color: $color-white-almost;
+          font-size: 18px;
+
+          &:hover,
+          &:focus {
+            color: $color-white-almost;
+          }
+        }
+
+        &-tagline {
+          font-family: $typographic-font-mono;
+          color: $color-white-almost;
+          font-size: 12px;
+          line-height: normal;
+          width: fit-content;
+        }
+      }
+
+      img {
+        border-radius: 200px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid $color-yellow;
+    max-width: $layout-post-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    padding-right: 10px;
+  }
 }
 
 @include breakpoint-md {
@@ -47,5 +110,11 @@
       top: 30px;
       left: 30px;
     }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-sm) {
+  .post__footer-contacts {
+    display: none;
   }
 }
