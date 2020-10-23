@@ -23,6 +23,7 @@
       &:hover,
       &:focus {
         color: $color-white-almost;
+        text-decoration: none !important;
       }
 
       &--disable {

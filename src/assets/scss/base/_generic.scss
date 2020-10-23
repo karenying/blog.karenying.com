@@ -125,6 +125,7 @@ strong {
 
 ul {
   @include margin-bottom(1);
+  color: $color-white-almost;
 
   & li {
     padding: 0 5px;

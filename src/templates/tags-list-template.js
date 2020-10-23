@@ -15,7 +15,7 @@ const TagsListTemplate = () => {
 
   return (
     <>
-    <Header />
+      <Header />
       <Layout title={`Tags - ${title}`} description={subtitle}>
         <Sidebar />
         <SmallHeader />

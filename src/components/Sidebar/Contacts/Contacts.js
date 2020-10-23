@@ -14,7 +14,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 const Contacts = () => (
   <div className={styles['contacts']}>
     <div className={`${styles['contacts__about']} ${styles['contacts__link']}`}>
-      <Tooltip title="About me" aria-label="about me" placement="top">
+      <Tooltip title="About me" aria-label="about me" placement="top" arrow>
         <a
           href='http://karenying.com/'
           target='_blank'
@@ -26,7 +26,7 @@ const Contacts = () => (
 
     </div>
     <div className={`${styles['contacts__github']} ${styles['contacts__link']}`}>
-      <Tooltip title="GitHub" aria-label="github" placement="top">
+      <Tooltip title="GitHub" aria-label="github" placement="top" arrow>
         <a
           href='https://github.com/karenying'
           target='_blank'
@@ -37,7 +37,7 @@ const Contacts = () => (
       </Tooltip>
     </div>
     <div className={`${styles['contacts__email']} ${styles['contacts__link']}`}>
-      <Tooltip title="Email" aria-label="email" placement="top">
+      <Tooltip title="Email" aria-label="email" placement="top" arrow>
         <a
           href='mailto:karenying7@gmail.com'
           target='_blank'
@@ -48,7 +48,7 @@ const Contacts = () => (
       </Tooltip>
     </div>
     <div className={`${styles['contacts__linkedin']} ${styles['contacts__link']}`}>
-      <Tooltip title="LinkedIn" aria-label="linkedin" placement="top">
+      <Tooltip title="LinkedIn" aria-label="linkedin" placement="top" arrow>
         <a
           href='https://www.linkedin.com/in/kyying/'
           target='_blank'
@@ -59,7 +59,7 @@ const Contacts = () => (
       </Tooltip>
     </div>
     <div className={`${styles['contacts__twitter']} ${styles['contacts__link']}`}>
-      <Tooltip title="Twitter" aria-label="twitter" placement="top">
+      <Tooltip title="Twitter" aria-label="twitter" placement="top" arrow>
         <a
           href='https://twitter.com/karen_ying_'
           target='_blank'
