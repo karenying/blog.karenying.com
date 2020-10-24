@@ -46,5 +46,14 @@
     margin-bottom: 2rem;
     font-size: 18px;
     text-align: center;
+
+    a {
+      color: $color-gray-medium;
+
+      &:hover,
+      &:active {
+        color: $color-gray-medium;
+      }
+    }
   }
 }

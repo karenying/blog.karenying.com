@@ -23,7 +23,8 @@ const Author = ({ author }) => (
     <div className={styles['author__creds']}>
       cs <span className='yellow-text'>@</span> princeton
       <br />
-      swe <span className='yellow-text'>@</span> wellsheet
+      swe <span className='yellow-text'>@</span>{' '}
+      <a href='https://www.wellsheet.com/'>wellsheet</a>
     </div>
   </div>
 );
