@@ -13,16 +13,8 @@ module.exports = {
   menu: [
     {
       label: 'Articles',
-      path: '/'
+      path: '/',
     },
-    {
-      label: 'About me',
-      path: '/pages/about'
-    },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
   ],
   author: {
     name: 'Karen Ying',
@@ -45,6 +37,6 @@ module.exports = {
       youtube: '',
       soundcloud: '',
       medium: '',
-    }
-  }
+    },
+  },
 };
