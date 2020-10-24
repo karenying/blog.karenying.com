@@ -18,7 +18,7 @@ I picked up blogging on [Medium](https://medium.com/@karenying) over the summer 
 
 This past week, I decided that I will be returning to [Wellsheet](https://www.wellsheet.com/), a fast-paced healthcare startup based in NYC, as a full-time software engineer in Summer 2020! With that settled, I hacked together this blog site in the past couple of days.
 
-I used the Gatsby Lumen [starter](https://github.com/alxshelepenok/gatsby-starter-lumen), creating only a couple of new components, and overriding much of the CSS. I wanted the theme to be completely dark-mode with pops of pastel color, echoing my personal/portfolio [site](https://www.karenying.com/) (they are sisters not twins!)
+I used the Gatsby Lumen [starter](https://github.com/alxshelepenok/gatsby-starter-lumen), creating only a couple of new components, and overriding much of the CSS. I wanted the theme to be completely dark-mode with pops of pastel color, echoing my personal/portfolio [site](https://www.karenying.com/) (they are sisters not twins!) I adore [Varela Round](https://fonts.google.com/specimen/Varela+Round) (think grown-up Comic Sans) and [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono) reflects the tech content. I recognize that there is a thing as "too much color" and to that I say 🤷🏻‍♀️.
 
 With the go-live of this site, I thought it would only be appropriate to give some context/introduce myself.
 
