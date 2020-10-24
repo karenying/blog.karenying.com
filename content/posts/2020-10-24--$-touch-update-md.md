@@ -7,12 +7,12 @@ slug: '$-touch-update-md'
 tags:
   - 'Update'
 description: 'blog.karenying.com launch, goodbye Medium'
-socialImage: '/media/socialImages/2020-10-24--$-touch-update-md.png'
+socialImage: '/media/socialImages/$-touch-update-md.png'
 minutes: '4'
 category: 'welp'
 ---
 
-![](/media/socialImages/2020-10-24--$-touch-update-md.png)
+![](/media/socialImages/$-touch-update-md.png)
 
 I picked up blogging on [Medium](https://medium.com/@karenying) over the summer out of boredom and [angst](http://localhost:8000/posts/let-2020-be-the-year-png-icons-die). However, with school and recruiting, I took a long break from pushing out content. It seemed like the longer I was away from blogging, the harder it was to pick it back up again.
 
@@ -24,7 +24,9 @@ With the go-live of this site, I thought it would only be appropriate to give so
 
 ### About me
 
-To new readers, 👋🏼&nbsp; hi I'm Karen. I'm currently a senior at Princeton University. I switched majors into Computer Science only about a year ago and since then it's just been a deep dive into the world of web dev! I enjoy frontend work, with a strong interest in product/design. Blogging has been a fun outlet to explore those areas, while also helping me better articulate my thoughts/writing.
+To new readers, 👋🏼&nbsp; hi I'm Karen. I'm currently a senior at Princeton University. I switched majors into Computer Science only about a year ago and since then it's just been a deep dive into the world of web dev! You can view my portfolio [here](https://karenying.com/projects).
+
+I enjoy frontend work, with a strong interest in product/design. Blogging has been a fun outlet to explore those areas, while also helping me better articulate my thoughts/writing.
 
 **Some (non-tech) things I've gone viral for**:
 
