@@ -60,6 +60,8 @@
         &:focus {
           color: $color-pink-light;
           text-decoration: none !important;
+          text-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
         }
       }
     }
