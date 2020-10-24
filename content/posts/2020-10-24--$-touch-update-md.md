@@ -28,12 +28,12 @@ To new readers, 👋🏼&nbsp; hi I'm Karen. I'm currently a senior at Princeton
 
 I enjoy frontend work, with a strong interest in product/design. Blogging has been a fun outlet to explore those areas, while also helping me better articulate my thoughts/writing.
 
-**Some (non-tech) things I've gone viral for**:
+**Some (non-tech) things I've gone semi-viral for**:
 
 - [**100k views**] LinkedIn [post](https://www.youtube.com/watch?v=DAKZhAXQEs0&ab_channel=KarenYing) about Vimeo cancelling my 2020 summer internship (worked out in the end though!)
 - [**45k views**] APUSH YouTube [documentary](https://www.youtube.com/watch?v=DAKZhAXQEs0&ab_channel=KarenYing) (you know you made it when you get hate comments)
 - [**14k views**] Tchaikovsky Sweet Dreams piano recital [performance](https://www.youtube.com/watch?v=yGLcelRH4v4&ab_channel=ruanruijuan) at 7y/o (I know I played it too fast)
-- [**200+ DMs**] Subtle Asian Dating auction (iykyk 👀)
+- [**200+ DMs**] SAD auction (iykyk 👀)
 
 ## Blogging
 
