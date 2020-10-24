@@ -7,11 +7,26 @@ import { AiFillTwitterCircle } from 'react-icons/ai';
 import { GoMarkGithub } from 'react-icons/go';
 import { IoMdMail } from 'react-icons/io';
 import Tooltip from '@material-ui/core/Tooltip';
+import { withStyles } from '@material-ui/core/styles';
+
+const LightTooltip = withStyles(() => ({
+  tooltip: {
+    boxShadow: '0.3rem 0.3rem 1rem black',
+    fontSize: 11,
+    fontWeight: 700,
+    fontFamily: 'Varela Round',
+  },
+}))(Tooltip);
 
 const Contacts = () => (
   <div className={styles['contacts']}>
     <div className={`${styles['contacts__about']} ${styles['contacts__link']}`}>
-      <Tooltip title='About me' aria-label='about me' placement='top' arrow>
+      <LightTooltip
+        title='About me'
+        aria-label='about me'
+        placement='top'
+        arrow
+      >
         <a
           href='http://karenying.com/'
           target='_blank'
@@ -19,12 +34,12 @@ const Contacts = () => (
         >
           <FaInfoCircle size='1.05rem' />
         </a>
-      </Tooltip>
+      </LightTooltip>
     </div>
     <div
       className={`${styles['contacts__github']} ${styles['contacts__link']}`}
     >
-      <Tooltip title='GitHub' aria-label='github' placement='top' arrow>
+      <LightTooltip title='GitHub' aria-label='github' placement='top' arrow>
         <a
           href='https://github.com/karenying'
           target='_blank'
@@ -32,10 +47,10 @@ const Contacts = () => (
         >
           <GoMarkGithub />
         </a>
-      </Tooltip>
+      </LightTooltip>
     </div>
     <div className={`${styles['contacts__email']} ${styles['contacts__link']}`}>
-      <Tooltip title='Email' aria-label='email' placement='top' arrow>
+      <LightTooltip title='Email' aria-label='email' placement='top' arrow>
         <a
           href='mailto:karenying7@gmail.com'
           target='_blank'
@@ -43,12 +58,17 @@ const Contacts = () => (
         >
           <IoMdMail size='1.1rem' />
         </a>
-      </Tooltip>
+      </LightTooltip>
     </div>
     <div
       className={`${styles['contacts__linkedin']} ${styles['contacts__link']}`}
     >
-      <Tooltip title='LinkedIn' aria-label='linkedin' placement='top' arrow>
+      <LightTooltip
+        title='LinkedIn'
+        aria-label='linkedin'
+        placement='top'
+        arrow
+      >
         <a
           href='https://www.linkedin.com/in/kyying/'
           target='_blank'
@@ -56,12 +76,12 @@ const Contacts = () => (
         >
           <FaLinkedin size='1.04rem' />
         </a>
-      </Tooltip>
+      </LightTooltip>
     </div>
     <div
       className={`${styles['contacts__twitter']} ${styles['contacts__link']}`}
     >
-      <Tooltip title='Twitter' aria-label='twitter' placement='top' arrow>
+      <LightTooltip title='Twitter' aria-label='twitter' placement='top' arrow>
         <a
           href='https://twitter.com/karen_ying_'
           target='_blank'
@@ -69,7 +89,7 @@ const Contacts = () => (
         >
           <AiFillTwitterCircle size='1.15rem' />
         </a>
-      </Tooltip>
+      </LightTooltip>
     </div>
   </div>
 );

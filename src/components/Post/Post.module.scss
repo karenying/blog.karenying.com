@@ -29,8 +29,9 @@
 
     &:hover,
     &:focus {
-      text-decoration: underline;
       color: $color-white-almost;
+      text-decoration: none !important;
+      text-shadow: 10px 10px 10px black;
     }
   }
 
@@ -81,6 +82,7 @@
       img {
         border-radius: 200px;
         margin-right: 10px;
+        box-shadow: 5px 5px 5px black;
       }
     }
   }

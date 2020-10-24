@@ -23,7 +23,8 @@
         &:hover,
         &:focus {
           color: $color-white-almost;
-          text-decoration: underline;
+          text-decoration: none !important;
+          text-shadow: 10px 10px 10px black;
         }
       }
     }
@@ -58,6 +59,7 @@
         &:hover,
         &:focus {
           color: $color-pink-light;
+          text-decoration: none !important;
         }
       }
     }
