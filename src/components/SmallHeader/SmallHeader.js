@@ -14,29 +14,26 @@ const SmallHeader = () => {
           <img
             src={withPrefix(author.photo)}
             className={styles['author__photo']}
-            width="55"
-            height="55"
+            width='55'
+            height='55'
             alt={author.name}
           />
 
           <div className={styles['smallheader__inner-right-details']}>
-            <Link className={styles['smallheader__inner-right-details-home']} to="/">
-                blog
-                <span className="dark-pink-text">.</span>
-                karenying
-                <span className="blue-text">.</span>
-                com
+            <Link
+              className={styles['smallheader__inner-right-details-home']}
+              to='/'
+            >
+              blog
+              <span className='dark-pink-text'>.</span>
+              karenying
+              <span className='blue-text'>.</span>
+              com
             </Link>
             <div className={styles['smallheader__inner-right-details-tagline']}>
-              i
-              {' '}
-              <span className="blue-text">beep boop</span>
-              {' '}
-              <span className="light-pink-text">&amp;&amp;</span>
-              {' '}
-              <span className="dark-pink-text">write</span>
-              {' '}
-              about it
+              i <span className='blue-text'>beep boop</span>{' '}
+              <span className='light-pink-text'>&amp;&amp;</span>{' '}
+              <span className='dark-pink-text'>write</span> about it
             </div>
           </div>
         </div>
