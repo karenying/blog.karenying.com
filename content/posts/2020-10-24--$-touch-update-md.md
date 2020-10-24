@@ -6,9 +6,9 @@ draft: false
 slug: '$-touch-update-md'
 tags:
   - 'Update'
-description: 'blog.karenying.com launch'
+description: 'blog.karenying.com launch, goodbye Medium'
 socialImage: '/media/socialImages/2020-10-24--$-touch-update-md.png'
-minutes: '2'
+minutes: '4'
 category: 'welp'
 ---
 
@@ -45,11 +45,11 @@ All of these posts have been imported onto this site and I probably will stop po
 
 ### Future content
 
-I will continute to write about web dev/visual design. If you have any ideas for me to write about, or any feedback on my existing posts, please [email me](mailto:karenying7@gmail.com)! I would love to hear from you.
+I will continue to write about web dev/visual design. If you have any ideas for me to write about, or any feedback on my existing posts, please [email me](mailto:karenying7@gmail.com)! I would love to hear from you.
 
 A subscriber email list _might_ be in the works -- stay tuned if you like what you see.
 
-## Acknowledgements
+## Acknowledgments
 
 I would like to thank Steven Chien, Reilly Bova, and Ali Alobaidi for being my biggest fans. I value your opinions so much and I know I'm really annoying when it comes to blogging :')
 
