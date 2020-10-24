@@ -8,6 +8,7 @@
     font-size: 2.7rem;
     font-family: $typographic-font-basic;
     color: $color-white-almost;
+    transition: text-shadow 100ms;
 
     &:hover,
     &:focus {

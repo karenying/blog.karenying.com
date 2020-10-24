@@ -26,6 +26,7 @@
     margin-left: auto;
     margin-right: auto;
     @include margin-top(1);
+    transition: text-shadow 100ms;
 
     &:hover,
     &:focus {

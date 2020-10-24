@@ -13,36 +13,36 @@ module.exports = {
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
     author: siteConfig.author,
-    image: "/preview.png",
+    image: '/preview.png',
   },
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static`,
-        name: 'assets'
-      }
+        name: 'assets',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/media`,
-        name: 'media'
-      }
+        name: 'media',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content`,
-        name: 'pages'
-      }
+        name: 'pages',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'css',
-        path: `${__dirname}/static/css`
-      }
+        path: `${__dirname}/static/css`,
+      },
     },
     {
       resolve: 'gatsby-plugin-feed',
@@ -58,18 +58,18 @@ module.exports = {
             }
           }
         `,
-        feeds: [{
-          serialize: ({ query: { site, allMarkdownRemark } }) => (
-            allMarkdownRemark.edges.map((edge) => ({
-              ...edge.node.frontmatter,
-              description: edge.node.frontmatter.description,
-              date: edge.node.frontmatter.date,
-              url: site.siteMetadata.site_url + edge.node.fields.slug,
-              guid: site.siteMetadata.site_url + edge.node.fields.slug,
-              custom_elements: [{ 'content:encoded': edge.node.html }]
-            }))
-          ),
-          query: `
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.edges.map((edge) => ({
+                ...edge.node.frontmatter,
+                description: edge.node.frontmatter.description,
+                date: edge.node.frontmatter.date,
+                url: site.siteMetadata.site_url + edge.node.fields.slug,
+                guid: site.siteMetadata.site_url + edge.node.fields.slug,
+                custom_elements: [{ 'content:encoded': edge.node.html }],
+              })),
+            query: `
               {
                 allMarkdownRemark(
                   limit: 1000,
@@ -94,22 +94,23 @@ module.exports = {
                 }
               }
             `,
-          output: '/rss.xml',
-          title: siteConfig.title
-        }]
-      }
+            output: '/rss.xml',
+            title: siteConfig.title,
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          "gatsby-remark-embed-gist",
+          'gatsby-remark-embed-gist',
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-katex',
             options: {
-              strict: 'ignore'
-            }
+              strict: 'ignore',
+            },
           },
           {
             resolve: 'gatsby-remark-images',
@@ -117,19 +118,31 @@ module.exports = {
               maxWidth: 960,
               withWebp: true,
               ignoreFileExtensions: [],
-            }
+            },
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
-            options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
+            options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
           },
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          'gatsby-remark-external-links'
-        ]
-      }
+          {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [
+                {
+                  resolve: 'gatsby-remark-external-links',
+                  options: {
+                    rel: null,
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -138,7 +151,7 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/index.js`,
-      }
+      },
     },
     {
       resolve: 'gatsby-plugin-google-gtag',
@@ -173,12 +186,13 @@ module.exports = {
           }
         `,
         output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) => allSitePage.edges.map((edge) => ({
-          url: site.siteMetadata.siteUrl + edge.node.path,
-          changefreq: 'daily',
-          priority: 0.7
-        }))
-      }
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.edges.map((edge) => ({
+            url: site.siteMetadata.siteUrl + edge.node.path,
+            changefreq: 'daily',
+            priority: 0.7,
+          })),
+      },
     },
     {
       resolve: 'gatsby-plugin-manifest',
@@ -189,7 +203,7 @@ module.exports = {
         background_color: '#2a2b2e',
         theme_color: '#ffb6b9',
         display: 'standalone',
-        icon: 'static/icon.png'
+        icon: 'static/icon.png',
       },
     },
     'gatsby-plugin-offline',
@@ -201,10 +215,10 @@ module.exports = {
         postCssPlugins: [...postCssPlugins],
         cssLoaderOptions: {
           camelCase: false,
-        }
-      }
+        },
+      },
     },
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
-  ]
+  ],
 };

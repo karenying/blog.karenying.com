@@ -19,6 +19,7 @@
 
       &-link {
         color: $color-white-almost;
+        transition: text-shadow 100ms;
 
         &:hover,
         &:focus {
@@ -55,6 +56,8 @@
         font-weight: bold;
         line-height: normal;
         margin: 0px 10px 10px 0px;
+        transition: text-shadow 100ms;
+        transition: box-shadow 100ms;
 
         &:hover,
         &:focus {
