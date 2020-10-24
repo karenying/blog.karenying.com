@@ -1,13 +1,11 @@
 import React from 'react';
-import { getContactHref, getIcon } from '../../../utils';
-import Icon from '../../Icon';
+
 import styles from './Contacts.module.scss';
 
 import { FaLinkedin, FaInfoCircle } from 'react-icons/fa';
-import { AiFillTwitterCircle, AiFillMediumCircle } from 'react-icons/ai';
+import { AiFillTwitterCircle } from 'react-icons/ai';
 import { GoMarkGithub } from 'react-icons/go';
 import { IoMdMail } from 'react-icons/io';
-import { MdInfo } from 'react-icons/md';
 import Tooltip from '@material-ui/core/Tooltip';
 
 const Contacts = () => (

@@ -1,4 +1,3 @@
-// @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
@@ -19,7 +18,7 @@ const TagsListTemplate = () => {
       <Layout title={`Tags - ${title}`} description={subtitle}>
         <Sidebar />
         <SmallHeader />
-        <Page title="Tags">
+        <Page title='Tags'>
           <ul>
             {tags.map((tag) => (
               <li key={tag.fieldValue}>

@@ -1,4 +1,3 @@
-// @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
@@ -14,7 +13,7 @@ const CategoriesListTemplate = () => {
   return (
     <Layout title={`Categories - ${title}`} description={subtitle}>
       <Sidebar />
-      <Page title="Categories">
+      <Page title='Categories'>
         <ul>
           {categories.map((category) => (
             <li key={category.fieldValue}>
