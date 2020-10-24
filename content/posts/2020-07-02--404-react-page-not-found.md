@@ -8,7 +8,7 @@ tags:
   - 'React'
   - 'Tutorial'
   - 'Web Dev'
-description: 'How to avoid the dreaded “Page Not Found” bug for apps using React Router on Netlify'
+description: 'How to avoid the dreaded "Page Not Found" bug for apps using React Router on Netlify'
 socialImage: '/media/socialImages/404-react-page-not-found.png'
 minutes: '5'
 category: 'lol'
@@ -20,7 +20,7 @@ You just deployed your first [Create React App](https://reactjs.org/docs/create-
 
 You happily visit your new site and click around the relative links. Nice, [React Router](https://www.npmjs.com/package/react-router) has been putting in the work. Everything looks great.
 
-You enter a path in the address bar that you know is handled with React Router… and get hit with “Page Not Found”. Huh?
+You enter a path in the address bar that you know is handled with React Router… and get hit with "Page Not Found". Huh?
 
 Convinced that you must’ve done something wrong, you spin up your app in your local dev environment and try to replicate the bug. But the routing is perfectly fine locally. It even works for the production version: `npm run build` and `serve -s build`. So what’s the problem here?
 
@@ -42,15 +42,15 @@ Ever wonder what exactly happens when you run `npm start` in your CRA?
 
 `npm start` runs `react-scripts start` under the hood (check it out in your `package.json`). If we peek into the `react-scripts` folder under `/node_modules`, we see that CRA uses [Webpack](https://webpack.js.org/) to bundle and serve your app.
 
-All of your app’s Webpack “settings” live in `webpackDevServer.config.js` and `webpack.config.js` under `/react-scripts/config`.
+All of your app’s Webpack "settings" live in `webpackDevServer.config.js` and `webpack.config.js` under `/react-scripts/config`.
 
 For the dev version of the app, Webpack sets the [History API Fallback option](https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback) as true. In `webpackDevServer.config.js`, Webpack is instructed to redirect all requests to paths.`publicUrlOrPath` which is the base url, http://localhost:3000/, that serves index.html:
 
-![*Examining *webpackDevServer.config.js](https://cdn-images-1.medium.com/max/2000/1*O4aSF0dvgT5eOCSbCZaW2Q.png)\**Examining *webpackDevServer.config.js\*
+![*Examining *webpackDevServer.config.js](https://cdn-images-1.medium.com/max/2000/1*O4aSF0dvgT5eOCSbCZaW2Q.png)_Examining `webpackDevServer.config.js`_
 
 For the prod version which is served when you `npm run build` and `serve -s build`, we turn to `webpack.config.js`. Here, we have the [Navigate Fallback option](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.GenerateSW) set to `paths.publicUrlOrPath + 'index.html'`:
 
-![*Examining webpack.config.js*](https://cdn-images-1.medium.com/max/2000/1*LtOYcrdTX4B1f5l2RgjbdA.png)**Examining webpack.config.js**
+![*Examining webpack.config.js*](https://cdn-images-1.medium.com/max/2000/1*LtOYcrdTX4B1f5l2RgjbdA.png)_Examining `webpack.config.js`_
 
 Voila! Again, Webpack directs all traffic to `index.html`.
 

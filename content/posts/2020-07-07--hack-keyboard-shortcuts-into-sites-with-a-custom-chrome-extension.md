@@ -43,15 +43,15 @@ Next, choose an icon for your extension! I just downloaded the GCal icon and put
 
 With our `manifest.json`, we can set up the development environment.
 
-Head over to `chrome://extensions` in your address bar. Toggle “Developer Mode” so that it’s on. Then click “Load Unpacked” and select your extension directory. You should see your extension with the details and icon show up as a new card:
+Head over to `chrome://extensions` in your address bar. Toggle "Developer Mode" so that it’s on. Then click "Load Unpacked" and select your extension directory. You should see your extension with the details and icon show up as a new card:
 
 ![chrome://extensions](https://cdn-images-1.medium.com/max/2000/1*VsTvQSEqGFz1R8z8OptgxA.png)_chrome://extensions_
 
 Your ID might be different but that’s fine.
 
-Every time you make changes to your extension, you just have to press the refresh icon in the bottom right corner to “recompile”.
+Every time you make changes to your extension, you just have to press the refresh icon in the bottom right corner to "recompile".
 
-If you head over to [https://calendar.google.com](https://calendar.google.com) and click on the puzzle piece icon on the right of the address bar, you should see the extension listed under “Full access”. If you go to another random page, the extension should instead show up under “No access needed” — this is your permissions working.
+If you head over to [https://calendar.google.com](https://calendar.google.com) and click on the puzzle piece icon on the right of the address bar, you should see the extension listed under "Full access". If you go to another random page, the extension should instead show up under "No access needed" — this is your permissions working.
 
 Yay, now we have a dev environment set up and can dive into the actual coding part.
 
@@ -59,7 +59,7 @@ Yay, now we have a dev environment set up and can dive into the actual coding pa
 
 Content scripts interact with the DOM. In this case, we want the content script to traverse the DOM, local the arrow divs, and click on them when the shortcut keys are hit.
 
-Under a new folder called `js`, create a new file called `contentScript.js`. We need to register this file in `manifest.json`. Under the `“content_scripts”` key, we also need to specify `"matches"` which determines what pages the content script is allowed to run on:
+Under a new folder called `js`, create a new file called `contentScript.js`. We need to register this file in `manifest.json`. Under the `"content_scripts"` key, we also need to specify `"matches"` which determines what pages the content script is allowed to run on:
 
 `gist:karenying/575e0248a881cffdbdf9b42cd2c0af8b/manifest-json`
 
@@ -85,7 +85,7 @@ A couple of notes:
 
 - The command must consist of at least two words separated by a dash like `"navigate-left"`. It just won’t work with only `"left"`.
 
-- We have to specify a `"default"` and `"mac"` under `“suggested_key”`, because Macs have the command key which the equivalent to Ctrl.
+- We have to specify a `"default"` and `"mac"` under `"suggested_key"`, because Macs have the command key which the equivalent to Ctrl.
 
 - The documentation specifics that the shortcut must include the `Alt` (`option` on Macs) OR `Ctrl/Command`. So here, we chose `Alt + Left/Right`. We also have to make sure the command does not conflict with current Chrome/computer shortcuts. This is why `Command/Ctrl + Left/Right` is not a good idea.
 

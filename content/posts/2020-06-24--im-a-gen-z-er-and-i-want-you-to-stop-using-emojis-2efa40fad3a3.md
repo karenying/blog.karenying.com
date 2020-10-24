@@ -41,7 +41,7 @@ Notice how without the emojis, we’re left with a super minimalistic file organ
 
 First of all, as someone who’s writing this Workspace landing page, you’re committing to using a new emoji with every bullet. In the example above, each emoji is loosely tied to the bullet they’re associated with. A telephone makes sense for an employee directory. Okay, sure.
 
-But what about the red flag next to “Mission, Vision, Values”? This bullet is an abstract concept. It’s clear the person writing this page struggled to find an emoji association here and ultimate settled on a red flag to signify “leadership”. However, a red flag has another meaning, a warning sign for danger which doesn’t make sense here. Even if there was a suitable emoji for “Mission, Vision, Values”, I’m not sure what it would be.
+But what about the red flag next to "Mission, Vision, Values"? This bullet is an abstract concept. It’s clear the person writing this page struggled to find an emoji association here and ultimate settled on a red flag to signify "leadership". However, a red flag has another meaning, a warning sign for danger which doesn’t make sense here. Even if there was a suitable emoji for "Mission, Vision, Values", I’m not sure what it would be.
 
 **The problem is there doesn’t exist an emoji for every possible phrase.** If you’re locked into using emojis as bullets, you might come upon writing a necessary bullet point without a suitable emoji. Then what? Use an unrelated substitute? Would rather get rid of emojis overall.
 
@@ -49,13 +49,13 @@ Finally, as the reader, these colorful icons ultimately are a distraction. For t
 
 ### The Ugly: Emojis as Periods
 
-Notion has also become the place to create fast and easy “landing pages” for personal and professional use. Emojis have trickled down into almost every public-facing page I’ve seen. The inspiration for this article came from this specific [one](https://www.notion.so/Public-Comps-Team-382f8b4b9b40479b8647b913486d7bff) I encountered yesterday:
+Notion has also become the place to create fast and easy "landing pages" for personal and professional use. Emojis have trickled down into almost every public-facing page I’ve seen. The inspiration for this article came from this specific [one](https://www.notion.so/Public-Comps-Team-382f8b4b9b40479b8647b913486d7bff) I encountered yesterday:
 
 ![Bio of Public Comps](https://cdn-images-1.medium.com/max/2000/1*8ulpRcTm9mUU8CjG5kuInw.png)_Bio of Public Comps_
 
-Here, Public Comps uses emojis in the place of periods, breaking up sentences. It seems like they can’t decide on whether or not there should be a period after an emoji… That inconsistency aside, I’m confused about the use of the Woman Shrugging emoji after “… Yahoo Finance”.
+Here, Public Comps uses emojis in the place of periods, breaking up sentences. It seems like they can’t decide on whether or not there should be a period after an emoji… That inconsistency aside, I’m confused about the use of the Woman Shrugging emoji after "… Yahoo Finance".
 
-> “He **hated** having to double-check…”
+> "He **hated** having to double-check…"
 
 This sentence reflects a negative connotation, not the indifference feeling that shrugging conveys. With the overuse of emojis, comes the same problem as above: you’re gonna struggle trying to fit an emoji for every phrase that you think needs one.
 
@@ -63,9 +63,9 @@ Next, I have a-many bones to pick with the founder bios underneath:
 
 ![Public Comps founder bios](https://cdn-images-1.medium.com/max/2000/1*MLguEKzi3zHg_aYiF1i0aA.png)_Public Comps founder bios_
 
-Hey, what’s up people that use emojis as periods 👋🏼 &nbsp; You know what’s a better ✅ &nbsp; and natural 🌱 &nbsp; delimiter that doesn’t take me twice 👯‍♀️ &nbsp; as long to read 📚 &nbsp; a paragraph because I’m pausing 🛑 &nbsp; every couple of words to skip over a colorful 🎨 &nbsp; emoji? **A SPACE or a PERIOD.**
+Hey, what’s up people that use emojis as periods 👋🏼&nbsp;You know what’s a better ✅&nbsp;and natural 🌱&nbsp;delimiter that doesn’t take me twice 👯‍♀️&nbsp;as long to read 📚&nbsp;a paragraph because I’m pausing 🛑&nbsp;every couple of words to skip over a colorful 🎨&nbsp;emoji? **A SPACE or a PERIOD.**
 
-Again, what’s that weird looking paper next to “Salesforce”? Apparently, it’s the [receipt](https://emojipedia.org/receipt/) emoji. Sales…receipts… ha ha ha 🤦🏻‍♀️ &nbsp; And I guess Groupon is a corporate company and thus the buildings? Not entirely making the connection here and it detracts, instead of adds, to the accompanying text.
+Again, what’s that weird looking paper next to "Salesforce"? Apparently, it’s the [receipt](https://emojipedia.org/receipt/) emoji. Sales…receipts… ha ha ha 🤦🏻‍♀️&nbsp;And I guess Groupon is a corporate company and thus the buildings? Not entirely making the connection here and it detracts, instead of adds, to the accompanying text.
 
 Jon and Howard are not the only ones! This emoji overuse unfortunately reminds me of the vulgar holiday copy pasta texts and middle schooler Instagram bios. You can find all sorts of The Bad and The Ugly by browsing through Notion’s template [gallery](https://www.notion.so/Notion-Template-Gallery-181e961aeb5c4ee6915307c0dfd5156d).
 
@@ -87,7 +87,7 @@ If I know the associated emojis, I can quickly skim the commits and understand w
 
 ### Slack
 
-Love love love emoji reactions on Slack. It allows for a wider range of “replies” to a message while saving space. For example, instead of replying “ok” to a message and notifying everyone in the channel, you can just 👍🏼 &nbsp; or 👌🏼 &nbsp; react. Emojis also make work interactions a little more personal and fun.
+Love love love emoji reactions on Slack. It allows for a wider range of "replies" to a message while saving space. For example, instead of replying "ok" to a message and notifying everyone in the channel, you can just 👍🏼&nbsp;or 👌🏼&nbsp;react. Emojis also make work interactions a little more personal and fun.
 
 ## Conclusion
 

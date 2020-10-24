@@ -28,7 +28,7 @@ To talk about colors, we should start with how colors can be represented digital
 
 The RGB color space is one of the most popular models. Each color is a combined weight of the three colors red, green, and blue. The weight ranges from 0 (least) to 255 (most) and is usually displayed in a triplet: `(red weight, green weight, blue weight)`. For example, red would be `(255, 0, 0)` since pure red has no traces of green or blue. A deep eggplant purple is `(128, 0, 128)` with equal parts red and blue. We also have black which is a lack of color: `(0, 0, 0)` and white, all the colors: (255, 255, 255).
 
-We can also visualize the RGB color space as a cube with red, green, and blue as the axis. Every color can be “plotted” in this cube.
+We can also visualize the RGB color space as a cube with red, green, and blue as the axis. Every color can be "plotted" in this cube.
 
 What we’re interested in are the colors along and around the _grayscale_ line. In this RGB cube, the grayscale line extends from black to white. Every color on this line has the same value for red, green, and blue. For example, medium gray is `(127, 127, 127)` and is the midpoint of the grayscale line. The closer to 0 the values are, the darker the shade of gray since black is `(0, 0, 0)`.
 
@@ -56,7 +56,7 @@ Now that we know a bit about RGB and Hex representations, we can explore the wor
 
 ## Anatomy of a Dark Mode App
 
-Across my analysis of various apps and sites, I’ve noticed a some general patterns that most dark mode apps follow.
+Across my analysis of various apps and sites, I’ve noticed a some general patterns that most dark mode apps follow:
 
 ![](https://cdn-images-1.medium.com/max/3064/1*YqtLqlYsT_NSetfGfbhetQ.png)
 
@@ -172,7 +172,7 @@ The dark mode palette used by YouTube is almost uninteresting. Each shade of gra
 
 ![**From left to right**: background, menu bars, primary text, secondary text](https://cdn-images-1.medium.com/max/5760/1*uoKXzDK9xoYAGD_y_ZFYYw.png)_**From left to right**: background, menu bars, primary text, secondary text_
 
-If Medium didn’t have dark mode, I most definitely wouldn’t use the app every night before bed 😅 &nbsp; Much like its plain logo of black and white, Medium’s iOS app’s dark mode colors are super simple. In my opinion, this simplicity works well for a publishing platform — it’s reminiscent of old-fashioned newspapers.
+If Medium didn’t have dark mode, I most definitely wouldn’t use the app every night before bed 😅&nbsp;Much like its plain logo of black and white, Medium’s iOS app’s dark mode colors are super simple. In my opinion, this simplicity works well for a publishing platform — it’s reminiscent of old-fashioned newspapers.
 
 **Additional comments**:
 
@@ -198,7 +198,7 @@ Dark mode for the iPhone can be seen in the native Apple apps such as Settings, 
 
 Now, this is where it gets interesting. Apple actually makes the backgrounds of native Mac apps transparent — but transparent relative to your _desktop wallpaper_, not whatever is currently open under the app. Thus, there is no decisive palette of colors since wallpapers vary.
 
-However, MacOS does have elements of a typical dark mode app: menu bars, cards, primary/secondary text, etc. Besides the transparent background (which is a really cool touch; I encourage you to explore this for yourself), the MacOS dark mode is predictable.
+However, MacOS does have elements of a typical dark mode app: menu bars, cards, primary/secondary text, etc. Besides the transparent background (which is a really cool touch -- I encourage you to explore this for yourself), the MacOS dark mode is predictable.
 
 ## Conclusion
 

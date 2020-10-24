@@ -14,7 +14,7 @@ minutes: '5'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/1919/1*0O9l9rnEB6WfxU1wMziprg.png)_Carousel on my personal site_
+![](https://miro.medium.com/max/1919/1*0O9l9rnEB6WfxU1wMziprg.png)_Carousel on my personal [site](http://karenying.com/)_
 
 Interested in jazzing up a boring React carousel? In this post, we use [Material-UI](https://material-ui.com/), an insanely popular and easy-to-use React library, to add sliding transitions.
 
@@ -85,7 +85,7 @@ With `constants.js`, we can refactor `App.js` to import and index into `SLIDE_IN
 
 `gist:karenying/7961078e3ce798986f42082832f1cb02/app-js`
 
-Since we indexed into the 4th item, the rendered slide should be yellow with the title “Slide 4”:
+Since we indexed into the 4th item, the rendered slide should be yellow with the title "Slide 4":
 
 ![](https://cdn-images-1.medium.com/max/3722/1*zSsw45LvQ35lrTre7WveCQ.png)
 
@@ -141,7 +141,7 @@ After updating `slideIn` and `slideDirection` in `onArrowClick`, we’ve added:
 
 Note: in **line 2**, we set the initial value of `slideDirection` to `'down'` so the carousel slides down on the first render.
 
-Finally, we want to wrap our `CarouselSlide` component with an extra `div` since Material-UI’s Slide’s child “[needs to be able to hold a ref](https://material-ui.com/guides/composition/#caveat-with-refs).” Then we pass in our state variables into `Slide` and our updated return statement now looks like:
+Finally, we want to wrap our `CarouselSlide` component with an extra `div` since Material-UI’s Slide’s child "[needs to be able to hold a ref](https://material-ui.com/guides/composition/#caveat-with-refs)." Then we pass in our state variables into `Slide` and our updated return statement now looks like:
 
 `gist:karenying/4ea450cb71eff46428cff24e9e12c2c4/app-js`
 

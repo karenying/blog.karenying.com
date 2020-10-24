@@ -17,9 +17,9 @@ category: 'lol'
 
 ![](https://cdn-images-1.medium.com/max/1600/1*FA6i6sE1USTsXdZHJkOSzA.gif)_My custom new tab [page](https://karenying.github.io/chromepage/). Theme consistent with my personal [site](https://karenying.com)._
 
-If you’ve seen a typical college student’s laptop, you might be familiar with [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en). This free Chrome extension _“replace[s] new tab page with a personal dashboard featuring to-do, weather, and inspiration”_.
+If you’ve seen a typical college student’s laptop, you might be familiar with [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en). This free Chrome extension _"replace[s] new tab page with a personal dashboard featuring to-do, weather, and inspiration"_.
 
-However, after 5 years of looking at the same couple of pictures, motivational quotes, and the cheesy “What is your main focus for today?”, I was long overdue for a change.
+However, after 5 years of looking at the same couple of pictures, motivational quotes, and the cheesy "What is your main focus for today?", I was long overdue for a change.
 
 ![Momentum — no shade, just need to switch it up :)](https://cdn-images-1.medium.com/max/2000/1*tAyZKJwRHGTNjg5eFR2_uQ.jpeg)_Momentum — no shade, just need to switch it up :)_
 
@@ -33,7 +33,7 @@ This tutorial assumes you have some knowledge of Javascript and HTML/CSS. All go
 
 ### 0. Getting Started
 
-Much like how every npm project requires a package.json, every Chrome extension needs a manifest.json for important information. This file goes in the root directory. This is all we need initially:
+Much like how every npm project requires a `package.json`, every Chrome extension needs a manifest.json for important information. This file goes in the root directory. This is all we need initially:
 
 `gist:karenying/be79110206415e17be3cfd7bb8881ed6/manifest-json`
 
@@ -45,17 +45,17 @@ The last line is the crucial part, we’ll be creating an `index.html` as our ho
 
 In the root directory, create an `index.html` file. Here’s a super bare bones template:
 
-`gist:karenying/035a3ee24482972e0b9d4145b1bc72a7/index-html`
+`gist:karenying/035a3ee24482972e0b9d4145b1bc72a7/index.html`
 
-Make sure you fill out the `title` tag or you’ll see an ugly “chrome://newtab”.
+Make sure you fill out the `title` tag or you’ll see an ugly "chrome://newtab".
 
-That’s it! You’ve just created an override of Chrome’s new tab page. Let’s make sure it works.
+Andddd that’s it! You’ve just created an override of Chrome’s new tab page. Let’s make sure it works.
 
 1. Go to `chrome://extensions` in the address bar
 
-1. Turn “Developer Mode” on the top left
+1. Turn "Developer Mode" on the top left
 
-1. Click “Load unpack” and select the destination as this root directory
+1. Click "Load unpack" and select the destination as this root directory
 
 You should see it show up like so:
 
@@ -63,9 +63,9 @@ You should see it show up like so:
 
 Don’t worry if your ID is different!
 
-Make sure that you’ve turned Momentum off if you’ve been using it. Now if you open a new tab or window, you should see the “Hello World!” from `index.html`.
+Make sure that you’ve turned Momentum off if you’ve been using it. Now if you open a new tab or window, you should see the "Hello World!" from `index.html`.
 
-That’s it. It’s that simple. If you know what you want yours to look like, seeya 👋🏼 &nbsp; If you want to see how I made mine, stick around to add a clock, greeting, and date.
+That’s it. It’s that simple. If you know what you want yours to look like, seeya 👋🏼&nbsp;If you want to see how I made mine, stick around to add a clock, greeting, and date.
 
 ### 1. Add Clock
 
@@ -73,7 +73,7 @@ I knew I wanted to add a clock like Momentum. I really liked the idea of flip cl
 
 ![[Flipping Clock](https://codepen.io/harshabhat86/full/tAxuF) by [Harsha Bhat](https://codepen.io/harshabhat86). Look familiar?](https://cdn-images-1.medium.com/max/2000/1*z7VWH20Euyi_KpulX2qtMg.png)_[Flipping Clock](https://codepen.io/harshabhat86/full/tAxuF) by [Harsha Bhat](https://codepen.io/harshabhat86). Look familiar?_
 
-So I converted his SCSS to an `index.css` , wrapped his JS in `DOMContentLoaded` event listener in a `script.js`, and linked the two new files and added `<div class=”clock”></div>` to `index.html` 😅
+So I converted his Sass to an `index.css` , wrapped his JS in `DOMContentLoaded` event listener in a `script.js`, and linked the two new files and added `<div class="clock"></div>` to `index.html` 😅
 
 You should check out his [code](https://codepen.io/harshabhat86/pen/tAxuF) if you’re interested in the nitty gritties, or see how I embedded it in my page in my GitHub [repo](https://github.com/karenying/chromepage).
 
@@ -81,7 +81,7 @@ I changed some of the CSS colors to fit my personal [site](http://karenying.com/
 
 ### 2. Add Greeting
 
-Just the clock looked a bit bare. So I recreated Momentum’s greeting: “Good [timeframe], Karen”.
+Just the clock looked a bit bare. So I recreated Momentum’s greeting: "Good [timeframe], Karen".
 
 All this takes is Javascript’s Date [API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). In `index.html`, we add
 

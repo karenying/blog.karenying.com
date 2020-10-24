@@ -17,7 +17,7 @@ category: 'lol'
 
 My coworker, Ali, always forgets to eat lunch while working. Since we’re working remote, I wanted some sort of automated reminder message to ping him. Instead of using Slack’s native no-code solution, [Slack reminders](https://slack.com/help/articles/208423427-Set-a-reminder), I decided to build and deploy one from scratch because #QuarantineBoredom.
 
-Like any reasonable person, I Googled “slack bot tutorial”, “how to build a slack bot from scratch”, and read a plethora of tutorials before diving in. I was interested in a **Node.js implementation** since that’s what I’m most familiar with. I also wanted a relatively straightforward configuration that didn’t require me to make 10 different accounts.
+Like any reasonable person, I Googled "slack bot tutorial", "how to build a slack bot from scratch", and read a plethora of tutorials before diving in. I was interested in a **Node.js implementation** since that’s what I’m most familiar with. I also wanted a relatively straightforward configuration that didn’t require me to make 10 different accounts.
 
 I finally settled on this tutorial from [freeCodeCamp](https://www.freecodecamp.org/news/building-a-slackbot-with-node-js-and-slackbots-js/). This post will essentially be about how I took [Bolaji Ayodeji](https://www.freecodecamp.org/news/author/bolajiayodeji/)’s implementation and made it work for me. We’ll be coding a slack bot that sends messages at scheduled times. Unlike Ayodeji’s article, **users cannot interact with this bot.**
 
@@ -33,9 +33,9 @@ Before we start coding, we have to register our app on Slack!
 
 ![Classic Slack App](https://cdn-images-1.medium.com/max/2276/1*UnsTLwbleG1fFrJSKl3MNQ.png)_Classic Slack App_
 
-Make sure you’re signed into Slack and head over to [**Create a Slack App (Classic)**](https://api.slack.com/apps?new_classic_app=1). **It’s critical that you create a “Classic” app** because the npm package we’re gonna be using, [slackbots](https://www.npmjs.com/package/slackbots), only works with tokens generated from the old Slack app API. It will \*\*NOT\*\* work if you head to [https://api.slack.com/apps](https://api.slack.com/apps) and click on “Create New App”.
+Make sure you’re signed into Slack and head over to [**Create a Slack App (Classic)**](https://api.slack.com/apps?new_classic_app=1). **It’s critical that you create a "Classic" app** because the npm package we’re gonna be using, [slackbots](https://www.npmjs.com/package/slackbots), only works with tokens generated from the old Slack app API. It will \*\*NOT\*\* work if you head to [https://api.slack.com/apps](https://api.slack.com/apps) and click on "Create New App".
 
-Enter your desired app name (I called mine “lunchbot”) and choose the workspace you want to add your new app to. Click **Create App**.
+Enter your desired app name (I called mine "lunchbot") and choose the workspace you want to add your new app to. Click **Create App**.
 
 On the **Basic Information** page, scroll down to **Display Information.** This is the fun part! Customize the appearance of your bot. You can also do/change this later.
 
@@ -129,7 +129,7 @@ The last piece is to call `createJob` when the bot starts:
 
 `gist:karenying/d7f01d0fbce4ac241a1ddc16b8a09b71/index-js`
 
-That’s it! You’ve just created your own slack bot in less than 30 lines of code 🎉 &nbsp; You can mess around with when the messages should get sent/to whom for more testing and experimenting if you want. When you’re ready, push your code to a GitHub repo and let’s deploy to Heroku!
+That’s it! You’ve just created your own slack bot in less than 30 lines of code 🎉&nbsp;You can mess around with when the messages should get sent/to whom for more testing and experimenting if you want. When you’re ready, push your code to a GitHub repo and let’s deploy to Heroku!
 
 ## Deploying
 
@@ -145,7 +145,7 @@ Head over to **Deploy > Manual deploy** and click **Deploy Branch**. Within seco
 
 ### Heroku Scheduler
 
-If you’ve used Heroku before, you’ll know that their free tier has limitations: namely your app “goes to sleep” after [30 minutes of inactivity](https://devcenter.heroku.com/articles/free-dyno-hours). This would be fine except our app doesn’t have a frontend. Unless you manually deploy the app every time, it will forever be asleep after the initial 30 min. This is where [Heroku Scheduler](https://devcenter.heroku.com/articles/scheduler) comes in.
+If you’ve used Heroku before, you’ll know that their free tier has limitations: namely your app "goes to sleep" after [30 minutes of inactivity](https://devcenter.heroku.com/articles/free-dyno-hours). This would be fine except our app doesn’t have a frontend. Unless you manually deploy the app every time, it will forever be asleep after the initial 30 min. This is where [Heroku Scheduler](https://devcenter.heroku.com/articles/scheduler) comes in.
 
 In the case of lunchbot, we only want lunchbot to be awake before 12:32PM every weekday so the cron job can kick in and send the message.
 
@@ -155,7 +155,7 @@ On your app’s Heroku dashboard, go to **Resources > Add-ons** and search for a
 
 **Heroku Scheduler** should appear under **Add-ons**. Click on the name and it should redirect you to the scheduler’s dashboard. Click on **Create Job**. Enter the frequency that you want your app to start at. For me, it made sense to choose **Every day at… 4:30 PM UTC**. The command we want the scheduler to run is `npm start` so be sure to enter that. Click **Save Job **and you’re good to go!
 
-With Heroku Scheduler, we’ve gotten around the free tier problem of the app falling asleep.** The caveat is there is no guarantee Heroku Scheduler executes on time.** When creating a job, there’s the disclaimer _Jobs run within a time window as close to the schedule as possible_. In my experience with lunchbot, there have been times that the job didn’t execute until 2 hours later. Then our cron job doesn’t work anymore and our bot fails to notify Ali to eat lunch ☹️ Unfortunately, this is just the consequence of using Heroku for free.
+With Heroku Scheduler, we’ve gotten around the free tier problem of the app falling asleep. **The caveat is there is no guarantee Heroku Scheduler executes on time.** When creating a job, there’s the disclaimer _Jobs run within a time window as close to the schedule as possible_. In my experience with lunchbot, there have been times that the job didn’t execute until 2 hours later. Then our cron job doesn’t work anymore and our bot fails to notify Ali to eat lunch ☹️ Unfortunately, this is just the consequence of using Heroku for free.
 
 **Another note**: Although Heroku claims your app goes to sleep after 30 minutes of inactivity, Heroku also randomly starts your app quite frequently:
 
@@ -167,7 +167,7 @@ Anyways yay! You have a functional Slack bot. Below I’ve included some tricky 
 
 ## Troubleshooting
 
-![I didn’t know node-cron was UTC by default](https://cdn-images-1.medium.com/max/2000/1*GZ15EUQWmNB4-tz6508Yew.png)_I didn’t know node-cron was UTC by default_
+![I didn’t know node-cron was UTC by default](https://cdn-images-1.medium.com/max/2000/1*GZ15EUQWmNB4-tz6508Yew.png)_node-cron is UTC by default oops_
 
 The answer should be **yes** to these questions ✅
 
