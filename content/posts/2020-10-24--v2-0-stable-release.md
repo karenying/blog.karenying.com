@@ -39,7 +39,7 @@ I enjoy frontend work and dabble in product/design. Blogging has been a fun outl
 
 ### Summer recap
 
-Over the past 4 months, I’ve amassed around 15k views over my 8 [Medium](https://medium.com/@karenying) articles. I mostly wrote Javascript tutorials and UI/UX observational pieces.
+Over the past 4 months, I’ve amassed around 15k views over my 8 [Medium](https://medium.com/@karenying) articles. I mostly wrote web dev tutorials and UI/UX observational pieces.
 
 My most popular posts are [Adding Transitions to a React Carousel with Material-UI](https://www.blog.karenying.com/posts/adding-transitions-to-a-react-carousel-with-material-ui) and [404: React Page Not Found](https://www.blog.karenying.com/posts/404-react-page-not-found). Most of these views come from Google (thank you SEO). My favorite post, however, is [50 Shades of Dark Mode Gray](https://www.blog.karenying.com/posts/50-shades-of-dark-mode-gray).
 
