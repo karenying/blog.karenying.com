@@ -13,7 +13,6 @@ const Layout = ({ children, title, description, socialImage }) => {
         <title>{title}</title>
         <meta name='description' content={description} />
         <meta property='og:site_name' content={title} />
-        <meta property='og:title' content='blog.karenying.com' />
         <meta property='og:image' content={metaImageUrl} />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content={title} />
