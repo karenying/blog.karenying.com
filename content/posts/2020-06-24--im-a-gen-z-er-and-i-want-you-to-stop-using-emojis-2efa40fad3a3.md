@@ -53,9 +53,9 @@ Notion has also become the place to create fast and easy "landing pages" for per
 
 ![Bio of Public Comps](https://cdn-images-1.medium.com/max/2000/1*8ulpRcTm9mUU8CjG5kuInw.png)_Bio of Public Comps_
 
-Here, Public Comps uses emojis in the place of periods, breaking up sentences. It seems like they can’t decide on whether or not there should be a period after an emoji… That inconsistency aside, I’m confused about the use of the Woman Shrugging emoji after "… Yahoo Finance".
+Here, Public Comps uses emojis in the place of periods, breaking up sentences. It seems like they can’t decide on whether or not there should be a period after an emoji... That inconsistency aside, I’m confused about the use of the Woman Shrugging emoji after "... Yahoo Finance".
 
-> "He **hated** having to double-check…"
+> "He **hated** having to double-check..."
 
 This sentence reflects a negative connotation, not the indifference feeling that shrugging conveys. With the overuse of emojis, comes the same problem as above: you’re gonna struggle trying to fit an emoji for every phrase that you think needs one.
 
@@ -65,7 +65,7 @@ Next, I have a-many bones to pick with the founder bios underneath:
 
 Hey, what’s up people that use emojis as periods 👋🏼&nbsp;You know what’s a better ✅&nbsp;and natural 🌱&nbsp;delimiter that doesn’t take me twice 👯‍♀️&nbsp;as long to read 📚&nbsp;a paragraph because I’m pausing 🛑&nbsp;every couple of words to skip over a colorful 🎨&nbsp;emoji? **A SPACE or a PERIOD.**
 
-Again, what’s that weird looking paper next to "Salesforce"? Apparently, it’s the [receipt](https://emojipedia.org/receipt/) emoji. Sales…receipts… ha ha ha 🤦🏻‍♀️&nbsp;And I guess Groupon is a corporate company and thus the buildings? Not entirely making the connection here and it detracts, instead of adds, to the accompanying text.
+Again, what’s that weird looking paper next to "Salesforce"? Apparently, it’s the [receipt](https://emojipedia.org/receipt/) emoji. Sales...receipts... ha ha ha 🤦🏻‍♀️&nbsp;And I guess Groupon is a corporate company and thus the buildings? Not entirely making the connection here and it detracts, instead of adds, to the accompanying text.
 
 Jon and Howard are not the only ones! This emoji overuse unfortunately reminds me of the vulgar holiday copy pasta texts and middle schooler Instagram bios. You can find all sorts of The Bad and The Ugly by browsing through Notion’s template [gallery](https://www.notion.so/Notion-Template-Gallery-181e961aeb5c4ee6915307c0dfd5156d).
 

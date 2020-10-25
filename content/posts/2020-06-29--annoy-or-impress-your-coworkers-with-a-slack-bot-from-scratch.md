@@ -153,7 +153,7 @@ In the case of lunchbot, we only want lunchbot to be awake before 12:32PM every 
 
 On your app’s Heroku dashboard, go to **Resources > Add-ons** and search for and select **Heroku Scheduler**. Click on **Provision**.
 
-**Heroku Scheduler** should appear under **Add-ons**. Click on the name and it should redirect you to the scheduler’s dashboard. Click on **Create Job**. Enter the frequency that you want your app to start at. For me, it made sense to choose **Every day at… 4:30 PM UTC**. The command we want the scheduler to run is `npm start` so be sure to enter that. Click **Save Job **and you’re good to go!
+**Heroku Scheduler** should appear under **Add-ons**. Click on the name and it should redirect you to the scheduler’s dashboard. Click on **Create Job**. Enter the frequency that you want your app to start at. For me, it made sense to choose **Every day at... 4:30 PM UTC**. The command we want the scheduler to run is `npm start` so be sure to enter that. Click **Save Job **and you’re good to go!
 
 With Heroku Scheduler, we’ve gotten around the free tier problem of the app falling asleep. **The caveat is there is no guarantee Heroku Scheduler executes on time.** When creating a job, there’s the disclaimer _Jobs run within a time window as close to the schedule as possible_. In my experience with lunchbot, there have been times that the job didn’t execute until 2 hours later. Then our cron job doesn’t work anymore and our bot fails to notify Ali to eat lunch ☹️ Unfortunately, this is just the consequence of using Heroku for free.
 

@@ -1,18 +1,18 @@
 ---
-title: '$ touch update.md'
-date: '2020-10-24T22:12:03.284Z'
+title: 'v2.0 Stable Release'
+date: '2020-10-25T22:12:03.284Z'
 template: 'post'
 draft: false
-slug: '$-touch-update-md'
+slug: 'v2-0-stable-release'
 tags:
   - 'Update'
-description: 'blog.karenying.com launch, goodbye Medium'
-socialImage: '/media/socialImages/$-touch-update-md.png'
+description: 'blog.karenying.com launch ... goodbye Medium'
+socialImage: '/media/socialImages/v2-0-stable-release.png'
 minutes: '4'
 category: 'welp'
 ---
 
-![](/media/socialImages/$-touch-update-md.png)
+![](/media/socialImages/v2-0-stable-release.png)
 
 I picked up blogging on [Medium](https://medium.com/@karenying) over the summer out of boredom and [angst](http://localhost:8000/posts/let-2020-be-the-year-png-icons-die). However, with school and recruiting, I took a long break from pushing out content. It seemed like the longer I was away from blogging, the harder it was to pick it back up again.
 
@@ -59,8 +59,8 @@ I also want to shoutout Victor Zhou for always being a blogging inspiration. His
 
 ## Links
 
-- [Email](mailto:karenying7@gmail.com) me!
-- Personal/portfolio [site](https://www.karenying.com/)
+- [Email me](mailto:karenying7@gmail.com)!
+- [Personal/portfolio site](https://www.karenying.com/)
 - [Twitter](https://twitter.com/karen_ying_)
 - [Medium](https://medium.com/@karenying)
 - [GitHub](https://github.com/karenying)

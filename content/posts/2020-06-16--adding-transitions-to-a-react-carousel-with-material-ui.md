@@ -40,7 +40,7 @@ $ cd react-carousel
 $ npm start
 ```
 
-…and add some dependencies — Material-UI for the transitions, and [React Icons](https://www.npmjs.com/package/react-icons) for the cute arrows:
+...and add some dependencies — Material-UI for the transitions, and [React Icons](https://www.npmjs.com/package/react-icons) for the cute arrows:
 
 ```bash
 $ npm install @material-ui/core
@@ -123,7 +123,7 @@ After this step, we have a working carousel:
 
 ![](https://cdn-images-1.medium.com/max/2116/1*3-6baS3AFM3ad7lCUkAbtw.gif)
 
-…but it looks awfully plain 😞 Let’s add some transitions!
+...but it looks awfully plain 😞 Let’s add some transitions!
 
 ### 4. Adding transitions with Material-UI
 

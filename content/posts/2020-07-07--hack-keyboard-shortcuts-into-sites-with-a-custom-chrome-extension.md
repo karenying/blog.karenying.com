@@ -63,7 +63,7 @@ Under a new folder called `js`, create a new file called `contentScript.js`. We 
 
 `gist:karenying/575e0248a881cffdbdf9b42cd2c0af8b/manifest-json`
 
-Cool. We can now investigate the GCal DOM. By opening Inspect Element, we find that the two arrows are wrapped in divs with 7 classes…It looks like it’d be cleaner to access the parent div which only has 2 classes and iterate through the children.
+Cool. We can now investigate the GCal DOM. By opening Inspect Element, we find that the two arrows are wrapped in divs with 7 classes...It looks like it’d be cleaner to access the parent div which only has 2 classes and iterate through the children.
 
 ![Parent container is highlighted](https://cdn-images-1.medium.com/max/2000/1*QMHEQFpwfN1haJow7uONxg.png)_Parent container is highlighted_
 
@@ -75,7 +75,7 @@ Our content script looks good for now. We gotta hook up some other stuff before 
 
 ### 2. commands API
 
-For security reasons we can’t just add `document.addEventListener('keydown', handleKeyDown)` in our extension. Imagine if extensions became malicious keyloggers…
+For security reasons we can’t just add `document.addEventListener('keydown', handleKeyDown)` in our extension. Imagine if extensions became malicious keyloggers...
 
 Instead, we’ll be using Chrome’s [commands API](https://developer.chrome.com/apps/commands). This allows us to register keyboard shortcuts with our extension. All we gotta do is add to our `manifest.json`:
 
@@ -97,7 +97,7 @@ You’ll see that the shortcuts have the suggested keys that we declared above i
 
 ### 3. Background Script
 
-Background scripts run in…well, the background of the extension. In this case, we want our background script to listen to command events.
+Background scripts run in...well, the background of the extension. In this case, we want our background script to listen to command events.
 
 Create a file under the `js` folder called `background.js` and let’s register it in `manifest.json`:
 

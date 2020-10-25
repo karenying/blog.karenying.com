@@ -20,7 +20,7 @@ You just deployed your first [Create React App](https://reactjs.org/docs/create-
 
 You happily visit your new site and click around the relative links. Nice, [React Router](https://www.npmjs.com/package/react-router) has been putting in the work. Everything looks great.
 
-You enter a path in the address bar that you know is handled with React Router… and get hit with "Page Not Found". Huh?
+You enter a path in the address bar that you know is handled with React Router... and get hit with "Page Not Found". Huh?
 
 Convinced that you must’ve done something wrong, you spin up your app in your local dev environment and try to replicate the bug. But the routing is perfectly fine locally. It even works for the production version: `npm run build` and `serve -s build`. So what’s the problem here?
 

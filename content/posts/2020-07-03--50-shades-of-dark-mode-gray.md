@@ -202,9 +202,9 @@ However, MacOS does have elements of a typical dark mode app: menu bars, cards, 
 
 ## Conclusion
 
-If you ever thought that all dark mode apps are starting to look the same, you’re not wrong. They share the common elements we learned about: Usually a dark, almost black, background color, with lighter menu bars lining the top and/or sides; even lighter, rounded-corner cards section content, and seem to appear closer because of the color contrast; accent color jellybean buttons, a bright white primary text, and smaller slightly darker secondary text… All the apps blend together.
+If you ever thought that all dark mode apps are starting to look the same, you’re not wrong. They share the common elements we learned about: Usually a dark, almost black, background color, with lighter menu bars lining the top and/or sides; even lighter, rounded-corner cards section content, and seem to appear closer because of the color contrast; accent color jellybean buttons, a bright white primary text, and smaller slightly darker secondary text... All the apps blend together.
 
-That being said, there are still ways to slightly deviate from this template. We saw Spotify’s gradient, Twitter’s blue-hued shades, and MacOS’s opaque background. If you’re designing a dark mode app, I encourage you to find ways to subtly stand out. After all, we could use some variety…and more shades of gray.
+That being said, there are still ways to slightly deviate from this template. We saw Spotify’s gradient, Twitter’s blue-hued shades, and MacOS’s opaque background. If you’re designing a dark mode app, I encourage you to find ways to subtly stand out. After all, we could use some variety...and more shades of gray.
 
 Thanks for reading!
 
