@@ -6,7 +6,7 @@ draft: false
 slug: 'v2-0-stable-release'
 tags:
   - 'Update'
-description: 'blog.karenying.com launch ... @Medium, it’s not you. It’s me'
+description: 'blog.karenying.com launch ... @Medium, it’s time to break up. It’s not you. It’s me'
 socialImage: '/media/socialImages/v2-0-stable-release.png'
 minutes: '4'
 category: 'welp'
