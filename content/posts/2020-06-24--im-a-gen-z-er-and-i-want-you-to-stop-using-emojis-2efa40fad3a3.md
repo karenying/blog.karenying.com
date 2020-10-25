@@ -15,7 +15,7 @@ minutes: '5'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/700/1*4sjw4DewSz2rILRwNG-gfA.png)
+![Emojis](https://miro.medium.com/max/700/1*4sjw4DewSz2rILRwNG-gfA.png)
 
 Let me preface by saying I LOVE emojis. I use them every day in messaging/texting, on my Instagram, on my [personal site](http://karenying.com/), and in my Medium [posts](https://medium.com/@karenying). This article represents my personal stylistic opinion.
 
@@ -79,9 +79,9 @@ I’ve seen more and more GitHub repos start using emojis to tag commits:
 
 ![[gitmoji commits](https://github.com/carloscuesta/gitmoji)](https://cdn-images-1.medium.com/max/2006/1*FkEf3laSLBk9OGp9trlqYg.png)_[gitmoji commits](https://github.com/carloscuesta/gitmoji)_
 
-Here, each type of commit is associated with a specific emoji. This [cheat sheet ](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)lists the suggested ones. Here’s a preview:
+Here, each type of commit is associated with a specific emoji. This [cheat sheet](https://gist.github.com/parmentf/035de27d6ed1dce0b36a) lists the suggested ones. Here’s a preview:
 
-![](https://cdn-images-1.medium.com/max/2000/1*gXzts1HbtQBHwM4WMlu_Cg.png)
+![Gitmoji cheat sheet](https://cdn-images-1.medium.com/max/2000/1*gXzts1HbtQBHwM4WMlu_Cg.png)
 
 If I know the associated emojis, I can quickly skim the commits and understand what roughly each one is about, without having to read the commit message!
 
@@ -99,4 +99,6 @@ Next time, save the emoji overload for your texts to your 👵🏻
 
 Thanks for reading!
 
-<i>Orginally [published](https://medium.com/frontend-digest/im-a-gen-z-er-and-i-want-you-to-stop-using-emojis-2efa40fad3a3?source=friends_link&sk=8495a8932613489fbc7176a23762612b) in [Frontend Digest](https://medium.com/frontend-digest) on Medium<i>.
+---
+
+<i>Originally [published](https://medium.com/frontend-digest/im-a-gen-z-er-and-i-want-you-to-stop-using-emojis-2efa40fad3a3?source=friends_link&sk=8495a8932613489fbc7176a23762612b) in [Frontend Digest](https://medium.com/frontend-digest) on Medium<i>.

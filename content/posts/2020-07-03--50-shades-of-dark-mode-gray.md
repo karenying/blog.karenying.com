@@ -14,7 +14,7 @@ minutes: '8'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/700/1*hyamvB4egtb6Xziwl-o1gQ.jpeg)
+![Gray stone](https://miro.medium.com/max/700/1*hyamvB4egtb6Xziwl-o1gQ.jpeg)
 
 If you’re an avid dark mode user like me, you’ll know that dark mode isn’t just about white text on black backgrounds. In a single app, a handful of shades of gray give the app some depth. And across various apps, the spectrum of gray becomes even wider.
 
@@ -58,7 +58,7 @@ Now that we know a bit about RGB and Hex representations, we can explore the wor
 
 Across my analysis of various apps and sites, I’ve noticed a some general patterns that most dark mode apps follow:
 
-![](https://cdn-images-1.medium.com/max/3064/1*YqtLqlYsT_NSetfGfbhetQ.png)
+![Anatomy of a Dark Mode App](https://cdn-images-1.medium.com/max/3064/1*YqtLqlYsT_NSetfGfbhetQ.png)
 
 ### Background
 
@@ -106,7 +106,7 @@ Indeed, the colorful album covers contrast with the dark app, and make them appe
 
 Spotify is also the only app I’ve noticed that uses a gradient for the main background. Referencing the palette, the background ranges from `#404040`, a much lighter gray, to `#181818`, almost black. My theory is also that users spend the most time looking at playlist pages:
 
-![](https://cdn-images-1.medium.com/max/5760/1*kd7jnKDPQgDPC3O3wnVgQg.png)
+![Spotify playlist](https://cdn-images-1.medium.com/max/5760/1*kd7jnKDPQgDPC3O3wnVgQg.png)
 
 Here, the gradient makes sense for a long list of items, almost imitating motion. On non-playlist pages, the gradient also provides some depth.
 
@@ -124,7 +124,7 @@ Here, the gradient makes sense for a long list of items, almost imitating motion
 
 Right off the bat, just by looking at the RGB values, Twitter heavily favors blue for its dark mode. For each of the shades, the blue value is the highest.
 
-![](https://cdn-images-1.medium.com/max/5760/1*AdVlnCmGKC5ofWYCkaE2Vw.png)
+![Twitter](https://cdn-images-1.medium.com/max/5760/1*AdVlnCmGKC5ofWYCkaE2Vw.png)
 
 Since its logo/accent color is blue, the blue-ness of the dark mode isn’t surprising and goes well together. As with any app that uses blue as its identifying color, Twitter hopes that this color choice conveys trust and tranquility.
 
@@ -146,7 +146,7 @@ Since its logo/accent color is blue, the blue-ness of the dark mode isn’t surp
 
 Facebook’s dark mode color decisions are interesting. If you look at the Hex codes, none of the colors are on the grayscale line. Instead, each RGB value is close to each other, slightly increasing from red to green to blue. It’s so subtle that it’s virtually unnoticeable when using the app:
 
-![](https://cdn-images-1.medium.com/max/5760/1*U6xRM8Z-8K7x7AxUqiX4aw.png)
+![Facebook](https://cdn-images-1.medium.com/max/5760/1*U6xRM8Z-8K7x7AxUqiX4aw.png)
 
 The colors might as well be grayscale colors.
 
@@ -166,7 +166,7 @@ The colors might as well be grayscale colors.
 
 The dark mode palette used by YouTube is almost uninteresting. Each shade of gray is exactly on the grayscale lines. Unlike the apps above, there doesn’t seem to be an accent color. You don’t see the YouTube red anywhere in the app except the logo in the top left.
 
-![](https://cdn-images-1.medium.com/max/5760/1*dDpNoGABNLz-gjdKRuJfDw.png)
+![YouTube](https://cdn-images-1.medium.com/max/5760/1*dDpNoGABNLz-gjdKRuJfDw.png)
 
 ## Medium (iOS App)
 
@@ -208,4 +208,6 @@ That being said, there are still ways to slightly deviate from this template. We
 
 Thanks for reading!
 
-<i>Orginally [published](https://codeburst.io/50-shades-of-dark-mode-gray-d3e9907b1194?source=friends_link&sk=d35c650a88a71baef133e66323fa8220) in [codeburst](https://codeburst.io/) on Medium<i>.
+---
+
+<i>Originally [published](https://codeburst.io/50-shades-of-dark-mode-gray-d3e9907b1194?source=friends_link&sk=d35c650a88a71baef133e66323fa8220) in [codeburst](https://codeburst.io/) on Medium<i>.

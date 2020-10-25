@@ -6,15 +6,15 @@ draft: false
 slug: 'v2-0-stable-release'
 tags:
   - 'Update'
-description: 'blog.karenying.com launch ... goodbye Medium'
+description: 'blog.karenying.com launch ... @Medium, it’s not you. It’s me'
 socialImage: '/media/socialImages/v2-0-stable-release.png'
 minutes: '4'
 category: 'welp'
 ---
 
-![](/media/socialImages/v2-0-stable-release.png)
+![logo](/media/socialImages/v2-0-stable-release.png)
 
-I picked up blogging on [Medium](https://medium.com/@karenying) over the summer out of boredom and [angst](http://localhost:8000/posts/let-2020-be-the-year-png-icons-die). However, with school and recruiting, I took a long break from pushing out content. It seemed like the longer I was away from blogging, the harder it was to pick it back up again.
+I picked up blogging on [Medium](https://medium.com/@karenying) over the summer out of boredom and [angst](http://localhost:8000/posts/let-2020-be-the-year-png-icons-die). It was an easy way to test to waters of blogging. However, with school and recruiting, I took a long break from pushing out content. It seemed like the longer I was away from blogging, the harder it was to pick it back up again.
 
 This past week, I decided that I will be returning to [Wellsheet](https://www.wellsheet.com/), a fast-paced healthcare startup based in NYC, as a full-time software engineer in Summer 2020! With that settled, I hacked together this blog site in the past couple of days.
 
@@ -24,11 +24,11 @@ With the go-live of this site, I thought it would only be appropriate to give so
 
 ### About me
 
-To new readers, 👋🏼&nbsp; hi I'm Karen. I'm currently a senior at Princeton University. I switched majors into Computer Science only about a year ago and since then it's just been a deep dive into the world of web dev! You can view my portfolio [here](https://karenying.com/projects).
+To new readers, 👋🏼&nbsp; hi I’m Karen. I’m currently a senior at Princeton University. I switched majors into Computer Science only about a year ago and since then it’s just been a deep dive into the world of web dev! You can view my portfolio [here](https://karenying.com/projects).
 
 I enjoy frontend work, with a strong interest in product/design. Blogging has been a fun outlet to explore those areas, while also helping me better articulate my thoughts/writing.
 
-**Some (non-tech) things I've gone semi-viral for**:
+**Some (non-tech) things I’ve gone semi-viral for**:
 
 - [**100k views**] LinkedIn [post](https://www.youtube.com/watch?v=DAKZhAXQEs0&ab_channel=KarenYing) about Vimeo cancelling my 2020 summer internship (worked out in the end though!)
 - [**45k views**] APUSH YouTube [documentary](https://www.youtube.com/watch?v=DAKZhAXQEs0&ab_channel=KarenYing) (you know you made it when you get hate comments)
@@ -39,7 +39,7 @@ I enjoy frontend work, with a strong interest in product/design. Blogging has be
 
 ### Summer recap
 
-Over the past 4 months, I've amassed around 15k views over my 8 [Medium](https://medium.com/@karenying) articles. I mostly wrote Javascript tutorials and UI/UX observational pieces.
+Over the past 4 months, I’ve amassed around 15k views over my 8 [Medium](https://medium.com/@karenying) articles. I mostly wrote Javascript tutorials and UI/UX observational pieces.
 
 My most popular articles are [Adding Transitions to a React Carousel with Material-UI](https://www.blog.karenying.com/posts/adding-transitions-to-a-react-carousel-with-material-ui) and [404: React Page Not Found](https://www.blog.karenying.com/posts/404-react-page-not-found). Most of these views come from Google (thank you SEO). My favorite post, however, is [50 Shades of Dark Mode Gray](https://www.blog.karenying.com/posts/50-shades-of-dark-mode-gray).
 
@@ -49,11 +49,11 @@ All of these posts have been imported onto this site and I probably will stop po
 
 I will continue to write about web dev/visual design. If you have any ideas for me to write about, or any feedback on my existing posts, please [email me](mailto:karenying7@gmail.com)! I would love to hear from you.
 
-A subscriber email list _might_ be in the works -- stay tuned if you like what you see.
+A subscriber email list _might_ be in the works -- stay tuned if you like what you’ve read.
 
 ## Acknowledgments
 
-I would like to thank Steven Chien, Reilly Bova, and Ali Alobaidi for being my biggest fans. I value your opinions so much and I know I'm really annoying when it comes to blogging :')
+I would like to thank Steven Chien, Reilly Bova, and Ali Alobaidi for being my biggest fans. I value your opinions so much and I know I’m really annoying when it comes to blogging :')
 
 I also want to shoutout Victor Zhou for always being a blogging inspiration. His [blog](https://victorzhou.com/) is pretty great and you should definitely check it out!
 

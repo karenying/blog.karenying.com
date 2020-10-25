@@ -15,7 +15,7 @@ minutes: '4'
 category: 'lol'
 ---
 
-![](https://cdn-images-1.medium.com/max/1600/1*FA6i6sE1USTsXdZHJkOSzA.gif)_My custom new tab [page](https://karenying.github.io/chromepage/). Theme consistent with my personal [site](https://karenying.com)._
+![New tab page](https://cdn-images-1.medium.com/max/1600/1*FA6i6sE1USTsXdZHJkOSzA.gif)_My custom new tab [page](https://karenying.github.io/chromepage/). Theme consistent with my personal [site](https://karenying.com)._
 
 If you’ve seen a typical college student’s laptop, you might be familiar with [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en). This free Chrome extension _"replace[s] new tab page with a personal dashboard featuring to-do, weather, and inspiration"_.
 

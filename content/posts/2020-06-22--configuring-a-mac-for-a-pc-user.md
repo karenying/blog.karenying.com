@@ -14,7 +14,7 @@ minutes: '6'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/1917/1*5Wx0SGRV6Xdg067eJGiEpA.jpeg)_16-inch MacBook Pro_
+![16-inch MacBook Pro](https://miro.medium.com/max/1917/1*5Wx0SGRV6Xdg067eJGiEpA.jpeg)_16-inch MacBook Pro_
 
 _**Disclaimer**: this article reflects my PC experience with mainly using a [Lenovo Thinkpad X250](https://www.lenovo.com/us/en/laptops/thinkpad/x-series/x250/) which may not be the universal PC experience!_
 
@@ -56,7 +56,7 @@ To replicate this a Mac, we can use the concept of Hot Corners. Go to System Pre
 
 ### Split Screen
 
-![](https://cdn-images-1.medium.com/max/2000/1*UtRIewh3iPkO-i3z9R0OYw.png)
+![Split Screen](https://cdn-images-1.medium.com/max/2000/1*UtRIewh3iPkO-i3z9R0OYw.png)
 
 Hover over the green fullscreen button to achieve app split screen. However, Macs don’t have the native drag-to-one-side auto split screen of Windows. [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12) is a \$2.99 Mac App substitute! Raving reviews claim this is the best \$3 they’ve ever spent for the sake of productivity.
 
@@ -172,4 +172,6 @@ There are so many ways to configure your MacBook. These are just a couple of sug
 
 Hope this post gets you excited about your induction into the MacBook cult 🎉 while also improving your workflow! Feel free to comment which ones worked for you and if I’m missing anything. Thanks for reading!
 
-<i>Orginally [published](https://medium.com/macoclock/configuring-a-mac-for-a-pc-user-708677345415?source=friends_link&sk=8e3dfa7cbb662e21fec06defb186af68) in [Mac O'Clock](https://medium.com/macoclock) on Medium<i>.
+---
+
+<i>Originally [published](https://medium.com/macoclock/configuring-a-mac-for-a-pc-user-708677345415?source=friends_link&sk=8e3dfa7cbb662e21fec06defb186af68) in [Mac O'Clock](https://medium.com/macoclock) on Medium<i>.

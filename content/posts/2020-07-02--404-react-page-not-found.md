@@ -14,7 +14,7 @@ minutes: '5'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/1000/1*SykPj2Btn7Tff_I9S_oPNA.png)_Netlify’s 404 Page_
+![Netlify’s 404 Page](https://miro.medium.com/max/1000/1*SykPj2Btn7Tff_I9S_oPNA.png)_Netlify’s 404 Page_
 
 You just deployed your first [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) to Netlify. `Site is live` shows up in the scrolling deployment log. Success 🎉
 
@@ -119,4 +119,6 @@ Netlify isn’t alone! As we saw above, Python’s http.server is another culpri
 
 Thanks for reading. Happy hacking!
 
-<i>Orginally [published](https://medium.com/javascript-in-plain-english/404-react-page-not-found-355b9352041e?source=friends_link&sk=df8e7824a1c93cd1604afc464282f78c) in [JavaScript In Plain English](https://medium.com/javascript-in-plain-english) on Medium<i>.
+---
+
+<i>Originally [published](https://medium.com/javascript-in-plain-english/404-react-page-not-found-355b9352041e?source=friends_link&sk=df8e7824a1c93cd1604afc464282f78c) in [JavaScript In Plain English](https://medium.com/javascript-in-plain-english) on Medium<i>.

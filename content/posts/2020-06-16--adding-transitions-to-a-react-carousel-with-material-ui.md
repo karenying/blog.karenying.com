@@ -14,7 +14,7 @@ minutes: '5'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/1919/1*0O9l9rnEB6WfxU1wMziprg.png)_Carousel on my personal [site](http://karenying.com/)_
+![Carousel on karenying.com](https://miro.medium.com/max/1919/1*0O9l9rnEB6WfxU1wMziprg.png)_Carousel on my personal [site](http://karenying.com/)_
 
 Interested in jazzing up a boring React carousel? In this post, we use [Material-UI](https://material-ui.com/), an insanely popular and easy-to-use React library, to add sliding transitions.
 
@@ -71,7 +71,7 @@ To get the slide to render, we’ll create some props for `content` and update `
 
 Okay! After running `npm start`, we should see something like this on http://localhost:3000/:
 
-![](https://cdn-images-1.medium.com/max/3950/1*SH6tdc5wzNrklOiCrvYllA.png)
+![Carousel](https://cdn-images-1.medium.com/max/3950/1*SH6tdc5wzNrklOiCrvYllA.png)
 
 Super super simple. Now let’s add some more content to iterate through in our carousel.
 
@@ -87,7 +87,7 @@ With `constants.js`, we can refactor `App.js` to import and index into `SLIDE_IN
 
 Since we indexed into the 4th item, the rendered slide should be yellow with the title "Slide 4":
 
-![](https://cdn-images-1.medium.com/max/3722/1*zSsw45LvQ35lrTre7WveCQ.png)
+![Carousel](https://cdn-images-1.medium.com/max/3722/1*zSsw45LvQ35lrTre7WveCQ.png)
 
 ### 3. Changing content on click with arrows
 
@@ -121,7 +121,7 @@ and style the arrow SVGs in `App.css`:
 
 After this step, we have a working carousel:
 
-![](https://cdn-images-1.medium.com/max/2116/1*3-6baS3AFM3ad7lCUkAbtw.gif)
+![Carousel](https://cdn-images-1.medium.com/max/2116/1*3-6baS3AFM3ad7lCUkAbtw.gif)
 
 ...but it looks awfully plain 😞 Let’s add some transitions!
 
@@ -149,7 +149,7 @@ Yay 🎉
 
 We got the slide transitions to work. This is what the carousel should look like now:
 
-![](https://cdn-images-1.medium.com/max/2116/1*6U-7al8M3bAs0-4uTNtlfg.gif)
+![Carousel](https://cdn-images-1.medium.com/max/2116/1*6U-7al8M3bAs0-4uTNtlfg.gif)
 
 If you think the transitions are too fast, you can use the timeout prop from the [Slide API](https://material-ui.com/api/slide/) and adjust it to your speed.
 
@@ -187,4 +187,6 @@ Carousels look great on personal sites, blogs, and product sites. Jazzing it up 
 
 Thanks for reading. Happy hacking!
 
-<i>Orginally [published](https://levelup.gitconnected.com/adding-transitions-to-a-react-carousel-with-material-ui-b95825653c1b?source=friends_link&sk=4e012ba17cb0e2297c526ce142c6e7fc) in [Level Up Coding](https://levelup.gitconnected.com/) on Medium<i>.
+---
+
+<i>Originally [published](https://levelup.gitconnected.com/adding-transitions-to-a-react-carousel-with-material-ui-b95825653c1b?source=friends_link&sk=4e012ba17cb0e2297c526ce142c6e7fc) in [Level Up Coding](https://levelup.gitconnected.com/) on Medium<i>.

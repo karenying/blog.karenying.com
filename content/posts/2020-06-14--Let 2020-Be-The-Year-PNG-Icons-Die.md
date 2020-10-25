@@ -15,13 +15,13 @@ minutes: '4'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/4800/1*1NsyodtGxXetMW1l647hrQ.png)_Marine Layer website_
+![Marine Layer website](https://miro.medium.com/max/4800/1*1NsyodtGxXetMW1l647hrQ.png)_Marine Layer website_
 
 Marine Layer is a trendy, up-and-coming, [sustainable](https://www.marinelayer.com/pages/ml-sustainability) clothing company that sells basic and minimalistic pieces. They’ve always had a large online presence, with only a handful of brick-and-mortar stores around the United States.
 
 I finally clicked on one of their multiple Facebook and Instagram targeted ads and browsed around before **I noticed that their rating stars around the site mysteriously appear blurry:**
 
-![](https://cdn-images-1.medium.com/max/2000/1*seYUcnlWKL69F9tL1ooBRw.png)
+![Blurry rating stars](https://cdn-images-1.medium.com/max/2000/1*seYUcnlWKL69F9tL1ooBRw.png)
 
 ![Blurry rating stars](https://cdn-images-1.medium.com/max/2000/1*fOQy43QP6JzjuTQzDYL2nQ.png)_Blurry rating stars_
 
@@ -75,4 +75,6 @@ Small details like blurry icons can really expose the lack of attention to detai
 
 Thanks for reading. Happy hacking!
 
-<i>Orginally [published](https://medium.com/frontend-digest/let-2020-be-the-year-png-icons-die-aeb898263180?source=friends_link&sk=d48411e6b94be910e63410e8244ea887) in [Frontend Digest](https://medium.com/frontend-digest) on Medium<i>.
+---
+
+<i>Originally [published](https://medium.com/frontend-digest/let-2020-be-the-year-png-icons-die-aeb898263180?source=friends_link&sk=d48411e6b94be910e63410e8244ea887) in [Frontend Digest](https://medium.com/frontend-digest) on Medium<i>.

@@ -15,7 +15,7 @@ minutes: '6'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/700/1*OPtj5zoJWxPNHZx3dZQfIg.jpeg)
+![Keyboard](https://miro.medium.com/max/700/1*OPtj5zoJWxPNHZx3dZQfIg.jpeg)
 
 Ever wish a site had a keyboard shortcut? Me 🙋🏻‍♀️, every time I press the right arrow key in Google Calendar and sigh in frustration when the site doesn’t navigate to the next week. This seems like such an intuitive shortcut: use the arrow keys to browse forward and backward in time. It’s so intuitive that I forget it doesn’t actually exist natively.
 
@@ -155,4 +155,6 @@ Hopefully, this extension helps increase productivity. If anything, it’s super
 
 Thanks for reading. Happy hacking!
 
-<i>Orginally [published](https://codeburst.io/hack-keyboard-shortcuts-into-sites-with-a-custom-chrome-extension-35e884526980?source=friends_link&sk=53d9c12626dd9e59e4e886ddeed19e84) in [codeburst](https://codeburst.io/) on Medium<i>.
+---
+
+<i>Originally [published](https://codeburst.io/hack-keyboard-shortcuts-into-sites-with-a-custom-chrome-extension-35e884526980?source=friends_link&sk=53d9c12626dd9e59e4e886ddeed19e84) in [codeburst](https://codeburst.io/) on Medium<i>.

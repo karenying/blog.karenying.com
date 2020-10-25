@@ -97,23 +97,23 @@ a {
 }
 
 hr {
-  margin-top: 52px;
-  margin-bottom: 52px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   border: 0;
-  color: $color-base;
+  color: $color-white-almost;
   display: block;
-  height: 26px;
+  height: 18px;
   margin-right: auto;
   margin-left: auto;
-  background-size: 100% 26px;
+  background-size: 100% 18px;
   background-image: linear-gradient(
     to bottom,
     transparent 1px,
-    transparent 11px,
-    $color-base 11px,
-    $color-base 15px,
-    transparent 15px,
-    transparent 26px
+    transparent 8px,
+    $color-white-almost 8px,
+    $color-white-almost 10px,
+    transparent 10px,
+    transparent 18px
   );
   width: 100px;
 }

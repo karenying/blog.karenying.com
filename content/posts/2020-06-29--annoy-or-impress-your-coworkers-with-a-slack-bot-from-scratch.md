@@ -13,7 +13,7 @@ minutes: '8'
 category: 'lol'
 ---
 
-![](https://miro.medium.com/max/700/1*I4PH9UomY67fk5sEQhVlXA.jpeg)
+![Slack](https://miro.medium.com/max/700/1*I4PH9UomY67fk5sEQhVlXA.jpeg)
 
 My coworker, Ali, always forgets to eat lunch while working. Since we’re working remote, I wanted some sort of automated reminder message to ping him. Instead of using Slack’s native no-code solution, [Slack reminders](https://slack.com/help/articles/208423427-Set-a-reminder), I decided to build and deploy one from scratch because #QuarantineBoredom.
 
@@ -113,7 +113,7 @@ Let’s have the bot notify us when it starts:
 
 Now if you run `npm start` you should get notified that your bot is starting! Get used to this because you’ll be see this message a whole lot 😅
 
-![](https://cdn-images-1.medium.com/max/2000/1*HboNZVETE_lfJX-hhmAOfA.png)
+![Bot starting](https://cdn-images-1.medium.com/max/2000/1*HboNZVETE_lfJX-hhmAOfA.png)
 
 Yay the connection works!
 
@@ -149,7 +149,7 @@ If you’ve used Heroku before, you’ll know that their free tier has limitatio
 
 In the case of lunchbot, we only want lunchbot to be awake before 12:32PM every weekday so the cron job can kick in and send the message.
 
-![](https://cdn-images-1.medium.com/max/2000/1*cjXwVJsBPoWTrkcSQvYhXw.png)
+![Heroku dashboard](https://cdn-images-1.medium.com/max/2000/1*cjXwVJsBPoWTrkcSQvYhXw.png)
 
 On your app’s Heroku dashboard, go to **Resources > Add-ons** and search for and select **Heroku Scheduler**. Click on **Provision**.
 
@@ -191,4 +191,6 @@ That’s all I have for you. Go forth and annoy (or impress) your coworkers 😛
 
 Thanks for reading. Happy hacking!
 
-<i>Orginally [published](https://levelup.gitconnected.com/annoy-or-impress-your-coworkers-with-a-slack-bot-made-from-scratch-43753e33e7cc?source=friends_link&sk=8e85686eaccdfe98d35ec2c03e84fc04) in [Level Up Coding](https://levelup.gitconnected.com/) on Medium<i>.
+---
+
+<i>Originally [published](https://levelup.gitconnected.com/annoy-or-impress-your-coworkers-with-a-slack-bot-made-from-scratch-43753e33e7cc?source=friends_link&sk=8e85686eaccdfe98d35ec2c03e84fc04) in [Level Up Coding](https://levelup.gitconnected.com/) on Medium<i>.
