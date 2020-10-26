@@ -30,7 +30,7 @@ I enjoy frontend work and dabble in product/design. Blogging has been a fun outl
 
 **Some (non-tech) things I’ve gone semi-viral for**:
 
-- [**100k views**] LinkedIn [post](https://www.youtube.com/watch?v=DAKZhAXQEs0&ab_channel=KarenYing) about Vimeo cancelling my 2020 summer internship (worked out in the end though!)
+- [**100k views**] LinkedIn [post](https://www.linkedin.com/posts/kyying_internship-hiring-recruiting-activity-6661335912712060929-CO2b) about Vimeo cancelling my 2020 summer internship (worked out in the end though!)
 - [**45k views**] APUSH YouTube [documentary](https://www.youtube.com/watch?v=DAKZhAXQEs0&ab_channel=KarenYing) (you know you made it when you get hate comments)
 - [**14k views**] Tchaikovsky Sweet Dreams piano recital [performance](https://www.youtube.com/watch?v=yGLcelRH4v4&ab_channel=ruanruijuan) at 7 y/o (yes, I played it too fast)
 - [**200+ DMs**] SAD auction (iykyk 👀)
