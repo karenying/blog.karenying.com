@@ -1,4 +1,5 @@
 @import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
 
 .toc {
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -59,5 +60,11 @@
       font-size: 0.8rem;
       margin-left: 20px;
     }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-sm) {
+  .toc {
+    display: none;
   }
 }
