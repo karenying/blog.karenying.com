@@ -1,0 +1,24 @@
+@import '../../../assets/scss/variables';
+
+.toc {
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 200px; /* Stay at the top */
+  right: calc(((100vw - #{$layout-width}) / 2) - 100px);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  color: white;
+  padding-left: 50px;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0px;
+  }
+
+  h3 {
+    margin-left: 20px;
+  }
+}

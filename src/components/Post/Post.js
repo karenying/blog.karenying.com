@@ -7,6 +7,7 @@ import { useSiteMetadata } from '../../hooks';
 import { withPrefix } from 'gatsby';
 import Copyright from '../Sidebar/Copyright';
 import Contacts from '../Sidebar/Contacts';
+import TableOfContents from './TableOfContents';
 
 export const CopyrightFooter = () => (
   <div className={styles['post__copyright']}>
@@ -34,6 +35,7 @@ const Post = ({ post }) => {
           com
         </div>
       </Link>
+      <TableOfContents html={html} />
       <div className={styles['post__content']}>
         <Content body={html} title={title} date={date} minutes={minutes} />
       </div>
