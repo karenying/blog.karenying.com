@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './TableOfContents.module.scss';
 
 const TITLE_TYPES = new Set(['H2', 'H3', 'H4', 'H5', 'H6']);
@@ -14,27 +14,33 @@ function createATag(node) {
 }
 
 const TableOfContents = ({ html }) => {
-  const el = document.createElement('html');
-  el.innerHTML = html;
-  const body = el.lastChild;
-  const children = body.childNodes;
+  const [htmlString, setHtmlString] = useState('');
 
-  const titles = Array.prototype.slice
-    .call(children)
-    .filter((child) => TITLE_TYPES.has(child.nodeName));
+  useEffect(() => {
+    const el = document.createElement('html');
+    el.innerHTML = html;
+    const body = el.lastChild;
+    const children = body.childNodes;
 
-  let output = '';
-  titles.forEach((title) => {
-    title.removeChild(title.firstChild);
-    output += createATag(title);
-  });
+    const titles = Array.prototype.slice
+      .call(children)
+      .filter((child) => TITLE_TYPES.has(child.nodeName));
+
+    let s = '';
+    titles.forEach((title) => {
+      title.removeChild(title.firstChild);
+      s += createATag(title);
+    });
+
+    setHtmlString(s);
+  }, []);
 
   return (
     <div className={styles['toc']}>
       <h2 className={styles['toc__title']}>table of contents</h2>
       <div
         className={styles['toc__content']}
-        dangerouslySetInnerHTML={{ __html: output }}
+        dangerouslySetInnerHTML={{ __html: htmlString }}
       ></div>
     </div>
   );
