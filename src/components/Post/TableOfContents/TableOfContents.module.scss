@@ -2,9 +2,9 @@
 @import '../../../assets/scss/mixins';
 
 .toc {
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 150px; /* Stay at the top */
+  position: fixed;
+  z-index: 1;
+  top: 150px;
   right: calc(((100vw - #{$layout-width}) / 2) - 100px);
   padding-top: 20px;
   color: white;
