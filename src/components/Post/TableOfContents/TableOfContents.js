@@ -1,30 +1,41 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import styles from './TableOfContents.module.scss';
 
 const TITLE_TYPES = new Set(['H2', 'H3', 'H4', 'H5', 'H6']);
 
+function createATag(node) {
+  const { id } = node;
+  const AStart = `<a href=#${id} >`;
+  const AEnd = '</a>';
+
+  node.removeAttribute('id');
+
+  return AStart + node.outerHTML + AEnd;
+}
+
 const TableOfContents = ({ html }) => {
-  const ref = useRef();
+  const el = document.createElement('html');
+  el.innerHTML = html;
+  const body = el.lastChild;
+  const children = body.childNodes;
 
-  useEffect(() => {
-    const el = document.createElement('html');
-    el.innerHTML = html;
-    const body = el.lastChild;
-    const children = body.childNodes;
+  const titles = Array.prototype.slice
+    .call(children)
+    .filter((child) => TITLE_TYPES.has(child.nodeName));
 
-    const titles = Array.prototype.slice
-      .call(children)
-      .filter((child) => TITLE_TYPES.has(child.nodeName));
-
-    titles.forEach((title) => {
-      ref.current.appendChild(title); // why does this break the scroll
-    });
-  }, []);
+  let output = '';
+  titles.forEach((title) => {
+    title.removeChild(title.firstChild);
+    output += createATag(title);
+  });
 
   return (
     <div className={styles['toc']}>
-      <h2>Table of Contents</h2>
-      <div className={styles['toc__content']} ref={ref}></div>
+      <h2 className={styles['toc__title']}>table of contents</h2>
+      <div
+        className={styles['toc__content']}
+        dangerouslySetInnerHTML={{ __html: output }}
+      ></div>
     </div>
   );
 };

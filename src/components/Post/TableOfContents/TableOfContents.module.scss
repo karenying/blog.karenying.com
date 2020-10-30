@@ -3,22 +3,61 @@
 .toc {
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  top: 200px; /* Stay at the top */
+  top: 150px; /* Stay at the top */
   right: calc(((100vw - #{$layout-width}) / 2) - 100px);
-  overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
   color: white;
   padding-left: 50px;
+  max-width: 275px;
+  max-height: 500px;
+  overflow-y: scroll;
 
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  &__title {
+    font-family: $typographic-font-mono;
+    color: $color-pink-light;
+    font-size: 1.5rem;
     margin: 0px;
   }
 
-  h3 {
+  &__content {
     margin-left: 20px;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0px;
+      margin-bottom: 7px;
+      font-family: $typographic-font-basic;
+      line-height: normal;
+    }
+
+    a {
+      transition: text-shadow 100ms;
+
+      &:hover,
+      &:focus {
+        text-decoration: none !important;
+        text-shadow: 7px 7px 10px black;
+      }
+    }
+
+    h2 {
+      color: $color-gray-light;
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      color: $color-gray-medium;
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+
+    h4 {
+      color: $color-gray-medium;
+      font-size: 0.8rem;
+      margin-left: 20px;
+    }
   }
 }
