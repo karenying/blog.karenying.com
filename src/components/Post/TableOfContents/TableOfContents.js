@@ -5,12 +5,10 @@ const TITLE_TYPES = new Set(['H2', 'H3', 'H4', 'H5', 'H6']);
 
 function createATag(node) {
   const { id } = node;
-  const AStart = `<a href=#${id} >`;
-  const AEnd = '</a>';
 
   node.removeAttribute('id');
 
-  return AStart + node.outerHTML + AEnd;
+  return `<a href=#${id}>${node.outerHTML}</a>`;
 }
 
 const TableOfContents = ({ html }) => {
