@@ -17,7 +17,7 @@ const TableOfContents = ({ html }) => {
       .filter((child) => TITLE_TYPES.has(child.nodeName));
 
     titles.forEach((title) => {
-      ref.current.appendChild(title);
+      ref.current.appendChild(title); // why does this break the scroll
     });
   }, []);
 
