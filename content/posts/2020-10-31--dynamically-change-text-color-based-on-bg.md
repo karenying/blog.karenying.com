@@ -1,21 +1,23 @@
 ---
 title: 'Dynamically Change Text Color Based on Background Color'
-date: '2020-10-31T22:12:03.284Z'
+date: '2020-11-04T22:12:03.284Z'
 template: 'post'
 draft: false
 slug: 'dynamically-change-text-color-based-on-bg'
 tags:
   - 'React'
   - 'Front End'
-  - 'Web Dev'
+  - 'UI/UX'
   - 'Tutorial'
-description: ''
+description: '... to increase visual accessiblity'
 socialImage: '/media/socialImages/dynamically-change-text-color-based-on-bg.png'
 minutes: '3'
 category: 'welp'
 ---
 
 ![gradient.png](/media/socialImages/dynamically-change-text-color-based-on-bg.png)_See it in action in [gradient.png](http://gradient-png.netlify.app/)_
+
+If you're only looking for implementation, [skip ahead](#implementation).
 
 ## WCAG and Contrast Ratio
 The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) (WCAG) aims to provide a set of standards for developers around the world -- to make web content more accessible to people with disabilities. 
@@ -58,15 +60,27 @@ There are three exceptions to the above rule:
 - **Incidental**: text that is for decorative/design purposes, not really meant to be read
 - **Logos**
 
-## Examples of Variable Background Color
+#### Examples
+
+- Contrast ratio of **12.98** (good job Karen)
+- <span style="color:#5d93ff">Contrast ratio of <b>4.77</b> (I could do better for links)</span>
+- <span style="color:#767676;background-color:white">Contrast ratio of <b>4.54</b> (barely passable)</span>
+- <span style="color:white;background-color:#ffc300">Contrast ratio of <b>1.61</b> (terrible)</span>
+- <span style="color:red;background-color:#de6262">Contrast ratio of <b>1.15</b> (my eyes are crying)</span>
+
+## Variable Background Color Use Cases
 
 ### Facebook Messenger
 
 ### gradient.png
 
+### Charts and Diagrams
+![Pie chart](https://d2mvzyuse3lwjc.cloudfront.net/doc/en/UserGuide/images/Bar_Of_Pie_Chart/Bar_Of_Pie_Chart.png?v=83483)_Rando pie chart I found [online](https://www.originlab.com/doc/Origin-Help/Bar-Of-Pie)_
+
 ## Implementation
 
-### Prereqs
+### -1. Prereqs
+This tutorial assumes you have some knowledge of JavaScript and React. All good? Let’s get started 👍🏼
 
 ### 0. Getting Started
 
