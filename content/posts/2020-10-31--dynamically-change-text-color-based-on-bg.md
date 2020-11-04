@@ -71,6 +71,12 @@ There are three exceptions to the above rule:
 ## Variable Background Color Use Cases
 
 ### Facebook Messenger
+![Facebook Messenger blue](/media/dynamically-change-text-color-based-on-bg/fb-blue.png#width=200px)_Default Messenger blue_
+
+![Facebook Messenger yellow](/media/dynamically-change-text-color-based-on-bg/fb-yellow.png#width=200px)_Yellow theme in a group chat_
+
+![Facebook Messenger palette](/media/dynamically-change-text-color-based-on-bg/fb-palette.png)_Messenger solid palette_
+
 
 ### gradient.png
 
@@ -87,3 +93,5 @@ This tutorial assumes you have some knowledge of JavaScript and React. All good?
 ## Conclusion
 
 ## Further Reading
+- [Luminance/contrast ratio calculator](https://planetcalc.com/7779/)
+- [More on contrast and color accessibility](https://webaim.org/articles/contrast/)

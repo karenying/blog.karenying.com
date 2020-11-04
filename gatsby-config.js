@@ -129,10 +129,17 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           {
-            resolve: `gatsby-remark-external-links`,
+            resolve: 'gatsby-remark-external-links',
             options: {
               rel: null,
             },
+          },
+          {
+            resolve: 'gatsby-remark-image-attributes',
+            options: {
+              styleAttributes: true,
+              dataAttributes: false
+            }
           },
         ],
       },
