@@ -15,9 +15,9 @@ minutes: '4'
 category: 'lol'
 ---
 
-![Marine Layer website](https://miro.medium.com/max/4800/1*1NsyodtGxXetMW1l647hrQ.png)_Marine Layer website_
+![Marine Layer website](https://miro.medium.com/max/4800/1*1NsyodtGxXetMW1l647hrQ.png)_Marine Layer [website](https://www.marinelayer.com/)_
 
-Marine Layer is a trendy, up-and-coming, [sustainable](https://www.marinelayer.com/pages/ml-sustainability) clothing company that sells basic and minimalistic pieces. They’ve always had a large online presence, with only a handful of brick-and-mortar stores around the United States.
+[Marine Layer](https://www.marinelayer.com/) is a trendy, up-and-coming, [sustainable](https://www.marinelayer.com/pages/ml-sustainability) clothing company that sells basic and minimalistic pieces. They’ve always had a large online presence, with only a handful of brick-and-mortar stores around the United States.
 
 I finally clicked on one of their multiple Facebook and Instagram targeted ads and browsed around before **I noticed that their rating stars around the site mysteriously appear blurry:**
 
