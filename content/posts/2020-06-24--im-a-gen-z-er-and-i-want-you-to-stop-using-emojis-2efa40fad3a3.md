@@ -7,7 +7,6 @@ slug: 'i’m-a-gen-z-er-and-i-want-you-to-stop-using-emojis'
 tags:
   - 'UI/UX'
   - 'Opinion'
-  - 'Front End'
   - 'Apps'
 description: 'An analysis on emoji usage in the popular app Notion'
 socialImage: '/media/socialImages/i’m-a-gen-z-er-and-i-want-you-to-stop-using-emojis.png'

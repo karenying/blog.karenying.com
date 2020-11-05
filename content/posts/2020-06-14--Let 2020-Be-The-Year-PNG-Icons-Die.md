@@ -5,10 +5,9 @@ template: 'post'
 draft: false
 slug: 'let-2020-be-the-year-png-icons-die'
 tags:
-  - 'Web Dev'
   - 'HTML'
-  - 'Front End'
   - 'Tutorial'
+  - 'Opinion'
 description: 'Examining a trendy store’s mysteriously blurry rating stars and proposing a solution'
 socialImage: '/media/socialImages/let-2020-be-the-year-png-icons-die.png'
 minutes: '4'

@@ -5,11 +5,11 @@ template: 'post'
 draft: false
 slug: 'dynamically-change-text-color-based-on-bg'
 tags:
-  - 'React'
-  - 'Front End'
   - 'UI/UX'
+  - 'React'
+  - 'Apps'
   - 'Tutorial'
-description: '... to increase visual accessiblity'
+description: '... to increase visual accessiblity. Even Facebook gets this wrong. Do you?'
 socialImage: '/media/socialImages/dynamically-change-text-color-based-on-bg.png'
 minutes: '3'
 category: 'welp'
@@ -17,12 +17,12 @@ category: 'welp'
 
 ![gradient.png](/media/socialImages/dynamically-change-text-color-based-on-bg.png)_See it in action in [gradient.png](http://gradient-png.netlify.app/)_
 
-If you're only looking for implementation, [skip ahead](#implementation).
+**If you're only looking for implementation, [skip ahead](#implementation).**
 
 ## WCAG and Contrast Ratio
 The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) (WCAG) aims to provide a set of standards for developers around the world -- to make web content more accessible to people with disabilities. 
 
-Perhaps the most obvious applications of the WCAG are in visual accessibility. In this post we'll dive into the world of color contrast, specifically looking at scenarios where you would want to dynamically change text color based on the background color to increase readibility.
+Perhaps the most obvious applications of the WCAG are in visual accessibility. In this post we'll dive into the world of color contrast, specifically looking at scenarios where you would want to dynamically change text color based on the background color to increase readability.
 
 In order to understand the motivation behind this, we have to first understand how to quantify the contrast between two colors. 
 
@@ -64,21 +64,21 @@ There are three exceptions to the above rule:
 
 - Contrast ratio of **12.98** (good job Karen)
 - <span style="color:#5d93ff">Contrast ratio of <b>4.77</b> (I could do better for links)</span>
-- <span style="color:#767676;background-color:white">Contrast ratio of <b>4.54</b> (barely passable)</span>
+- <span style="color:#767676;background-color:white">Contrast ratio of <b>4.54</b> (barely passable by WCAG standards)</span>
 - <span style="color:white;background-color:#ffc300">Contrast ratio of <b>1.61</b> (terrible)</span>
 - <span style="color:red;background-color:#de6262">Contrast ratio of <b>1.15</b> (my eyes are crying)</span>
 
 ## Variable Background Color Use Cases
 
 ### Facebook Messenger
-![Facebook Messenger blue](/media/dynamically-change-text-color-based-on-bg/fb-blue.png#width=200px)_Default Messenger blue_
+![Facebook Messenger blue](/media/dynamically-change-text-color-based-on-bg/fb-blue.png#width=300px)<br>_Default Messenger blue_
 
-![Facebook Messenger yellow](/media/dynamically-change-text-color-based-on-bg/fb-yellow.png#width=200px)_Yellow theme in a group chat_
+![Facebook Messenger yellow](/media/dynamically-change-text-color-based-on-bg/fb-yellow.png#width=300px)<br> _Yellow theme in a group chat_
 
-![Facebook Messenger palette](/media/dynamically-change-text-color-based-on-bg/fb-palette.png)_Messenger solid palette_
-
+![Facebook Messenger palette](/media/dynamically-change-text-color-based-on-bg/fb-palette.png#width=300px)<br> _Messenger solid palette_
 
 ### gradient.png
+![gradient.png](/media/socialImages/dynamically-change-text-color-based-on-bg.png)_Imperfect implementation for [gradient.png](http://gradient-png.netlify.app/)_
 
 ### Charts and Diagrams
 ![Pie chart](https://d2mvzyuse3lwjc.cloudfront.net/doc/en/UserGuide/images/Bar_Of_Pie_Chart/Bar_Of_Pie_Chart.png?v=83483)_Rando pie chart I found [online](https://www.originlab.com/doc/Origin-Help/Bar-Of-Pie)_

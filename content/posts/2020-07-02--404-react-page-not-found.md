@@ -7,7 +7,6 @@ slug: '404-react-page-not-found'
 tags:
   - 'React'
   - 'Tutorial'
-  - 'Web Dev'
 description: 'How to avoid the dreaded "Page Not Found" bug for apps using React Router on Netlify'
 socialImage: '/media/socialImages/404-react-page-not-found.png'
 minutes: '5'

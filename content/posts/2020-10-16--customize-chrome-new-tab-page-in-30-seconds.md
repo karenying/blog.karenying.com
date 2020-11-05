@@ -7,7 +7,6 @@ slug: 'customize-chrome-new-tab-page-in-30-seconds'
 tags:
   - 'Chrome Extension'
   - 'Productivity'
-  - 'Web Dev'
   - 'Tutorial'
 description: 'Override Chrome’s new tab page to create a more personalized browsing experience'
 socialImage: '/media/socialImages/customize-chrome-new-tab-page-in-30-seconds.gif'

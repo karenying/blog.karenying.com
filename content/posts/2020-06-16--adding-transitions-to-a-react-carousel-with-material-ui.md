@@ -5,7 +5,6 @@ template: 'post'
 draft: false
 slug: 'adding-transitions-to-a-react-carousel-with-material-ui'
 tags:
-  - 'Web Dev'
   - 'React'
   - 'Tutorial'
 description: 'PowerPoint-esque slide animations + React carousel'
