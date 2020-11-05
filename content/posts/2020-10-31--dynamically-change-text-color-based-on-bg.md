@@ -66,22 +66,34 @@ There are three exceptions to the above rule:
 - <span style="color:#5d93ff">Contrast ratio of <b>4.77</b> (I could do better for links)</span>
 - <span style="color:#767676;background-color:white">Contrast ratio of <b>4.54</b> (barely passable by WCAG standards)</span>
 - <span style="color:white;background-color:#ffc300">Contrast ratio of <b>1.61</b> (terrible)</span>
-- <span style="color:red;background-color:#de6262">Contrast ratio of <b>1.15</b> (my eyes are crying)</span>
+- <span style="color:red;background-color:#de6262">Contrast ratio of <b>1.15</b> (brb my eyes are crying)</span>
 
-## Variable Background Color Use Cases
+## Use Cases
+Before we get started coding, let's run through a couple of examples of where you would want to dynamically changed the text color based on its background color.
 
 ### Facebook Messenger
+Messenger is what spurred this post. Facebook lets you change the chat default color from the typical blue to a variety of different options. This theme color the background color of all the messages *you* send. The messages you receive are typically with a dark gray background. 
+
 ![Facebook Messenger blue](/media/dynamically-change-text-color-based-on-bg/fb-blue.png#width=300px)<br>_Default Messenger blue_
+
+![Facebook Messenger palette](/media/dynamically-change-text-color-based-on-bg/fb-palette.png#width=300px)<br> _Messenger solid palette. They change this up pretty often. Gradient options are also available 😍_
+
+However, regardless of what color you pick, the text color is infuriatingly white.
 
 ![Facebook Messenger yellow](/media/dynamically-change-text-color-based-on-bg/fb-yellow.png#width=300px)<br> _Yellow theme in a group chat_
 
-![Facebook Messenger palette](/media/dynamically-change-text-color-based-on-bg/fb-palette.png#width=300px)<br> _Messenger solid palette_
-
+Remember this example from before? <span style="color:white;background-color:#ffc300">Contrast ratio of <b>1.61</b> (terrible)</span> 🙁
 ### gradient.png
+I made a gradient generating [app](http://gradient-png.netlify.app/) a while back. The app lets you choose colors for a gradient, displaying the hex codes on the current colors.
+
 ![gradient.png](/media/socialImages/dynamically-change-text-color-based-on-bg.png)_Imperfect implementation for [gradient.png](http://gradient-png.netlify.app/)_
+
+I calculated luminance for the colors and choose dark text if the luminance was below 50%. However, I didn't apply the contrast ratio formula, so this is an imperfect implementation. Still better than nothing though?
 
 ### Charts and Diagrams
 ![Pie chart](https://d2mvzyuse3lwjc.cloudfront.net/doc/en/UserGuide/images/Bar_Of_Pie_Chart/Bar_Of_Pie_Chart.png?v=83483)_Rando pie chart I found [online](https://www.originlab.com/doc/Origin-Help/Bar-Of-Pie)_
+
+This concept might be most useful when you're displaying data with different colors, and you want to write text over each section.
 
 ## Implementation
 
@@ -89,6 +101,23 @@ There are three exceptions to the above rule:
 This tutorial assumes you have some knowledge of JavaScript and React. All good? Let’s get started 👍🏼
 
 ### 0. Getting Started
+We’ll use [Create React App](https://create-react-app.dev/docs/getting-started/) to create, bundle, and run the project:
+
+```bash
+$ npx create-react-app dyn-change-text-color
+$ cd dyn-change-text-color
+$ npm start
+```
+
+### 1. Template
+
+### 2. Color Object
+
+### 3. Luminance
+
+### 4. Contrast Ratio
+
+### 5. Piecing it all Together
 
 ## Conclusion
 
