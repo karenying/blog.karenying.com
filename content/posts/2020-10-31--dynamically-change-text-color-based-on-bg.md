@@ -136,9 +136,9 @@ const ColorBox = ({ backgroundHex }) => {
   return (
     <div
       className='colorbox-container'
-      style={{ backgroundColor: '#' + backgroundHex }}
+      style={{ backgroundColor: `#${backgroundHex}` }}
     >
-      {'#' + backgroundHex}
+      {`#${backgroundHex}`}
     </div>
   );
 };
@@ -155,7 +155,7 @@ Let's import `ColorBox` to `App.js` and pass in black as the `backgroundHex` pro
 function App() {
   return (
     <div className='App'>
-      <ColorBox backgroundHex='000000' />
+      <ColorBox backgroundHex='2a2b2e' />
     </div>
   );
 }
@@ -172,23 +172,23 @@ Add some styling with `ColorBox.css`:
   width: 200px;
   border-radius: 5px;
   padding: 20px;
-  color: white;
+  text-align: center;
 }
 ```
 
 If we run the app, we should see:
 
-![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-1.png#width=350px)<br>_`ColorBox` component with black as `backgroundHex` prop_
+![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-1.png#width=350px)<br>_`ColorBox` component with black as `backgroundHex` prop. Terrible contrast ratio with default black text_
 
 ### 2. `Color.js` and `helper.js` (so OOP, much modularization)
 
-To better organize our code, we're gonna create a `Color` class as well as some helper functions in `helper.js`. Let's set these up:
+To better organize our code, we're gonna create a `Color` class as well as some helper methods. Let's set these up:
 
 ```js
 // Header: Color.js
 import { textColors, contrastRatioPair, getLuminance } from './helper';
 
-class Color {
+export default class Color {
   // takes in hex string without '#'
   constructor(hex) {
     this.hex = hex;
@@ -197,12 +197,12 @@ class Color {
   // returns luminance as a number between 0 and 1
   get luminance() {}
 
-  // returns either textColors.BLACK / WHITE
-  get textColor() {}
-
   /* returns contrast ratio with a second color,
   calls contrastRatioPair */
   contrastRatioWith(hex2) {}
+
+  // returns either textColors.BLACK / WHITE
+  get textColor() {}
 }
 ```
 
@@ -224,11 +224,124 @@ function hexToRGB(hex) {}
 export function getLuminance(hex) {}
 ```
 
+Great, now we can start filling out these functions.
+
 ### 3. Luminance
+
+As mentioned before, the luminance calculation is a bit messy. We need to first convert our 6 bit hex string to RGB values. To do so, we splice the string, and parse the substrings from hex to decimal:
+
+```js
+// Header: helper.js
+// takes in hex string and converts to decimal number
+function hexToDecimal(hex_string) {
+  return parseInt(hex_string, 16);
+}
+
+/* converts a hex string to an object with 'r', 'g', 'b' 
+as the keys and their respective values */
+function hexToRGB(hex) {
+  const r = hexToDecimal(hex.substring(0, 2));
+  const g = hexToDecimal(hex.substring(2, 4));
+  const b = hexToDecimal(hex.substring(4, 6));
+
+  return { r, g, b };
+}
+```
+
+We can then call `hexToRGB` in our luminance calculation. If you want to read more about exactly how to calculate, you can check out this [calculator](https://planetcalc.com/7779/) or [Wikipedia](https://en.wikipedia.org/wiki/Relative_luminance). But if you just wanna trust me on this one, here's the gross code:
+
+```js
+// Header: helper.js
+// calculates relative luminance given a hex string
+export function getLuminance(hex) {
+  const { r, g, b } = hexToRGB(hex);
+  const rgb = [r, g, b];
+
+  for (let i = 0; i < rgb.length; i++) {
+    let c = rgb[i];
+    c /= 255;
+
+    if (c > 0.03928) {
+      c = Math.pow((c + 0.055) / 1.055, 2.4);
+    } else {
+      c /= 12.92;
+    }
+
+    rgb[i] = c;
+  }
+
+  return 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
+}
+```
 
 ### 4. Contrast Ratio
 
-### 5. Piecing it all Together
+With our luminance function done, we can call it to calculate the contrast ratio between two colors with our division formula from before:
+
+```js
+// Header: helper.js
+// calculates contrast ratio between two hex strings
+export function contrastRatioPair(hex1, hex2) {
+  const lum1 = getLuminance(hex1);
+  const lum2 = getLuminance(hex2);
+
+  return (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+}
+```
+
+### 5. Filling out `Color.js`
+
+We can now fill out the methods of the `Color` class with our helper methods:
+
+```js
+// Header: Color.js
+  // returns luminance as a number between 0 and 1
+  get luminance() {
+    return getLuminance(this.hex);
+  }
+
+  /* returns contrast ratio with a second color,
+  calls contrastRatioPair */
+  contrastRatioWith(hex2) {
+    return contrastRatioPair(this.hex, hex2);
+  }
+
+  // returns either textColors.BLACK / WHITE
+  get textColor() {
+    const { BLACK, WHITE } = textColors;
+
+    return this.contrastRatioWith(BLACK) > this.contrastRatioWith(WHITE)
+      ? BLACK
+      : WHITE;
+  }
+```
+
+### 6. Back to React
+
+```jsx
+// Header: ColorBox.js
+const ColorBox = ({ backgroundHex }) => {
+  const backgroundColor = new Color(backgroundHex);
+  const { textColor } = backgroundColor;
+
+  return (
+    <div
+      className='colorbox-container'
+      style={{ backgroundColor: `#${backgroundHex}`, color: `#${textColor}` }}
+    >
+      {`#${backgroundHex}`}
+      <br />
+      {`Constrast ratio: ${backgroundColor
+        .contrastRatioWith(textColor)
+        .toFixed(2)}`}
+    </div>
+  );
+};
+```
+
+![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-2.png#width=350px)<br>_The text color flipped to white 🎉_
+
+![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-3.png#width=350px)<br>_OG Messenger example_
 
 ## Conclusion
 
