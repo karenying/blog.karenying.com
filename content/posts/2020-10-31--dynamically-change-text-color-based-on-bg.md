@@ -180,20 +180,48 @@ If we run the app, we should see:
 
 ![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-1.png#width=350px)<br>_`ColorBox` component with black as `backgroundHex` prop_
 
-### 2. Color Object
+### 2. `Color.js` and `helper.js` (so OOP, much modularization)
 
-To better organize our code, we're gonna create a `Color` class as well as some helper functions in `helper.js`. Let's set these up--
-
-`Color.js`
+To better organize our code, we're gonna create a `Color` class as well as some helper functions in `helper.js`. Let's set these up:
 
 ```js
+// Header: Color.js
+import { textColors, contrastRatioPair, getLuminance } from './helper';
 
+class Color {
+  // takes in hex string without '#'
+  constructor(hex) {
+    this.hex = hex;
+  }
+
+  // returns luminance as a number between 0 and 1
+  get luminance() {}
+
+  // returns either textColors.BLACK / WHITE
+  get textColor() {}
+
+  /* returns contrast ratio with a second color,
+  calls contrastRatioPair */
+  contrastRatioWith(hex2) {}
+}
 ```
 
-`helper.js`
-
 ```js
+// Header: helper.js
+export const textColors = {
+  BLACK: '000000',
+  WHITE: 'ffffff',
+};
 
+// calculates contrast ratio between two hex strings
+export function contrastRatioPair(hex1, hex2) {}
+
+/* converts a hex string to an object with 'r', 'g', 'b' 
+as the keys and their respective values */
+function hexToRGB(hex) {}
+
+// calculates relative luminance given a hex string
+export function getLuminance(hex) {}
 ```
 
 ### 3. Luminance
