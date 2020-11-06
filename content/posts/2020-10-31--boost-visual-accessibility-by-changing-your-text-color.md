@@ -1,21 +1,21 @@
 ---
-title: 'Dynamically Change Text Color Based on Background Color'
-date: '2020-11-04T22:12:03.284Z'
+title: 'Boost Visual Accessibility by Changing Your Text Color'
+date: '2020-11-06T22:12:03.284Z'
 template: 'post'
 draft: false
-slug: 'dynamically-change-text-color-based-on-bg'
+slug: 'boost-visual-accessibility-by-changing-your-text-color'
 tags:
   - 'UI/UX'
   - 'React'
   - 'Apps'
   - 'Tutorial'
 description: '... to increase visual accessiblity. Even Facebook gets this wrong. Do you?'
-socialImage: '/media/socialImages/dynamically-change-text-color-based-on-bg.png'
-minutes: '3'
-category: 'welp'
+socialImage: '/media/socialImages/boost-visual-accessibility-by-changing-your-text-color.png'
+minutes: '15'
+category: 'brolic af'
 ---
 
-![gradient.png](/media/socialImages/dynamically-change-text-color-based-on-bg.png)_See it in action in [gradient.png](http://gradient-png.netlify.app/)_
+![gradient.png](/media/socialImages/boost-visual-accessibility-by-changing-your-text-color.png)_[gradient.png](http://gradient-png.netlify.app/)_
 
 **If you're only looking for implementation, [skip ahead](#implementation).**
 
@@ -83,13 +83,13 @@ Before we get started coding, let's run through a couple of examples of where yo
 
 Messenger is what spurred this post. Facebook lets you change the chat default color from the typical blue to a variety of different options. This theme color the background color of all the messages _you_ send. The messages you receive are typically with a dark gray background.
 
-![Facebook Messenger blue](/media/dynamically-change-text-color-based-on-bg/fb-blue.png#width=300px)<br>_Default Messenger blue_
+![Facebook Messenger blue](/media/boost-visual-accessibility-by-changing-your-text-color/fb-blue.png#width=300px)<br>_Default Messenger blue_
 
-![Facebook Messenger palette](/media/dynamically-change-text-color-based-on-bg/fb-palette.png#width=300px)<br> _Messenger solid palette. They change this up pretty often. Gradient options are also available 😍_
+![Facebook Messenger palette](/media/boost-visual-accessibility-by-changing-your-text-color/fb-palette.png#width=300px)<br> _Messenger solid palette. They change this up pretty often. Gradient options are also available 😍_
 
 However, regardless of what color you pick, the text color is infuriatingly white.
 
-![Facebook Messenger yellow](/media/dynamically-change-text-color-based-on-bg/fb-yellow.png#width=300px)<br> _Yellow theme in a group chat_
+![Facebook Messenger yellow](/media/boost-visual-accessibility-by-changing-your-text-color/fb-yellow.png#width=300px)<br> _Yellow theme in a group chat_
 
 Remember this example from before? <span style="color:white;background-color:#ffc300">Contrast ratio of <b>1.61</b> (terrible)</span> 🙁
 
@@ -97,7 +97,7 @@ Remember this example from before? <span style="color:white;background-color:#ff
 
 I made a gradient generating [app](http://gradient-png.netlify.app/) a while back. The app lets you choose colors for a gradient, displaying the hex codes on the current colors.
 
-![gradient.png](/media/socialImages/dynamically-change-text-color-based-on-bg.png)_Imperfect implementation for [gradient.png](http://gradient-png.netlify.app/)_
+![gradient.png](/media/socialImages/boost-visual-accessibility-by-changing-your-text-color.png)_Imperfect implementation for [gradient.png](http://gradient-png.netlify.app/)_
 
 I calculated luminance for the colors and choose dark text if the luminance was below 50%. However, I didn't apply the contrast ratio formula, so this is an imperfect implementation. Still better than nothing though?
 
@@ -178,7 +178,7 @@ Add some styling with `ColorBox.css`:
 
 If we run the app, we should see:
 
-![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-1.png#width=350px)<br>_`ColorBox` component with black as `backgroundHex` prop. Terrible contrast ratio with default black text_
+![ColorBox](/media/boost-visual-accessibility-by-changing-your-text-color/colorbox-1.png#width=350px)<br>_`ColorBox` component with black as `backgroundHex` prop. Terrible contrast ratio with default black text_
 
 ### 2. `Color.js` and `helper.js` (so OOP, much modularization)
 
@@ -339,9 +339,9 @@ const ColorBox = ({ backgroundHex }) => {
 };
 ```
 
-![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-2.png#width=350px)<br>_The text color flipped to white 🎉_
+![ColorBox](/media/boost-visual-accessibility-by-changing-your-text-color/colorbox-2.png#width=350px)<br>_The text color flipped to white 🎉_
 
-![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-3.png#width=350px)<br>_OG Messenger example_
+![ColorBox](/media/boost-visual-accessibility-by-changing-your-text-color/colorbox-3.png#width=350px)<br>_OG Messenger example_
 
 ## Conclusion
 
