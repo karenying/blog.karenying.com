@@ -109,7 +109,72 @@ $ cd dyn-change-text-color
 $ npm start
 ```
 
-### 1. Template
+### 1. ColorBox Component
+We're going to create a `ColorBox` component which takes a hex code string as a prop. For consistency sake, we will always store hex codes variables without the pound sign, only adding it when necessary for CSS/HTML. The hex code prop will determine the background color of the component.
+
+Create a new file called `ColorBox.js`:
+
+```jsx
+import './ColorBox.css';
+
+const ColorBox = ({ backgroundHex }) => {
+  return (
+    <div
+      className='colorbox-container'
+      style={{ backgroundColor: '#' + backgroundHex }}
+    >
+      {'#' + backgroundHex}
+    </div>
+  );
+};
+
+export default ColorBox;
+
+```
+
+Here we use inline styling to dynamically change the background color based on the component's prop. We also render the hex code as text in the component.
+
+Let's import `ColorBox` to `App.js` and pass in black as the `backgroundHex` prop:
+
+```jsx
+function App() {
+  return (
+    <div className='App'>
+      <ColorBox backgroundHex='000000' />
+    </div>
+  );
+}
+```
+
+Add some styling --
+
+`ColorBox.css`:
+```css
+.colorbox-container {
+  height: 70px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+```
+
+`App.css`:
+```css
+.App {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+```
+
+If we run the app, we should see:
+
+![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-1.png#width=350px)<br>_`ColorBox` component with black as `backgroundHex` prop_
 
 ### 2. Color Object
 
