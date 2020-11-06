@@ -151,6 +151,7 @@ Here we use inline styling to dynamically change the background color based on t
 Let's import `ColorBox` to `App.js` and pass in black as the `backgroundHex` prop:
 
 ```jsx
+// Header: App.js
 function App() {
   return (
     <div className='App'>
@@ -180,6 +181,20 @@ If we run the app, we should see:
 ![ColorBox](/media/dynamically-change-text-color-based-on-bg/colorbox-1.png#width=350px)<br>_`ColorBox` component with black as `backgroundHex` prop_
 
 ### 2. Color Object
+
+To better organize our code, we're gonna create a `Color` class as well as some helper functions in `helper.js`. Let's set these up--
+
+`Color.js`
+
+```js
+
+```
+
+`helper.js`
+
+```js
+
+```
 
 ### 3. Luminance
 
