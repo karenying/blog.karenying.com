@@ -1,9 +1,9 @@
 ---
-title: 'Boost Visual Accessibility by Changing Your Text Color'
+title: 'Boost Visual Accessibility by Changing Text Color'
 date: '2020-11-06T22:12:03.284Z'
 template: 'post'
 draft: false
-slug: 'boost-visual-accessibility-by-changing-your-text-color'
+slug: 'boost-visual-accessibility-by-changing-text-color'
 tags:
   - 'UI/UX'
   - 'React'
@@ -11,7 +11,7 @@ tags:
   - 'Tutorial'
 description: 'Please no more white text on light backgrounds. Even Facebook gets this wrong. Do you?'
 socialImage: '/media/socialImages/boost-visual-accessibility-by-changing-your-text-color.png'
-minutes: '15'
+minutes: '6'
 category: 'brolic af'
 ---
 
@@ -29,7 +29,7 @@ In order to understand the motivation behind this, we have to first understand h
 
 ### Mathematical Representation of Colors
 
-A quick crash course:
+A crash course:
 
 - Each color can be represented as a triplet of red, green, and blue values, with values between 0 and 255 -- this is the [RGB color space](https://en.wikipedia.org/wiki/RGB_color_space)
   - Red is `(255, 0, 0)`, green is `(0, 255, 0)`, blue is `(0, 0, 255)`
@@ -161,9 +161,10 @@ function App() {
 }
 ```
 
-Add some styling with `ColorBox.css`:
+Add some styling:
 
 ```css
+// Header: ColorBox.css
 .colorbox-container {
   display: flex;
   align-items: center;
@@ -180,7 +181,9 @@ If we run the app, we should see:
 
 ![ColorBox](/media/boost-visual-accessibility-by-changing-your-text-color/colorbox-1.png#width=350px)<br>_`ColorBox` component with black as `backgroundHex` prop. Terrible contrast ratio with default black text_
 
-### 2. `Color.js` and `helper.js` (so OOP, much modularization)
+### 2. So OOP, Much Modularization
+
+#### 2.1 Templates
 
 To better organize our code, we're gonna create a `Color` class as well as some helper methods. Let's set these up:
 
@@ -226,7 +229,7 @@ export function getLuminance(hex) {}
 
 Great, now we can start filling out these functions.
 
-### 3. Luminance
+#### 2.2. Luminance
 
 As mentioned before, the luminance calculation is a bit messy. We need to first convert our 6 bit hex string to RGB values. To do so, we splice the string, and parse the substrings from hex to decimal:
 
@@ -254,27 +257,22 @@ We can then call `hexToRGB` in our luminance calculation. If you want to read mo
 // Header: helper.js
 // calculates relative luminance given a hex string
 export function getLuminance(hex) {
-  const { r, g, b } = hexToRGB(hex);
-  const rgb = [r, g, b];
+  const rgb = hexToRGB(hex);
 
-  for (let i = 0; i < rgb.length; i++) {
-    let c = rgb[i];
+  for (const key in rgb) {
+    let c = rgb[key];
     c /= 255;
 
-    if (c > 0.03928) {
-      c = Math.pow((c + 0.055) / 1.055, 2.4);
-    } else {
-      c /= 12.92;
-    }
+    c = c > 0.03928 ? Math.pow((c + 0.055) / 1.055, 2.4) : (c /= 12.92);
 
-    rgb[i] = c;
+    rgb[key] = c;
   }
 
-  return 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
+  return 0.2126 * rgb.r + 0.7152 * rgb.g + 0.0722 * rgb.b;
 }
 ```
 
-### 4. Contrast Ratio
+#### 2.3. Contrast Ratio
 
 With our luminance function done, we can call it to calculate the contrast ratio between two colors with our division formula from before:
 
@@ -289,7 +287,7 @@ export function contrastRatioPair(hex1, hex2) {
 }
 ```
 
-### 5. Filling out `Color.js`
+#### 2.4. Filling out `Color.js`
 
 We can now fill out the methods of the `Color` class with our helper methods:
 
@@ -316,7 +314,7 @@ We can now fill out the methods of the `Color` class with our helper methods:
   }
 ```
 
-### 6. Pulling it all Together
+### 3. Pulling it all Together
 
 Now we can turn back to our `ColorBox` component.
 
@@ -339,7 +337,7 @@ Then we can set the `color` CSS property of the div as `textColor`. I also added
     >
       {`#${backgroundHex}`}
       <br />
-      {`Constrast ratio: ${backgroundColor
+      {`Contrast ratio: ${backgroundColor
         .contrastRatioWith(textColor)
         .toFixed(2)}`}
     </div>
@@ -353,7 +351,7 @@ Woo it worked. Let's set `backgroundHex` as the Facebook Messenger yellow:
 
 ![ColorBox](/media/boost-visual-accessibility-by-changing-your-text-color/colorbox-3.png#width=350px)<br>_OG Messenger example_
 
-Yep it's so much more readable as black 🎉 Feel free to play around with the input hex code.
+Yep it's so much more readable as black 🎉 &nbsp; Feel free to play around with the input hex code.
 
 ## Conclusion
 
@@ -365,4 +363,4 @@ It might seem like a small or trivial detail, but to the user, especially a visu
 
 - [Luminance/contrast ratio calculator](https://planetcalc.com/7779/)
 - [More on contrast and color accessibility](https://webaim.org/articles/contrast/)
-- [WCAG in Full](https://www.w3.org/TR/WCAG21/)
+- [WCAG in full](https://www.w3.org/TR/WCAG21/)
