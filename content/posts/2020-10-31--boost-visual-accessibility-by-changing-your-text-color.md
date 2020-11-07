@@ -1,6 +1,6 @@
 ---
 title: 'Boost Visual Accessibility by Changing Text Color'
-date: '2020-11-06T22:12:03.284Z'
+date: '2020-11-07T22:12:03.284Z'
 template: 'post'
 draft: false
 slug: 'boost-visual-accessibility-by-changing-text-color'
