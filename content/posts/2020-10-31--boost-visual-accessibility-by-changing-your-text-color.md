@@ -9,7 +9,7 @@ tags:
   - 'React'
   - 'Apps'
   - 'Tutorial'
-description: '... to increase visual accessiblity. Even Facebook gets this wrong. Do you?'
+description: 'Please no more white text on light backgrounds. Even Facebook gets this wrong. Do you?'
 socialImage: '/media/socialImages/boost-visual-accessibility-by-changing-your-text-color.png'
 minutes: '15'
 category: 'brolic af'
@@ -316,14 +316,22 @@ We can now fill out the methods of the `Color` class with our helper methods:
   }
 ```
 
-### 6. Back to React
+### 6. Pulling it all Together
+
+Now we can turn back to our `ColorBox` component.
+
+All we need to do is create a new `Color` object with the `backgroundHex` prop and call its appropriate properties/methods:
 
 ```jsx
 // Header: ColorBox.js
-const ColorBox = ({ backgroundHex }) => {
-  const backgroundColor = new Color(backgroundHex);
-  const { textColor } = backgroundColor;
+const backgroundColor = new Color(backgroundHex);
+const { textColor } = backgroundColor;
+```
 
+Then we can set the `color` CSS property of the div as `textColor`. I also added a couple of lines to display the current contrast ratio:
+
+```jsx
+// Header: ColorBox.js
   return (
     <div
       className='colorbox-container'
@@ -335,17 +343,26 @@ const ColorBox = ({ backgroundHex }) => {
         .contrastRatioWith(textColor)
         .toFixed(2)}`}
     </div>
-  );
-};
 ```
 
-![ColorBox](/media/boost-visual-accessibility-by-changing-your-text-color/colorbox-2.png#width=350px)<br>_The text color flipped to white 🎉_
+Now if you check out the app, it should look like this:
+
+![ColorBox](/media/boost-visual-accessibility-by-changing-your-text-color/colorbox-2.png#width=350px)<br>_The text color flipped to white!_
+
+Woo it worked. Let's set `backgroundHex` as the Facebook Messenger yellow:
 
 ![ColorBox](/media/boost-visual-accessibility-by-changing-your-text-color/colorbox-3.png#width=350px)<br>_OG Messenger example_
 
+Yep it's so much more readable as black 🎉 Feel free to play around with the input hex code.
+
 ## Conclusion
+
+In this post we learned about the WCAG and contrast ratios, implementing these concepts through a small React example. If you got lost along the way, here’s the [**GitHub repo**](https://github.com/karenying/dyn-change-text-color).
+
+It might seem like a small or trivial detail, but to the user, especially a visually impaired user, these touches could matter the world. As a developer, they show that you care about your users and the experience that you create.
 
 ## Further Reading
 
 - [Luminance/contrast ratio calculator](https://planetcalc.com/7779/)
 - [More on contrast and color accessibility](https://webaim.org/articles/contrast/)
+- [WCAG in Full](https://www.w3.org/TR/WCAG21/)
