@@ -355,7 +355,7 @@ Yep it's so much more readable as black 🎉 &nbsp; Feel free to play around wit
 
 ## Conclusion
 
-In this post we learned about the WCAG and contrast ratios, implementing these concepts through a small React example. If you got lost along the way, here’s the [**GitHub repo**](https://github.com/karenying/dyn-change-text-color).
+In this post we learned about the WCAG and contrast ratios, implementing these concepts through a small React example. If you got lost along the way, here’s the [GitHub repo](https://github.com/karenying/dyn-change-text-color).
 
 It might seem like a small or trivial detail, but to the user, especially a visually impaired user, these touches could matter the world. As a developer, they show that you care about your users and the experience that you create.
 
