@@ -123,3 +123,7 @@ My goal with this extension was to make my browsing experience feel more persona
 - [Flipping Clock](https://codepen.io/harshabhat86/full/tAxuF) by [Harsha Bhat](https://codepen.io/harshabhat86)
 
 Thanks for reading. Happy hacking!
+
+---
+
+<i>Also [published](https://codeburst.io/customize-chrome-new-tab-page-in-30-seconds-a209568957b2?source=friends_link&sk=d3f97e8f6722aaa50ddcfe87bed11681) in [Frontend Digest](https://medium.com/frontend-digest) on Medium<i>.
