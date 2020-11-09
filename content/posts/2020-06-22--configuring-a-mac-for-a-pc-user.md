@@ -160,7 +160,7 @@ Finally, I’m gonna cover a couple of handy Chrome/browser specific shortcuts.
 
 **⌃ + tab**: Switch to the tab immediately to the right
 
-**⌃ + ⇧ + [&nbsp; / &nbsp;]**: Switch left and right between tabs
+**⌘ + ⇧ + [&nbsp; / &nbsp;]**: Switch left and right between tabs
 
 **Trackpad swipe right and left with two fingers**: Navigate forward and backward in browsing history
 
