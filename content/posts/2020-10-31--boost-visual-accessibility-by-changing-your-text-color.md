@@ -1,5 +1,5 @@
 ---
-title: 'Boost Visual Accessibility by Changing Text Color'
+title: 'Boost Visual Accessibility by Auto Flipping Text Color'
 date: '2020-11-07T22:12:03.284Z'
 template: 'post'
 draft: false
