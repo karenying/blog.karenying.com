@@ -19,6 +19,8 @@ category: 'brolic af'
 
 **If you're only looking for implementation, [skip ahead](#implementation).**
 
+Often times, an app, website, or diagram will write text over a colored background. If the text is white, and the background is light colored, then it's always hard to read. Visual accessibility is becoming an increasingly hot topic. In this post, we'll quantify this contrast between two colors, define a standard for the minimum allowed contrast, and implement a way to dynamically change text color based on background color!
+
 ## WCAG and Contrast Ratio
 
 The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) (WCAG) aims to provide a set of standards for developers around the world -- to make web content more accessible to people with disabilities.
