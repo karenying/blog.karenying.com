@@ -316,6 +316,8 @@ We can now fill out the methods of the `Color` class with our helper methods:
   }
 ```
 
+`textColor` computes the contrast ratio of the current color with black and white, and returns the color (black or white) that yields the highest contrast ratio.
+
 ### 3. Pulling it all Together
 
 Now we can turn back to our `ColorBox` component.
