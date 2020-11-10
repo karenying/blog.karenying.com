@@ -132,6 +132,7 @@ We're going to create a `ColorBox` component which takes a hex code string as a 
 Create a new file called `ColorBox.js`:
 
 ```jsx
+// Header: ColorBox.js
 import './ColorBox.css';
 
 const ColorBox = ({ backgroundHex }) => {
