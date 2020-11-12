@@ -11,7 +11,7 @@ tags:
   - 'Tutorial'
 description: 'White text on light backgrounds is cancelled. Dynamically change text color based on background color instead. Even Facebook gets this wrong. Do you?'
 socialImage: '/media/socialImages/boost-visual-accessibility-by-changing-your-text-color.png'
-minutes: '6'
+minutes: '7'
 category: 'brolic af'
 ---
 
