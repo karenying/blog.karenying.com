@@ -12,4 +12,14 @@ minutes: '5'
 category: 'yay'
 ---
 
-adasd
+## Classical -- HTML
+
+## Renaissance -- Flash
+
+## Beaux Arts -- CSS
+
+## Modern -- Flat/Material
+
+## Brutalist -- Bootstrap
+
+## Post Modern -- Current
