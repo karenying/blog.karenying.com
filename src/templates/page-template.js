@@ -14,10 +14,8 @@ const PageTemplate = ({ data }) => {
     description: pageDescription,
     socialImage,
   } = frontmatter;
-  const metaDescription =
-    pageDescription !== null ? pageDescription : siteSubtitle;
-  const socialImageUrl =
-    typeof socialImage !== 'undefined' ? socialImage['publicURL'] : undefined;
+  const metaDescription = pageDescription || siteSubtitle;
+  const socialImageUrl = socialImage ? socialImage['publicURL'] : undefined;
 
   return (
     <Layout
