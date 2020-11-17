@@ -24,8 +24,16 @@ category: 'yay'
 
 ## Beaux-Arts -- CSS
 
+![Beaux-Arts](/media/pixels-vs-bricks/sg-lib.jpg)_Sainte-Geneviève Library Blueprint_
+
 ## Modern -- Flat/Material
+
+![Modern](/media/pixels-vs-bricks/modern.jpg)_Villa Savoye_
 
 ## Brutalist -- Bootstrap
 
-## Postmodern -- Current
+![Brutalist](/media/pixels-vs-bricks/brutalism.jpg)_Boston City Hall_
+
+## Deconstructivist -- Current
+
+![Deconstructivist](https://cdn.nazmiyalantiquerugs.com/wp-content/uploads/2011/07/cctv-building-beijing-china-at-dusk-nazmiyal-architecture-blog.jpg)_CCTV Building_
