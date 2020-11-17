@@ -20,7 +20,7 @@ export const CopyrightFooter = () => (
 const Post = ({ post }) => {
   const { html } = post;
   const { tagSlugs } = post.fields;
-  const { tags, title, date, minutes } = post.frontmatter;
+  const { tags, title, description, date, minutes } = post.frontmatter;
   const { author } = useSiteMetadata();
 
   return (
@@ -35,7 +35,13 @@ const Post = ({ post }) => {
         </div>
       </Link>
       <div className={styles['post__content']}>
-        <Content body={html} title={title} date={date} minutes={minutes} />
+        <Content
+          body={html}
+          title={title}
+          description={description}
+          date={date}
+          minutes={minutes}
+        />
       </div>
 
       <div className={styles['post__tags']}>
