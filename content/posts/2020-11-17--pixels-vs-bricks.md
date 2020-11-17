@@ -14,12 +14,18 @@ category: 'yay'
 
 ## Classical -- HTML
 
+![classical](/media/pixels-vs-bricks/classical.jpg)_Acropolis of Athens_
+
+![first site](/media/pixels-vs-bricks/first-site.jpeg)_First site on the internet_
+
 ## Renaissance -- Flash
 
-## Beaux Arts -- CSS
+![Renaissance](/media/pixels-vs-bricks/renaissance.jpg)_St. Peter's Basilica_
+
+## Beaux-Arts -- CSS
 
 ## Modern -- Flat/Material
 
 ## Brutalist -- Bootstrap
 
-## Post Modern -- Current
+## Postmodern -- Current
