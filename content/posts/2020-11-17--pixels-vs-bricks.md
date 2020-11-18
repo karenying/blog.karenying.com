@@ -7,10 +7,12 @@ slug: 'pixels-vs-bricks'
 tags:
   - 'UI/UX'
 description: 'Drawing parallels between web design and major architecture movements'
-socialImage: ''
+socialImage: '/media/socialImages/pixels-vs-bricks.png'
 minutes: '5'
 category: 'yay'
 ---
+
+![css modern](/media/socialImages/pixels-vs-bricks.png)
 
 ## HTML -- Classical
 
@@ -24,11 +26,29 @@ category: 'yay'
 
 ## CSS -- Beaux-Arts
 
+![Apple 1997](/media/pixels-vs-bricks/apple-1997.png)_Apple homepage 1997_
+
 ![Beaux-Arts](/media/pixels-vs-bricks/sg-lib.jpg)_Sainte-Geneviève Library Blueprint_
 
 ## Flat/Material -- Modern
 
 ![Modern](/media/pixels-vs-bricks/modern.jpg)_Villa Savoye_
+
+**Le Corbusier's [Five Points of New Architecture](https://www.lescouleurs.ch/en/journal/posts/the-five-points-of-a-new-architecture/) (1927)**:
+
+1. Pilotis
+2. Free facade
+3. Free plan
+4. Horizontal windows
+5. Roof gardens
+
+**Karen's Five Points of Flat Design**:
+
+1. Invisible design elements
+2. White space
+3. Responsiveness
+4. Cards
+5. Accent colors/gradients
 
 ## Bootstrap -- Brutalist
 
