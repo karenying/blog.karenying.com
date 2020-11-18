@@ -14,6 +14,10 @@ category: 'yay'
 
 ![css modern](/media/socialImages/pixels-vs-bricks.png)
 
+From pixels to bricks, Figma to CAD, Bootstrap to brutalist, it's easy to see similarities between web design and architecture -- both are the process and product of structural elements we see on the daily, the former digital, and the latter physical. In this post, we chronologically examine the history of web design through the lens of architecture.
+
+**Disclaimer**: While, we try to find one-to-one mappings between the two fields, it's definitely not perfect! I also have no formal design background, and have only taken one intro college class to architecture. It's not that serious 😛
+
 ## HTML -- Classical
 
 ![first site](/media/pixels-vs-bricks/first-site.jpeg)_First site on the internet!_
@@ -77,5 +81,6 @@ Jokes aside,
 ## Further Reading
 
 - [Apple homepage through the years](https://www.versionmuseum.com/history-of/apple-website)
+- A similar [post](https://medium.com/@sall/the-future-of-web-design-is-hidden-in-the-history-of-architecture-1cc93ea854d0) by [Mike Sall](https://medium.com/@sall)
 
 Thanks for reading!
