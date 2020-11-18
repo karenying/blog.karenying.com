@@ -22,15 +22,19 @@ category: 'yay'
 
 ## Flash -- Renaissance
 
+![Space Jam](/media/pixels-vs-bricks/space-jam.png)_[Space Jam](https://www.spacejam.com/)_
+
 ![Renaissance](/media/pixels-vs-bricks/renaissance.jpg)_St. Peter's Basilica_
 
 ## CSS -- Beaux-Arts
 
-![Apple 1997](/media/pixels-vs-bricks/apple-1997.png)_Apple homepage 1997_
+![Apple 1997](/media/pixels-vs-bricks/apple-1997.png)_[Apple homepage 1997](https://www.versionmuseum.com/history-of/apple-website)_
 
 ![Beaux-Arts](/media/pixels-vs-bricks/sg-lib.jpg)_Sainte-Geneviève Library Blueprint_
 
 ## Flat/Material -- Modern
+
+![Scale AI](/media/pixels-vs-bricks/scale.png)_[Scale AI site](https://scale.com/)_
 
 ![Modern](/media/pixels-vs-bricks/modern.jpg)_Villa Savoye_
 
@@ -50,12 +54,28 @@ category: 'yay'
 4. Cards
 5. Accent colors/gradients
 
+iOS 7 (2013)
+
 ## Bootstrap -- Brutalist
+
+They both begin with 'B' and are both ~~ugly~~ functional so this is an obvious one?
 
 ![Bootstrap](/media/pixels-vs-bricks/bootstrap.png)_2012 Bootstrap Template. Live on the Wayback Machine [here](https://web.archive.org/web/20130127154050/http://twitter.github.com/bootstrap/examples/hero.html)_
 
 ![Brutalist](/media/pixels-vs-bricks/brutalism.jpg)_Boston City Hall_
 
+Jokes aside,
+
 ## Current -- Deconstructivist
 
+![Apple 2020](/media/pixels-vs-bricks/apple-2020.png)_[Apple 2020](https://www.apple.com/iphone-12-pro/)_
+
 ![Deconstructivist](https://cdn.nazmiyalantiquerugs.com/wp-content/uploads/2011/07/cctv-building-beijing-china-at-dusk-nazmiyal-architecture-blog.jpg)_CCTV Building_
+
+- dark mode
+
+## Further Reading
+
+- [Apple homepage through the years](https://www.versionmuseum.com/history-of/apple-website)
+
+Thanks for reading!
