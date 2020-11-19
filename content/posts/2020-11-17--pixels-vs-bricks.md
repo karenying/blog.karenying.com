@@ -1,6 +1,6 @@
 ---
 title: 'Pixels vs. Bricks'
-date: '2020-11-17T22:12:03.284Z'
+date: '2020-11-19T03:16:38Z'
 template: 'post'
 draft: false
 slug: 'pixels-vs-bricks'
