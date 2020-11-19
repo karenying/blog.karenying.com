@@ -7,6 +7,7 @@ module.exports = {
   pathPrefix: siteConfig.pathPrefix,
   siteMetadata: {
     url: siteConfig.url,
+    siteUrl: siteConfig.url,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
@@ -191,7 +192,7 @@ module.exports = {
           allSitePage.edges.map((edge) => ({
             url: site.siteMetadata.siteUrl + edge.node.path,
             changefreq: 'daily',
-            priority: 0.7,
+            priority: edge.node.path === '/' ? 1.0 : 0.7,
           })),
       },
     },
