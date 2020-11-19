@@ -1,10 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styles from './Layout.module.scss';
+import { useSiteMetadata } from '../../hooks';
 
 const Layout = ({ children, title, description, socialImage }) => {
   const metaImage = socialImage || '/preview.png';
-  const metaImageUrl = 'https://www.blog.karenying.com' + metaImage;
+  const { url } = useSiteMetadata();
+  const metaImageUrl = url + metaImage;
 
   return (
     <div className={styles.layout}>
