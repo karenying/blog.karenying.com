@@ -46,7 +46,7 @@ Shortly after the introduction of Flash, Cascading Style Sheets came about. It b
 
 ![Apple 1997](/media/pixels-vs-bricks/apple-1997.png)_[Apple homepage 1997](https://www.versionmuseum.com/history-of/apple-website)_
 
-![Beaux-Arts](/media/pixels-vs-bricks/sg-lib.jpg)_Sainte-Geneviève Library Blueprint_
+![Beaux-Arts](/media/pixels-vs-bricks/sg-lib.jpg)_Sainte-Geneviève Library plan_
 
 Taught primarily at the École des Beaux-Arts in Paris, Beaux-Arts was characterized by order, formality, and decoration. Thus it seems appropriate to compare it to CSS.
 
