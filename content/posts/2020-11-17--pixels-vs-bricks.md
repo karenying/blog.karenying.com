@@ -14,7 +14,7 @@ category: 'yay'
 
 ![css modern](/media/socialImages/pixels-vs-bricks.png)
 
-From pixels to bricks, Figma to CAD, Bootstrap to brutalist, it's easy to see similarities between web design and architecture -- both are the process and product of structural elements we see on the daily, the former digital, and the latter physical. They are functional, with space for creativity and the potential to inspire and envoke feelings.
+From pixels to bricks, Figma to CAD, Bootstrap to brutalist, it's easy to see similarities between web design and architecture -- both are the process and product of structural elements we see on the daily, the former digital, and the latter physical. They are functional, with space for creativity and the potential to inspire and invoke feelings.
 
 In this post, we chronologically examine the history of web design through the lens of architecture.
 
@@ -48,13 +48,13 @@ Shortly after the introduction of Flash, Cascading Style Sheets came about. It b
 
 ![Beaux-Arts](/media/pixels-vs-bricks/sg-lib.jpg)_Sainte-Geneviève Library Blueprint_
 
-Taught primarily at the École des Beaux-Arts in Paris, Beaux-Arts was characterized by order, formalality, and decoration. Thus it seems appropriate to compare it to CSS.
+Taught primarily at the École des Beaux-Arts in Paris, Beaux-Arts was characterized by order, formality, and decoration. Thus it seems appropriate to compare it to CSS.
 
 ## Flat/Material -- Modern
 
 The Modern movement culminated in the International Congresses of Modern Architects (CIAM) where the most influential modernist architects met with the goal of spreading the principles of the movement. This reminds me of the period that we've been in the for the past decade or so -- flat (aka everything looks the same).
 
-![Scale AI](/media/pixels-vs-bricks/scale.png)_[Scale AI site](https://scale.com/)_
+![Scale AI](/media/pixels-vs-bricks/scale.png)_[Scale AI](https://scale.com/)_
 
 ![Modern](/media/pixels-vs-bricks/modern.jpg)_Villa Savoye_
 
@@ -78,7 +78,7 @@ I made my own manifest to create a generic flat modern site. Each point roughly 
 - **Cards**: to organize and separate information easily
 - **Accent colors/gradients**: to emphasize action buttons and provide cohesion and branding
 
-Most modern sites are flat. And most flat sites hit the five key points above (can you spot all five in [Scale AI's site](https://scale.com/)?).
+Most modern sites are flat. And most flat sites hit the five key points above (can you spot all five in Scale AI's [site](https://scale.com/)?).
 
 If you think that every site looks the same nowadays, you are not wrong. That's exactly how Postmodern architects felt, eventually creating a style that countered the sameness from the Modern movement.
 
