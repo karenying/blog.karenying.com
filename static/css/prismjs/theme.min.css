@@ -177,7 +177,7 @@ pre[class*='language-'] {
 }
 
 .token.punctuation.interpolation-punctuation {
-  color: #569cd6;
+  color: #569cd6 !important;
 }
 
 .token.boolean {
