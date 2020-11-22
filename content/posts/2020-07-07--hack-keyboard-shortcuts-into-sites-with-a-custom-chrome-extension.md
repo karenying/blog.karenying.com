@@ -150,7 +150,7 @@ In this tutorial, we learned how to add shortcuts to a website via a custom Chro
 
 In the case of GCal, the HTML class names are just a random assortment of letters — probably the result of bundling. Thus, these could change with different deployments and you might have to update your extension to work with the new DOM structure 😮
 
-Hopefully, this extension helps increase productivity. If anything, it’s super quick, easy, and fun to build from scratch. If you got lost along the way, check out my [GitHub](https://github.com/karenying/gcal-nav-shortcuts) repo. You can also install the version I made with the instructions in the repo `README`.
+Hopefully, this extension helps increase productivity. If anything, it’s super quick, easy, and fun to build from scratch. If you got lost along the way, check out my GitHub [repo](https://github.com/karenying/gcal-nav-shortcuts). You can also install the version I made with the instructions in the repo `README`.
 
 Thanks for reading. Happy hacking!
 
