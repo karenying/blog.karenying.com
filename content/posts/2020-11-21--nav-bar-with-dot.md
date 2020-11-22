@@ -254,6 +254,7 @@ And their respective properties:
   opacity: 0;
   transition: opacity 200ms linear;
 }
+
 .headerlink-title:hover .headerlink-dot {
   opacity: 1;
 }
