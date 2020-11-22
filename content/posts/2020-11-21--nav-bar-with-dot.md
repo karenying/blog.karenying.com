@@ -3,7 +3,7 @@ title: 'Simple React Router Nav Bar'
 date: '2020-11-21T03:16:38Z'
 template: 'post'
 draft: false
-slug: 'nav-bar-with-dot'
+slug: 'nav-bar-with-dots'
 tags:
   - 'React'
   - 'Tutorial'
@@ -298,7 +298,7 @@ And we're officially done 🎉
 
 In this tutorial, we learned how to set up a nav bar with React Router. Then we added a hover/active state as visual feedback to the user.
 
-If you got lost along the way, check out my GitHub [repo](https://github.com/karenying/nav-bar-with-dot). You can also see the live version [here](https://nav-bar-with-dot.netlify.app/).
+If you got lost along the way, check out my GitHub [repo](https://github.com/karenying/nav-bar-with-dots). You can also see the live version [here](https://nav-bar-with-dots.netlify.app/).
 
 If you decide to deploy your React app with [Netlify](https://www.netlify.com/), read about enabling redirects on Netlify to fix client-side routing for SPAs [here](https://www.blog.karenying.com/posts/404-react-page-not-found).
 
