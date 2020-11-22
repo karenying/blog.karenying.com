@@ -1,6 +1,6 @@
 ---
 title: 'Simple React Router Nav Bar'
-date: '2020-11-21T03:16:38Z'
+date: '2020-11-22T03:16:38Z'
 template: 'post'
 draft: false
 slug: 'nav-bar-with-dots'
