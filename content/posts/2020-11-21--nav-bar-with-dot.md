@@ -17,7 +17,7 @@ category: 'anotha react tutorial'
 
 One of my favorite things is simple UI state indicators. The nav bar on my personal [site](https://karenying.com/) utilizes dots under the links to convey hover and active state. It's minimalist yet effective:
 
-![karen nav bar](/media/nav-bar-with-dot/karen-nav-bar.gif)_Miss me with the dark blue/purple visited links 🤮_
+![karen nav bar](/media/nav-bar-with-dot/karen-nav-bar.gif)_Miss me with the dark blue/purple visited links 🤮 Please visit my [site](https://karenying.com/) to see a demo...this gif quality is so bad_
 
 In this tutorial, we walk through how to code this nav bar.
 
@@ -90,11 +90,11 @@ function App() {
 }
 ```
 
-If we run the app, and manually visit `http://localhost:3000/about`, we should see the About page.
+If we run the app, and manually visit http://localhost:3000/about, we should see the About page.
 
 ### 3. Creating Nav Bar
 
-We then create a new file called `Header.js` and a new component called `HeaderLink`. Each `HeaderLink` will route to the page it's passed in:
+We then create a new file called `Header.js` and a new component called `HeaderLink` inside it. Each `HeaderLink` will route to the page it's passed:
 
 ```jsx
 // Header: Header.js
@@ -178,6 +178,7 @@ And we add this new `Route` to `App.js`:
 // Header: App.js
 <Router>
   <Route path={'/:page'} component={Header} />
+
   <Route exact path='/' component={Home} />
   <Route exact path='/home' component={Home} />
   <Route exact path='/about' component={About} />
@@ -187,7 +188,7 @@ And we add this new `Route` to `App.js`:
 
 In order to grab this `page` variable in our `Header` component, we use the `useParams` [hook](https://reactrouter.com/web/api/Hooks/useparams).
 
-`useParams().page` will return value of our `page` variable, which is also the slug after the root URL. With this info, we can pass a `selected` prop to `HeaderLink`:
+`useParams().page` will return the value of our `page` variable, which is also the slug after the root URL. With this info, we can pass a `selected` prop to `HeaderLink`:
 
 ```jsx
 // Header: Header.js
@@ -208,9 +209,9 @@ const Header = () => {
 
 so that `HeaderLink` knows if its link is selected or not.
 
-We currently have a slight problem. If we visit the root URL (usually http://localhost:3000), the nav bar doesn't show up. Why? Because `path={'/:page'}` doesn't apply since `page` is null.
+We currently have a slight bug. If we visit the root URL (usually http://localhost:3000), the nav bar doesn't show up. Why? Because `path={'/:page'}` doesn't apply since `page` is null.
 
-Thus, we can catch that by hardcoding `Header` to show up for the root path:
+We can catch that by hardcoding `Header` to show up for the root path:
 
 ```jsx
 // Header: App.js
