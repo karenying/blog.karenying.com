@@ -17,7 +17,7 @@ category: 'anotha react tutorial'
 
 One of my favorite things is simple UI state indicators. The nav bar on my personal [site](https://karenying.com/) utilizes dots under the links to convey hover and active state. It's minimalist yet effective:
 
-![karen nav bar](/media/nav-bar-with-dot/karen-nav-bar.gif)_Miss me with the dark blue/purple visited links 🤮 Please visit my [site](https://karenying.com/) to see a demo...this gif quality is so bad_
+![karen nav bar](/media/nav-bar-with-dot/karen-nav-bar.gif)_Miss me with the dark blue/purple visited links 🤮 Please visit my [site](https://karenying.com/) to see a demo...this GIF quality is so bad_
 
 In this tutorial, we walk through how to code this nav bar.
 
@@ -70,7 +70,7 @@ Now we need to route them. We'll be using [React Router Dom](https://reactrouter
 npm install react-router-dom
 ```
 
-As per the quick start tutorial, we wrap all our `Route`s in a `Router` component. We'll route both the root page and `/home` to the `Home` component.
+As per the quick start tutorial, we wrap all our `Route`s in a `Router` component. We'll route both the root URL and `/home` to the `Home` component.
 
 ```jsx
 // Header: App.js
@@ -169,7 +169,7 @@ To render the `Header` component, instead of setting a fixed path, we append our
 
 ```jsx
 // Header: App.js
-<Route path={'/:page'} component={Header} />
+<Route path='/:page' component={Header} />
 ```
 
 And we add this new `Route` to `App.js`:
@@ -177,7 +177,7 @@ And we add this new `Route` to `App.js`:
 ```jsx
 // Header: App.js
 <Router>
-  <Route path={'/:page'} component={Header} />
+  <Route path='/:page' component={Header} />
 
   <Route exact path='/' component={Home} />
   <Route exact path='/home' component={Home} />
@@ -209,15 +209,15 @@ const Header = () => {
 
 so that `HeaderLink` knows if its link is selected or not.
 
-We currently have a slight bug. If we visit the root URL (usually http://localhost:3000), the nav bar doesn't show up. Why? Because `path={'/:page'}` doesn't apply since `page` is null.
+We currently have a slight bug. If we visit the root URL (usually http://localhost:3000), the nav bar doesn't show up. Why? Because `path='/:page'` doesn't apply since `page` is null.
 
 We can catch that by hardcoding `Header` to show up for the root path:
 
 ```jsx
 // Header: App.js
 <Router>
-  <Route path={'/:page'} component={Header} />
-  <Route exact path={'/'} component={Header} />
+  <Route path='/:page' component={Header} />
+  <Route exact path='/' component={Header} />
 
   <Route exact path='/' component={Home} />
   <Route exact path='/home' component={Home} />
