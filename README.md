@@ -6,7 +6,7 @@ Blog site of Karen Ying.
 
 <img src="./static/preview.png" width="500px">
 
-This site was bootstrapped with [Lumen](https://github.com/alxshelepenok/gatsby-starter-lumen), a lightweight [Gatsby](https://www.gatsbyjs.com/) blog starter..
+This site was bootstrapped with [Lumen](https://github.com/alxshelepenok/gatsby-starter-lumen), a lightweight [Gatsby](https://www.gatsbyjs.com/) blog starter.
 
 It is statically hosted on [Netlify](http://netlify.com/).
 
