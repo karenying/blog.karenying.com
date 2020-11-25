@@ -7,7 +7,7 @@ slug: 'vscode-girl'
 tags:
   - 'shitpost'
 description: 'The post that will have tech bros quaking in their Allbirds wool runners'
-socialImage: ''
+socialImage: 'https://twitter.com/kodewithklossy/status/1184917457129103360/photo/1'
 minutes: '5'
 category: 'l m a o'
 ---
