@@ -34,7 +34,7 @@ Here are some extensions I love:
 
 Ah yes, the social media platform for brogrammers.
 
-![](https://img.devrant.com/devrant/rant/r_957017_r4A2p.jpg)
+![meme](https://img.devrant.com/devrant/rant/r_957017_r4A2p.jpg)
 
 You need to become "the guy she tells me not to worry about".
 
@@ -50,7 +50,7 @@ Pin your most starred/forked/favotire repos so that lurkers can see them immedia
 
 Coding for a school assignment? Great, make that repo private and still commit frequently to it. Definitely turn on private contributions for your activity calendar:
 
-![](/media/vscode-girl/private.png)
+![GitHub private contributions toggle](/media/vscode-girl/private.png)
 
 You can keyboard smash as commits for private repos but you should probably have legit commit messages for your public ones.
 
@@ -66,7 +66,7 @@ People have gotten [real creative](https://towardsdatascience.com/build-a-stunni
 
 ### PRO Badge
 
-![](/media/vscode-girl/pro.png)
+![GitHub pro badge](/media/vscode-girl/pro.png)
 
 If you're a student, you get GitHub Pro for [free](https://education.github.com/pack).
 
@@ -92,7 +92,7 @@ If you thought [Hinge](https://hinge.co/) was a dating app ... No, it is so much
 
 You think I'm kidding? This is the first prompt on my profile:
 
-![](/media/vscode-girl/hinge.jpg)
+![My hinge profile](/media/vscode-girl/hinge.jpg)
 
 To trap the tech bros('s views), you need to mention some other buzzwords in your profile (climbing, boba, Elon, Robinhood) and set your location to South Bay.
 
