@@ -138,6 +138,6 @@ With these things in hand, pretty soon you'll have an army of LinkedIn simps. Hi
 
 Tech Twitter is a weird but fun place.
 
-Tweet your blogs, your opions, unpromptedly code review tech bros' shitty code snippets if they dare share a screenshot.
+Tweet your blogs, your opinions, unpromptedly code review tech bros' shitty code snippets if they dare share a screenshot.
 
 You should tweet as if you had millions of followers. Fake it till you make it, right?
