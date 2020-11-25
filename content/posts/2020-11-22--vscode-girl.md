@@ -88,19 +88,19 @@ Link your site EVERYWHERE. GitHub, LinkedIn, Twitter, Facebook, Instagram, and y
 
 ### Hinge
 
-If you thought [Hinge](https://hinge.co/) was a dating app ... No, it is so much more. For staters, it is THE place to expand your personal brand's reach. You just gotta tailor your profile towards the average tech bro, slap your personal site link on it, and watch your SEO skyrocket (disclaimer: SEO is a blackbox -- no one really knows how it works but I promise you this can't hurt).
+If you thought [Hinge](https://hinge.co/) was a dating app ... No, it is so much more. For starters, it is THE place to expand your personal brand's reach. You just gotta tailor your profile towards the average tech bro, slap your personal site link on it, and watch your SEO skyrocket (disclaimer: SEO is a blackbox -- no one really knows how it works but I promise you this can't hurt).
 
 You think I'm kidding? This is the first prompt on my profile:
 
 ![](/media/vscode-girl/hinge.jpg)
 
-To trap the tech bros, you need to mention some other buzzwords in your profile (climbing, boba, Elon, Robinhood) and set your location to South Bay.
+To trap the tech bros('s views), you need to mention some other buzzwords in your profile (climbing, boba, Elon, Robinhood) and set your location to South Bay.
 
 A side effect, whether you like it or not, is that you'll receive DMs like such:
 
 > What's your favorite stack? Mine is me on top of you
 
-Ugh gross 🤮
+Ugh gross 🤮 but probably MERN
 
 > Are you http? Because me without you is just ://
 
@@ -140,4 +140,4 @@ Tech Twitter is a weird but fun place.
 
 Tweet your blogs, your opinions, unpromptedly code review tech bros' shitty code snippets if they dare share a screenshot.
 
-You should tweet as if you had millions of followers. Fake it till you make it, right?
+You should tweet as if you had millions of followers (I [have](https://twitter.com/karen_ying_) 24). Fake it till you make it, right?
