@@ -94,7 +94,7 @@ You think I'm kidding? This is the first prompt on my profile:
 
 ![My hinge profile](/media/vscode-girl/hinge.jpg)
 
-To trap the tech bros('s views), you need to mention some other buzzwords in your profile (climbing, boba, Elon, Robinhood) and set your location to South Bay.
+To trap the tech bros(' views), you need to mention some other buzzwords on your profile (think: climbing, boba, Elon, Robinhood) and set your location to South Bay.
 
 A side effect, whether you like it or not, is that you'll receive DMs like such:
 
