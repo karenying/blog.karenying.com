@@ -16,7 +16,7 @@ https://twitter.com/kodewithklossy/status/1184917457129103360
 
 I didn't coin the term "VSCode girl" but I'm here to teach you how to become one. It's a lifestyle, a mindset, not a stereotype.
 
-> VSCode girl >> VSCO girl
+> VSCode girl >> [VSCO girl](https://www.urbandictionary.com/define.php?term=VSCO%20GIRL)
 
 We've emerged from the [sticky](https://support.apple.com/keyboard-service-program-for-mac-notebooks) depths of MacBook butterfly keyboards to oppose our archnemesis, the tech bros.
 
