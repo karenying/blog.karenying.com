@@ -86,7 +86,7 @@ Some blog posts I wrote to help with this:
 
 Link your site EVERYWHERE. GitHub, LinkedIn, Twitter, Facebook, Instagram, and yes even your Hinge.
 
-### Hinge
+## Hinge
 
 If you thought [Hinge](https://hinge.co/) was a dating app ... No, it is so much more. For starters, it is THE place to expand your personal brand's reach. You just gotta tailor your profile towards the average tech bro, slap your personal site link on it, and watch your SEO skyrocket (disclaimer: SEO is a blackbox -- no one really knows how it works but I promise you this can't hurt).
 
@@ -100,7 +100,7 @@ A side effect, whether you like it or not, is that you'll receive DMs like such:
 
 > What's your favorite stack? Mine is me on top of you
 
-Ugh gross 🤮 but probably MERN
+Ugh gross 🤮 but probably [MERN](https://www.mongodb.com/mern-stack)
 
 > Are you http? Because me without you is just ://
 
@@ -143,6 +143,6 @@ With these things in hand, pretty soon you'll have an army of LinkedIn simps. Hi
 
 Tech Twitter is a weird but fun place.
 
-Tweet your blogs, your opinions, unpromptedly code review tech bros' shitty code snippets if they dare share a screenshot.
+Tweet your blogs, your opinions, unpromptedly code review tech bros' shitty snippets if they dare share a screenshot.
 
-You should tweet as if you had millions of followers (I [have](https://twitter.com/karen_ying_) 24). Fake it till you make it, right?
+You should tweet as if you had millions of followers (I have [24](https://twitter.com/karen_ying_)). Fake it till you make it, right?
