@@ -110,6 +110,11 @@ Pretty clever but are you insecure? Why not HTTPS smh
 
 Yes.
 
+> Can you build me a website
+
+<!-- prettier-ignore -->
+Sure. I charge \$100 for an initial consultation and \$200/hour after that. [Email me](mailto:karenying7@gmail.com)
+
 <!-- prettier-ignore -->
 > if ([REDACTED] === cute) return go\_on\_date
 
