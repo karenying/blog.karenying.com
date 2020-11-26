@@ -44,7 +44,7 @@ Start putting all your coding projects on GitHub. Version control and open sourc
 
 ### Pinned
 
-Pin your most starred/forked/favotire repos so that lurkers can see them immediately.
+Pin your most starred/forked/favorite repos so that lurkers can see them immediately.
 
 ### Commits
 
