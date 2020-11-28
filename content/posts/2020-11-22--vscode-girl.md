@@ -5,7 +5,7 @@ template: 'post'
 draft: false
 slug: 'vscode-girl'
 tags:
-  - 'shitpost'
+  - 'Shitpost'
 description: 'The post that will have tech bros quaking in their Allbirds wool runners'
 socialImage: '/media/socialImages/vscode-girl.jpeg'
 minutes: '5'
