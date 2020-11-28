@@ -146,3 +146,5 @@ Tech Twitter is a weird but fun place.
 Tweet your blogs, your opinions, unpromptedly code review tech bros' shitty snippets if they dare share a screenshot.
 
 You should tweet as if you had millions of followers (I have [24](https://twitter.com/karen_ying_)). Fake it till you make it, right?
+
+Thanks for reading!
