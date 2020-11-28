@@ -108,6 +108,13 @@ module.exports = {
           'gatsby-remark-embed-gist',
           'gatsby-remark-relative-images',
           {
+            resolve: '@weknow/gatsby-remark-twitter',
+            options: {
+              theme: 'dark',
+              align: 'center',
+            },
+          },
+          {
             resolve: 'gatsby-remark-katex',
             options: {
               strict: 'ignore',
