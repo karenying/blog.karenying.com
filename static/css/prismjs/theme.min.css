@@ -113,6 +113,10 @@ pre[class*='language-'] {
   color: #ce9178;
 }
 
+.language-yaml .token.key.atrule {
+  color: #07a;
+}
+
 .token.atrule .token.rule {
   color: #c586c0;
 }
