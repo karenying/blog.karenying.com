@@ -5,7 +5,7 @@
   "main": "n/a",
   "scripts": {
     "develop": "yarn run clean && gatsby develop",
-    "build": "yarn run clean && gatsby build",
+    "build": "yarn run clean && cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
     "clean": "rimraf .cache public",
     "flow": "flow",
@@ -43,6 +43,7 @@
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
     "codecov": "^3.8.0",
+    "cross-env": "^7.0.2",
     "gatsby": "^2.24.80",
     "gatsby-link": "^2.4.15",
     "gatsby-plugin-catch-links": "^2.3.15",
