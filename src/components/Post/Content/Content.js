@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Content.module.scss';
 import feedStyles from '../../Feed/Feed.module.scss';
-import moment from 'moment';
+import { DateTime } from 'luxon';
 
 const Content = ({ body, title, description, date, minutes }) => (
   <div className={styles['content']}>
@@ -12,7 +12,7 @@ const Content = ({ body, title, description, date, minutes }) => (
     >
       <p>
         <span className='dark-pink-text'>
-          {moment(new Date(date)).format('MMM D, YYYY')}
+          {DateTime.fromISO(date).toFormat('MMM d, yyyy')}
         </span>
         <span className={`${feedStyles['feed__item-details-dot']} yellow-text`}>
           •

@@ -64,10 +64,13 @@
           font-family: $typographic-font-basic;
           color: $color-white-almost;
           font-size: 18px;
+          transition: text-shadow 100ms;
 
           &:hover,
           &:focus {
             color: $color-white-almost;
+            text-decoration: none !important;
+            text-shadow: 10px 10px 10px black;
           }
         }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styles from './Feed.module.scss';
-import moment from 'moment';
+import { DateTime } from 'luxon';
 
 export const Tags = ({ tags, tagSlugs }) => (
   <div className={styles['feed__item-tags-container']}>
@@ -38,7 +38,7 @@ const Feed = ({ edges }) => (
         <div className={styles['feed__item-details']}>
           <p>
             <span className='dark-pink-text'>
-              {moment(new Date(edge.node.frontmatter.date)).format('MMM D')}
+              {DateTime.fromISO(edge.node.frontmatter.date).toFormat('MMM d')}
             </span>
             <span className={`${styles['feed__item-details-dot']} yellow-text`}>
               •
