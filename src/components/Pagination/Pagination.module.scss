@@ -14,6 +14,11 @@
       font-weight: bold;
       display: flex;
       align-items: center;
+      transition: color 100ms;
+
+      svg {
+        transition: color 100ms;
+      }
 
       &:hover svg,
       &:focus svg {
@@ -22,7 +27,7 @@
 
       &:hover,
       &:focus {
-        color: $color-white-almost;
+        color: $color-yellow;
         text-decoration: none !important;
       }
 
