@@ -53,8 +53,8 @@ const Post = ({ post }) => {
           <img
             src={withPrefix(author.photo)}
             className={styles['post__footer-right-photo']}
-            width='50'
-            height='50'
+            width='65'
+            height='65'
             alt={author.name}
           />
 
