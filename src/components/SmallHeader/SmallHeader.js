@@ -14,8 +14,8 @@ const SmallHeader = () => {
           <img
             src={withPrefix(author.photo)}
             className={styles['author__photo']}
-            width='55'
-            height='55'
+            width='65'
+            height='65'
             alt={author.name}
           />
 
