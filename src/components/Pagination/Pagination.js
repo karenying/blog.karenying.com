@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { PAGINATION } from '../../constants';
 import styles from './Pagination.module.scss';
 
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const cx = classNames.bind(styles);
 
@@ -32,7 +32,7 @@ const Pagination = ({
           to={hasPrevPage ? prevPagePath : '/'}
           className={prevClassName}
         >
-          <FaChevronLeft size='1.2rem' /> {PAGINATION.PREV_PAGE}
+          <IoIosArrowBack size='25px' /> {PAGINATION.PREV_PAGE}
         </Link>
       </div>
       <div className={styles['pagination__next']}>
@@ -41,7 +41,7 @@ const Pagination = ({
           to={hasNextPage ? nextPagePath : '/'}
           className={nextClassName}
         >
-          {PAGINATION.NEXT_PAGE} <FaChevronRight size='1.2rem' />
+          {PAGINATION.NEXT_PAGE} <IoIosArrowForward size='25px' />
         </Link>
       </div>
     </div>

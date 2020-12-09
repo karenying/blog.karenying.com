@@ -17,12 +17,13 @@
       transition: color 100ms;
 
       svg {
-        transition: color 100ms;
+        transition: all 100ms;
       }
 
       &:hover svg,
       &:focus svg {
         color: $color-yellow;
+        transform: scale(1.2);
       }
 
       &:hover,
