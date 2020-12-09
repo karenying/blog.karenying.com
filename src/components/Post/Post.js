@@ -7,6 +7,7 @@ import { useSiteMetadata } from '../../hooks';
 import { withPrefix } from 'gatsby';
 import Copyright from '../Sidebar/Copyright';
 import Contacts from '../Sidebar/Contacts';
+import { IoIosArrowUp } from 'react-icons/io';
 
 export const CopyrightFooter = () => (
   <div className={styles['post__copyright']}>
@@ -23,6 +24,10 @@ const Post = ({ post }) => {
   const { tags, title, description, date, minutes } = post.frontmatter;
   const { author } = useSiteMetadata();
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className={styles['post']}>
       <Link className={styles['post__home-button']} to='/'>
@@ -34,6 +39,9 @@ const Post = ({ post }) => {
           com
         </div>
       </Link>
+      <div className={styles['post__top']} onClick={scrollToTop}>
+        <IoIosArrowUp size='35px' />
+      </div>
       <div className={styles['post__content']}>
         <Content
           body={html}
