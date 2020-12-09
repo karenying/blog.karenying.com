@@ -82,6 +82,7 @@ img {
   max-width: 100%;
   display: block;
   margin: inherit auto;
+  border-radius: 5px;
 }
 
 a {
@@ -123,13 +124,20 @@ strong {
   font-weight: 700;
 }
 
-ul {
+ul,
+ol {
   @include margin-bottom(1);
   color: $color-white-almost;
+  padding-inline-start: 0;
 
   & li {
     padding: 0 5px;
     margin-bottom: 10px;
+    margin-left: 35px !important;
+
+    p {
+      margin-bottom: 0.625rem !important;
+    }
   }
 }
 
@@ -139,8 +147,8 @@ p {
 }
 
 blockquote {
-  border-left: 3px solid $color-gray-medium;
-  background-color: #1d1e20;
+  border-left: 2px solid $color-gray-medium;
+  background-color: #1e1e1e;
   border-radius: 0 5px 5px 0;
 
   p {
