@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
 import Content from './Content';
 import { Tags } from '../Feed/Feed';
@@ -24,9 +24,27 @@ const Post = ({ post }) => {
   const { tags, title, description, date, minutes } = post.frontmatter;
   const { author } = useSiteMetadata();
 
+  let timeout;
+  const scrollRef = useRef();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const onScroll = () => {
+      scrollRef.current.style.opacity = 0;
+      clearTimeout(timeout);
+
+      timeout = setTimeout(() => {
+        scrollRef.current.style.opacity = 1;
+      }, 100);
+    };
+
+    window.addEventListener('scroll', onScroll);
+
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <div className={styles['post']}>
@@ -39,7 +57,11 @@ const Post = ({ post }) => {
           com
         </div>
       </Link>
-      <div className={styles['post__top']} onClick={scrollToTop}>
+      <div
+        className={styles['post__top']}
+        onClick={scrollToTop}
+        ref={scrollRef}
+      >
         <IoIosArrowUp size='35px' />
       </div>
       <div className={styles['post__content']}>
