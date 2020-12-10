@@ -149,11 +149,15 @@
 
       svg {
         transition: transform 100ms;
+        height: 40px;
+        width: 40px;
       }
 
       &:hover {
-        box-shadow: 5px 5px 5px black;
-
+        .shadow {
+          -webkit-filter: drop-shadow(5px 5px 3px black);
+          filter: drop-shadow(5px 5px 3px black);
+        }
         svg {
           transform: scale(1.2);
         }
@@ -182,6 +186,11 @@
     height: 40px;
     width: 40px;
     box-shadow: 5px 5px 5px black;
+
+    svg {
+      height: 35px;
+      width: 35px;
+    }
   }
 }
 

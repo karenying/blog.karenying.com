@@ -65,7 +65,7 @@ const Post = ({ post }) => {
         onClick={scrollToTop}
         ref={scrollRef}
       >
-        <IoIosArrowUp size='35px' />
+        <IoIosArrowUp className={styles['shadow']} />
       </div>
       <div className={styles['post__content']}>
         <Content
