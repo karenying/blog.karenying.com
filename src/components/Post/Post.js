@@ -24,8 +24,8 @@ const Post = ({ post }) => {
   const { tags, title, description, date, minutes } = post.frontmatter;
   const { author } = useSiteMetadata();
 
-  let timeoutID;
   const scrollRef = useRef();
+  let timeoutID;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
