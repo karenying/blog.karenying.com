@@ -24,7 +24,7 @@ const Post = ({ post }) => {
   const { tags, title, description, date, minutes } = post.frontmatter;
   const { author } = useSiteMetadata();
 
-  let timeout;
+  let timeoutID;
   const scrollRef = useRef();
 
   const scrollToTop = () => {
@@ -34,9 +34,9 @@ const Post = ({ post }) => {
   useEffect(() => {
     const onScroll = () => {
       scrollRef.current.style.opacity = 0;
-      clearTimeout(timeout);
+      clearTimeout(timeoutID);
 
-      timeout = setTimeout(() => {
+      timeoutID = setTimeout(() => {
         scrollRef.current.style.opacity = 1;
       }, 100);
     };
@@ -45,7 +45,7 @@ const Post = ({ post }) => {
 
     return () => {
       window.removeEventListener('scroll', onScroll);
-      clearTimeout(timeout);
+      clearTimeout(timeoutID);
     };
   }, []);
 
