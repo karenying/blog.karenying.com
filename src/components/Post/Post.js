@@ -59,7 +59,7 @@ const Post = ({ post }) => {
 
     const onScroll = () => {
       if (isScrolling) {
-        requestId = window.requestAnimationFrame(updateScrollDir);
+        requestID = window.requestAnimationFrame(updateScrollDir);
         isScrolling = false;
       }
     };
