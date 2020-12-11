@@ -38,7 +38,7 @@ const Post = ({ post }) => {
 
       timeoutID = setTimeout(() => {
         setOpacity(1);
-      }, 50);
+      }, 100);
     };
 
     window.addEventListener('scroll', onScroll);
