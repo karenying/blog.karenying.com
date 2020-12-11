@@ -39,7 +39,6 @@
 
   &__top {
     position: fixed;
-    max-width: auto;
     margin: 0;
     background-color: $color-gray-dark;
     color: $color-pink-light;
@@ -47,6 +46,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: opacity 100ms;
+    cursor: pointer;
     z-index: 10;
   }
 
@@ -131,7 +132,6 @@
 
     &__home-button {
       position: fixed;
-      max-width: auto;
       margin: 0;
       top: 30px;
       left: 30px;
@@ -140,18 +140,18 @@
     &__top {
       bottom: 50px;
       right: calc((100vw - 945px) / 2 + 50px);
-      cursor: pointer;
-      height: 45px;
-      width: 45px;
-
-      transition: box-shadow 100ms;
 
       svg {
         transition: transform 100ms;
+        height: 40px;
+        width: 40px;
       }
 
       &:hover {
-        box-shadow: 5px 5px 5px black;
+        .shadow {
+          -webkit-filter: drop-shadow(5px 5px 3px black);
+          filter: drop-shadow(5px 5px 3px black);
+        }
 
         svg {
           transform: scale(1.2);
@@ -181,6 +181,11 @@
     height: 40px;
     width: 40px;
     box-shadow: 5px 5px 5px black;
+
+    svg {
+      height: 35px;
+      width: 35px;
+    }
   }
 }
 
