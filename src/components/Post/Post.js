@@ -18,48 +18,72 @@ export const CopyrightFooter = () => (
   </div>
 );
 
+const HomeButton = ({ className, opacity }) => (
+  <Link className={styles[className]} to='/' style={{ opacity }}>
+    <div className={styles['header']}>
+      blog
+      <span className='dark-pink-text'>.</span>
+      karenying
+      <span className='blue-text'>.</span>
+      com
+    </div>
+  </Link>
+);
+
 const Post = ({ post }) => {
   const { html } = post;
   const { tagSlugs } = post.fields;
   const { tags, title, description, date, minutes } = post.frontmatter;
   const { author } = useSiteMetadata();
 
-  const [opacity, setOpacity] = useState(1);
+  const [opacity, setOpacity] = useState(0);
+  const [isScrollingUp, setScrollDir] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
-    let timeoutID;
-    const onScroll = () => {
-      setOpacity(0);
-      clearTimeout(timeoutID);
+    const threshold = 0;
+    const minShowThreshold = 812;
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
 
-      timeoutID = setTimeout(() => {
-        setOpacity(1);
-      }, 100);
+    const updateScrollDir = () => {
+      const scrollY = window.pageYOffset;
+
+      if (Math.abs(scrollY - lastScrollY) < threshold) {
+        ticking = false;
+        return;
+      }
+
+      setScrollDir(scrollY > minShowThreshold && scrollY < lastScrollY);
+      lastScrollY = Math.max(scrollY, 0);
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollDir);
+        ticking = true;
+      }
     };
 
     window.addEventListener('scroll', onScroll);
 
     return () => {
       window.removeEventListener('scroll', onScroll);
-      clearTimeout(timeoutID);
     };
   }, []);
 
+  useEffect(() => {
+    setOpacity(isScrollingUp ? 1 : 0);
+  }, [isScrollingUp]);
+
   return (
     <div className={styles['post']}>
-      <Link className={styles['post__home-button']} to='/'>
-        <div className={styles['header']}>
-          blog
-          <span className='dark-pink-text'>.</span>
-          karenying
-          <span className='blue-text'>.</span>
-          com
-        </div>
-      </Link>
+      <HomeButton className='post__home-button' opacity={1} />
+      <HomeButton className='post__home-button-float' opacity={opacity} />
       <div
         className={styles['post__top']}
         style={{ opacity }}
