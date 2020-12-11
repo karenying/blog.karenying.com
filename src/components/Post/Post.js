@@ -25,13 +25,13 @@ const Post = ({ post }) => {
   const { author } = useSiteMetadata();
 
   const [opacity, setOpacity] = useState(1);
-  let timeoutID;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
+    let timeoutID;
     const onScroll = () => {
       setOpacity(0);
       clearTimeout(timeoutID);
