@@ -44,28 +44,22 @@ const Post = ({ post }) => {
   };
 
   useEffect(() => {
-    const threshold = 0;
     const minShowThreshold = 812;
     let lastScrollY = window.pageYOffset;
-    let ticking = false;
+    let isScrolling = true;
 
     const updateScrollDir = () => {
       const scrollY = window.pageYOffset;
 
-      if (Math.abs(scrollY - lastScrollY) < threshold) {
-        ticking = false;
-        return;
-      }
-
       setScrollDir(scrollY > minShowThreshold && scrollY < lastScrollY);
-      lastScrollY = Math.max(scrollY, 0);
-      ticking = false;
+      lastScrollY = scrollY;
+      isScrolling = true;
     };
 
     const onScroll = () => {
-      if (!ticking) {
+      if (isScrolling) {
         window.requestAnimationFrame(updateScrollDir);
-        ticking = true;
+        isScrolling = false;
       }
     };
 
