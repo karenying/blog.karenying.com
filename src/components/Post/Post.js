@@ -8,6 +8,7 @@ import { withPrefix } from 'gatsby';
 import Copyright from '../Sidebar/Copyright';
 import Contacts from '../Sidebar/Contacts';
 import { IoIosArrowUp } from 'react-icons/io';
+import { FaBullseye } from 'react-icons/fa';
 
 export const CopyrightFooter = () => (
   <div className={styles['post__copyright']}>
@@ -24,8 +25,8 @@ const Post = ({ post }) => {
   const { tags, title, description, date, minutes } = post.frontmatter;
   const { author } = useSiteMetadata();
 
-  const [opacity, setOpacity] = useState(1);
-  const [isScrollingUp, setScrollDir] = useState(true);
+  const [opacity, setOpacity] = useState(0);
+  const [isScrollingUp, setScrollDir] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -33,6 +34,7 @@ const Post = ({ post }) => {
 
   useEffect(() => {
     const threshold = 0;
+    const minShowThreshold = 800;
     let lastScrollY = window.pageYOffset;
     let ticking = false;
 
@@ -44,8 +46,9 @@ const Post = ({ post }) => {
         return;
       }
 
-      setScrollDir(scrollY < lastScrollY);
-      lastScrollY = scrollY > 0 ? scrollY : 0;
+      setScrollDir(scrollY > minShowThreshold && scrollY < lastScrollY);
+      console.log(lastScrollY);
+      lastScrollY = Math.max(scrollY, 0);
       ticking = false;
     };
 
@@ -70,6 +73,19 @@ const Post = ({ post }) => {
   return (
     <div className={styles['post']}>
       <Link className={styles['post__home-button']} to='/'>
+        <div className={styles['header']}>
+          blog
+          <span className='dark-pink-text'>.</span>
+          karenying
+          <span className='blue-text'>.</span>
+          com
+        </div>
+      </Link>
+      <Link
+        className={styles['post__home-button-float']}
+        to='/'
+        style={{ opacity }}
+      >
         <div className={styles['header']}>
           blog
           <span className='dark-pink-text'>.</span>
