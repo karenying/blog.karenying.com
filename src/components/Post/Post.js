@@ -44,34 +44,30 @@ const Post = ({ post }) => {
   };
 
   useEffect(() => {
-    const threshold = 0;
     const minShowThreshold = 812;
     let lastScrollY = window.pageYOffset;
-    let ticking = false;
+    let isScrolling = true;
+    let requestID;
 
     const updateScrollDir = () => {
       const scrollY = window.pageYOffset;
 
-      if (Math.abs(scrollY - lastScrollY) < threshold) {
-        ticking = false;
-        return;
-      }
-
       setScrollDir(scrollY > minShowThreshold && scrollY < lastScrollY);
-      lastScrollY = Math.max(scrollY, 0);
-      ticking = false;
+      lastScrollY = scrollY;
+      isScrolling = true;
     };
 
     const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(updateScrollDir);
-        ticking = true;
+      if (isScrolling) {
+        requestID = window.requestAnimationFrame(updateScrollDir);
+        isScrolling = false;
       }
     };
 
     window.addEventListener('scroll', onScroll);
 
     return () => {
+      cancelAnimationFrame(requestID);
       window.removeEventListener('scroll', onScroll);
     };
   }, []);
