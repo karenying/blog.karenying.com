@@ -32,13 +32,14 @@ const Post = ({ post }) => {
   };
 
   useEffect(() => {
+    const threshold = 0;
     let lastScrollY = window.pageYOffset;
     let ticking = false;
 
     const updateScrollDir = () => {
       const scrollY = window.pageYOffset;
 
-      if (Math.abs(scrollY - lastScrollY) < 0) {
+      if (Math.abs(scrollY - lastScrollY) < threshold) {
         ticking = false;
         return;
       }
