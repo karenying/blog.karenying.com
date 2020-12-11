@@ -28,7 +28,7 @@ const Post = ({ post }) => {
   let timeoutID;
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
