@@ -47,6 +47,7 @@ const Post = ({ post }) => {
     const minShowThreshold = 812;
     let lastScrollY = window.pageYOffset;
     let isScrolling = true;
+    let requestID;
 
     const updateScrollDir = () => {
       const scrollY = window.pageYOffset;
@@ -58,7 +59,7 @@ const Post = ({ post }) => {
 
     const onScroll = () => {
       if (isScrolling) {
-        window.requestAnimationFrame(updateScrollDir);
+        requestId = window.requestAnimationFrame(updateScrollDir);
         isScrolling = false;
       }
     };
@@ -66,6 +67,7 @@ const Post = ({ post }) => {
     window.addEventListener('scroll', onScroll);
 
     return () => {
+      cancelAnimationFrame(requestID);
       window.removeEventListener('scroll', onScroll);
     };
   }, []);
