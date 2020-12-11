@@ -25,29 +25,46 @@ const Post = ({ post }) => {
   const { author } = useSiteMetadata();
 
   const [opacity, setOpacity] = useState(1);
+  const [isScrollingUp, setScrollDir] = useState(true);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
-    let timeoutID;
-    const onScroll = () => {
-      setOpacity(0);
-      clearTimeout(timeoutID);
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
 
-      timeoutID = setTimeout(() => {
-        setOpacity(1);
-      }, 100);
+    const updateScrollDir = () => {
+      const scrollY = window.pageYOffset;
+
+      if (Math.abs(scrollY - lastScrollY) < 0) {
+        ticking = false;
+        return;
+      }
+
+      setScrollDir(scrollY < lastScrollY);
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollDir);
+        ticking = true;
+      }
     };
 
     window.addEventListener('scroll', onScroll);
 
     return () => {
       window.removeEventListener('scroll', onScroll);
-      clearTimeout(timeoutID);
     };
   }, []);
+
+  useEffect(() => {
+    setOpacity(isScrollingUp ? 1 : 0);
+  }, [isScrollingUp]);
 
   return (
     <div className={styles['post']}>
