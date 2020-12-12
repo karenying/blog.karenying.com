@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Dark Mode is too Dark'
+title: 'GitHub Dark Mode is Too Dark'
 date: '2020-12-12T12:48:35-0500'
 template: 'post'
 draft: false
