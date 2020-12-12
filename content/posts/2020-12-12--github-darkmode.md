@@ -1,6 +1,6 @@
 ---
 title: 'GitHub Dark Mode is too Dark'
-date: '2020-12-12T00:00:00-0500'
+date: '2020-12-12T12:48:35-0500'
 template: 'post'
 draft: false
 slug: 'github-darkmode-sucks'
@@ -9,7 +9,7 @@ tags:
   - 'Apps'
 description: 'Using color theory to prove why GitHub dark mode actually sucks'
 socialImage: '/media/socialImages/github-darkmode-sucks.jpg'
-category: 'holidayz'
+category: 'ahh'
 minutes: '3'
 ---
 
