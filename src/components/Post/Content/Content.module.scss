@@ -72,6 +72,18 @@
       max-width: 100%;
     }
   }
+
+  table {
+    border-spacing: 10px;
+    padding: 0 0.75rem;
+    background-color: #1e1e1e;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+
+    th {
+      border-bottom: 1px solid $color-gray-medium;
+    }
+  }
 }
 
 @include breakpoint-md {
