@@ -68,7 +68,7 @@ On the right is the light mode colors and the on the left is the new shades. I o
 
 ![diff colors](/media/github-darkmode-sucks/diff.png)
 
-I did calculate the contrast ratios between both palettes and they were pretty similar (pretty close to 1 lol). However, for some reason the lighter one is just easier for me to parse at a cursory glance. Maybe I'm just not used to it yet but I really dislike how dark the new diff colors are. For something as important as code review, I'm using GitHub light mode.
+I did calculate the contrast ratios between both palettes and they were pretty similar (close to 1 lol). However, for some reason the lighter one is just easier for me to parse at a cursory glance. Maybe I'm just not used to it yet but I really dislike how dark the new diff colors are. For something as important as code review, I'm using GitHub light mode.
 
 ## Conclusion
 
