@@ -7,6 +7,7 @@ slug: 'github-darkmode-sucks'
 tags:
   - 'UI/UX'
   - 'Apps'
+  - 'Opinion'
 description: 'Using color theory to prove why GitHub dark mode actually sucks'
 socialImage: '/media/socialImages/github-darkmode-sucks.jpg'
 category: 'ahh'
@@ -37,20 +38,20 @@ I explain contrast ratio in depth [here](https://blog.karenying.com/posts/boost-
 
 I grabbed the dark mode color palettes of a couple of popular sites/apps. Every palette image shows background color, primary text color, secondary text color from left to right. I put the contrast ratio of the primary and secondary colors with the background on top of the respective color.
 
-**Spotify**
+**Spotify**:
 ![spotify](/media/github-darkmode-sucks/spotify.png)
 
-**Facebook**
+**Facebook**:
 ![facebook](/media/github-darkmode-sucks/facebook.png)
 
-**YouTube**
+**YouTube**:
 ![youtube](/media/github-darkmode-sucks/youtube.png)
 
 All of these satisfy the AAA standard of a contrast ratio of at least 7!
 
 And then we have our new GitHub dark mode...
 
-**Github**:
+**GitHub**:
 ![github](/media/github-darkmode-sucks/github.png)
 
 Not only do the colors look noticeably darker than their counterparts in other apps, **the secondary text fails AAA standards**!! I knew my eyes did not deceive me.
@@ -69,4 +70,6 @@ I did calculate the contrast ratios between both palettes and they were pretty s
 
 While there is no mathematical proof that the code diff color palette is worse, we did in fact show that GitHub's dark mode colors are not as accessible as many other dark mode apps we use daily.
 
-If GitHub put as much effort into researching a better dark mode palette as they did into the [promo video](https://twitter.com/github/status/1336362679506784256) they released, perhaps we wouldn't be here. GitHub, do better. Give us the dark mode experience we deserve.
+If GitHub put as much effort into researching a better dark mode palette as they did into the [promo video](https://twitter.com/github/status/1336362679506784256) they released, perhaps we wouldn't be here. **GitHub, do better. Give us the dark mode experience we deserve.**
+
+Thanks for reading. Happy hacking!
