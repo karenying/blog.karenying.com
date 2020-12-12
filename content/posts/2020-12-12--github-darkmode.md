@@ -72,7 +72,7 @@ I did calculate the contrast ratios between both palettes and they were pretty s
 
 ## Conclusion
 
-While there is no mathematical proof that the code diff color palette is worse, we did in fact show that GitHub's dark mode colors are not as accessible as many other dark mode apps we use daily.
+While there is no actual proof that the code diff color palette is worse, we did in fact show that GitHub's dark mode colors are not as accessible as many other dark mode apps we use daily.
 
 If GitHub put as much effort into researching a better dark mode palette as they did into the [promo video](https://twitter.com/github/status/1336362679506784256) they released, perhaps we wouldn't be here. **GitHub, do better. Give us the dark mode experience we deserve.**
 
