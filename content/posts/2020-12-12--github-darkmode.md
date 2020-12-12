@@ -62,7 +62,7 @@ While contrast ratios aren't [everything](https://www.bounteous.com/insights/201
 
 ### Code Review Palette
 
-Finally, my main grip with GitHub dark mode is that the red / green for code diffs looks super off to me.
+Finally, my main gripe with GitHub dark mode is that the red / green for code diffs looks super off to me.
 
 On the right is the light mode colors and the on the left is the new shades. I overlaid the respective background colors on top:
 
