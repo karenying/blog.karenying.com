@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Content.module.scss';
+import '../../../assets/scss/content.scss';
 import feedStyles from '../../Feed/Feed.module.scss';
 import { DateTime } from 'luxon';
 

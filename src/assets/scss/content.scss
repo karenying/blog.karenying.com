@@ -1,0 +1,47 @@
+@import '_variables';
+
+.blogmas {
+  &-menu {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-style: italic;
+
+    .line {
+      stroke-width: 6;
+      stroke-linecap: round;
+      stroke: #8deaff;
+      transition: all 500ms;
+    }
+
+    .top {
+      transform-origin: 26px 40px;
+    }
+
+    .middle {
+      stroke-dasharray: 60 60;
+    }
+
+    .bottom {
+      transform-origin: 26px 60px;
+    }
+
+    &:hover {
+      .line {
+        stroke: #ff7c7c;
+      }
+      .top {
+        transform: rotate(45deg);
+      }
+      .middle {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+      }
+      .bottom {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
