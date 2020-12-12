@@ -9,7 +9,6 @@ tags:
   - 'Tutorial'
 description: 'PowerPoint-esque slide animations + React carousel'
 socialImage: '/media/socialImages/adding-transitions-to-a-react-carousel-with-material-ui.png'
-minutes: '5'
 category: 'lol'
 ---
 

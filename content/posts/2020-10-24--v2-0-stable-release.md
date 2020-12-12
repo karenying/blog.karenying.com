@@ -8,7 +8,6 @@ tags:
   - 'Update'
 description: 'blog.karenying.com launch ... @Medium, it’s time to break up. It’s not you. It’s me'
 socialImage: '/media/socialImages/v2-0-stable-release.png'
-minutes: '3'
 category: 'welp'
 ---
 

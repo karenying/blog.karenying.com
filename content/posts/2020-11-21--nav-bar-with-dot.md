@@ -9,7 +9,6 @@ tags:
   - 'Tutorial'
 description: 'Using React Router and clever CSS to create a nav bar with dots to show hover and active state'
 socialImage: '/media/socialImages/nav-bar-with-dot.png'
-minutes: '4'
 category: 'anotha react tutorial'
 ---
 

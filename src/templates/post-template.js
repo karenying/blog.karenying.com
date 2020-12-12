@@ -34,13 +34,15 @@ export const query = graphql`
       fields {
         slug
         tagSlugs
+        readingTime {
+          minutes
+        }
       }
       frontmatter {
         date
         description
         tags
         title
-        minutes
         socialImage {
           publicURL
         }

@@ -8,7 +8,6 @@ tags:
   - 'Shitpost'
 description: 'The post that will have tech bros quaking in their Allbirds wool runners'
 socialImage: '/media/socialImages/vscode-girl.jpeg'
-minutes: '5'
 category: 'l m a o'
 ---
 

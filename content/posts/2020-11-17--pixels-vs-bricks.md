@@ -8,7 +8,6 @@ tags:
   - 'UI/UX'
 description: 'Drawing parallels between web design and major architecture movements'
 socialImage: '/media/socialImages/pixels-vs-bricks.png'
-minutes: '5'
 category: 'yay'
 ---
 
