@@ -36,7 +36,9 @@ I explain contrast ratio in depth [here](https://blog.karenying.com/posts/boost-
 
 ### Other Dark Mode Site Palettes
 
-I grabbed the dark mode color palettes of a couple of popular sites/apps. Every palette image shows the background color, primary text color, secondary text color from left to right. **I put the contrast ratio of the primary and secondary colors with the background on top of the respective color.**
+_I did a deep dive into the dark mode palettes of Spotify, Twitter, Facebook and more in this [post](https://blog.karenying.com/posts/50-shades-of-dark-mode-gray)._
+
+I grabbed the dark mode colors of a couple of popular sites/apps. Every palette image shows the background color, primary text color, secondary text color from left to right. **I put the contrast ratio of the primary and secondary colors with the background on top of the respective color.**
 
 **Spotify**:
 ![spotify](/media/github-darkmode-sucks/spotify.png)
