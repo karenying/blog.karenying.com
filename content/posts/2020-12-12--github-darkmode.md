@@ -57,7 +57,7 @@ Not only do the colors look noticeably darker than their counterparts in other a
 
 ## Code Review Palette
 
-Finally, my main grip with GitHub dark mode is that the red and green for diffs looks super off to me.
+Finally, my main grip with GitHub dark mode is that the red and green for code diffs looks super off to me.
 
 On the right is the light mode colors and the on the left is the new shades. I overlaid the respective background colors on top:
 
