@@ -20,13 +20,13 @@ This past week, GitHub [released](https://twitter.com/github/status/133636267950
 
 So I flipped the switch. My immediate reaction was that it seemed a bit off. But I wanted to give it a chance and credited that feeling towards just not being used to the theme yet.
 
-Flash forward a couple of days. I found myself switching to light mode for code review specifically. I didn't feel confident code reviewing in dark mode. I was scared I would miss something. It was after a couple of instances of this did I realize, GitHub dark mode is _too_ dark. And here's the proof.
+Flash forward a couple of days, I found myself switching to light mode for code review specifically. I didn't feel confident code reviewing in dark mode. I was scared I would miss something. It was after a couple of instances of this did I realize, GitHub dark mode is _too_ dark. And here's why.
 
 ## The Proof is in the Palette (Pudding)
 
 ### Accessibility and Contrast Ratio
 
-I explain contrast ratio in depth [here](https://blog.karenying.com/posts/boost-visual-accessibility-by-auto-flipping-text-color#wcag-and-contrast-ratio) but here's what you need to know:
+I explain contrast ratio in depth [here](https://blog.karenying.com/posts/boost-visual-accessibility-by-auto-flipping-text-color#wcag-and-contrast-ratio) but this is what you need to know:
 
 - The contrast ratio between two colors mathematically calculates how different our eyes perceive them to be
 - It ranges between **1** (two of the same colors) to **21** (black and white)
@@ -38,7 +38,7 @@ I explain contrast ratio in depth [here](https://blog.karenying.com/posts/boost-
 
 _I did a deep dive into the dark mode palettes of Spotify, Twitter, Facebook and more in this [post](https://blog.karenying.com/posts/50-shades-of-dark-mode-gray)._
 
-I grabbed the dark mode colors of a couple of popular sites/apps. Every palette image shows the background color, primary text color, secondary text color from left to right. **I put the contrast ratio of the primary and secondary colors with the background on top of the respective color.**
+I grabbed the dark mode colors of a couple of popular sites/apps. Every palette image shows the background color, primary text color, secondary text color from left to right. **I put the contrast ratios of the primary and secondary colors with the background color on top of the respective color.**
 
 **Spotify**:
 ![spotify](/media/github-darkmode-sucks/spotify.png)
@@ -51,22 +51,24 @@ I grabbed the dark mode colors of a couple of popular sites/apps. Every palette 
 
 All of these satisfy the AAA standard of a contrast ratio of at least 7!
 
-And then we have our new GitHub dark mode...
+And then we have GitHub's new look...
 
 **GitHub**:
 ![github](/media/github-darkmode-sucks/github.png)
 
 Not only do the colors look noticeably darker than their counterparts in other apps, **the secondary text color fails AAA standards**!! I knew my eyes did not deceive me.
 
-## Code Review Palette
+While contrast ratios aren't [everything](https://www.bounteous.com/insights/2019/03/22/orange-you-accessible-mini-case-study-color-ratio/), they are a simple way to quantify the difference between two colors. In this case, it's clear that GitHub's dark mode colors _are_ darker, which can make it harder to read text.
 
-Finally, my main grip with GitHub dark mode is that the red and green for code diffs looks super off to me.
+### Code Review Palette
+
+Finally, my main grip with GitHub dark mode is that the red / green for code diffs looks super off to me.
 
 On the right is the light mode colors and the on the left is the new shades. I overlaid the respective background colors on top:
 
 ![diff colors](/media/github-darkmode-sucks/diff.png)
 
-I did calculate the contrast ratios between both palettes and they were pretty similar. However, for some reason the lighter one is just easier for me to parse at a cursory glance. Maybe I'm just not used to it yet but I really dislike how dark the dark mode diff colors are.
+I did calculate the contrast ratios between both palettes and they were pretty similar. However, for some reason the lighter one is just easier for me to parse at a cursory glance. Maybe I'm just not used to it yet but I really dislike how dark the new diff colors are. For something as important as code review, I'm using GitHub light mode.
 
 ## Conclusion
 
@@ -74,4 +76,4 @@ While there is no mathematical proof that the code diff color palette is worse, 
 
 If GitHub put as much effort into researching a better dark mode palette as they did into the [promo video](https://twitter.com/github/status/1336362679506784256) they released, perhaps we wouldn't be here. **GitHub, do better. Give us the dark mode experience we deserve.**
 
-Thanks for reading. Happy hacking!
+_Thanks for reading. Happy hacking!_
