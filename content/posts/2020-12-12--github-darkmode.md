@@ -8,7 +8,7 @@ tags:
   - 'UI/UX'
   - 'Apps'
   - 'Opinion'
-description: 'Using color theory to prove why GitHub dark mode actually sucks'
+description: 'If you hate it too this is why. Using color theory to prove why GitHub dark mode actually sucks'
 socialImage: '/media/socialImages/github-darkmode-sucks.jpg'
 category: 'ahh'
 minutes: '3'
