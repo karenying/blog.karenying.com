@@ -32,8 +32,8 @@ const HomeButton = ({ className, opacity }) => (
 
 const Post = ({ post }) => {
   const { html } = post;
-  const { tagSlugs } = post.fields;
-  const { tags, title, description, date, minutes } = post.frontmatter;
+  const { tagSlugs, readingTime } = post.fields;
+  const { tags, title, description, date } = post.frontmatter;
   const { author } = useSiteMetadata();
 
   const [opacity, setOpacity] = useState(0);
@@ -93,7 +93,7 @@ const Post = ({ post }) => {
           title={title}
           description={description}
           date={date}
-          minutes={minutes}
+          minutes={Math.round(readingTime.minutes)}
         />
       </div>
 

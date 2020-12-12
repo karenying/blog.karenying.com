@@ -9,7 +9,6 @@ tags:
   - 'Tutorial'
 description: 'How to avoid the dreaded "Page Not Found" bug for apps using React Router on Netlify'
 socialImage: '/media/socialImages/404-react-page-not-found.png'
-minutes: '5'
 category: 'lol'
 ---
 

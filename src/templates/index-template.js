@@ -62,6 +62,9 @@ export const query = graphql`
             slug
             categorySlug
             tagSlugs
+            readingTime {
+              minutes
+            }
           }
           frontmatter {
             title
@@ -69,7 +72,6 @@ export const query = graphql`
             category
             description
             tags
-            minutes
           }
         }
       }

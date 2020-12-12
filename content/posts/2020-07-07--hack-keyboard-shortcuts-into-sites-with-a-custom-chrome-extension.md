@@ -10,7 +10,6 @@ tags:
   - 'Tutorial'
 description: 'Increase productivity by adding custom keyboard shortcuts to your favorite sites'
 socialImage: '/media/socialImages/hack-keyboard-shortcuts-into-sites-with-a-custom-chrome-extension.jpeg'
-minutes: '6'
 category: 'lol'
 ---
 

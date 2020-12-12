@@ -10,7 +10,6 @@ tags:
   - 'Opinion'
 description: 'Examining a trendy store’s mysteriously blurry rating stars and proposing a solution'
 socialImage: '/media/socialImages/let-2020-be-the-year-png-icons-die.png'
-minutes: '4'
 category: 'lol'
 ---
 

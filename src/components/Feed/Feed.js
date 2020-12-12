@@ -44,7 +44,7 @@ const Feed = ({ edges }) => (
               •
             </span>
             <span className='blue-text'>
-              {edge.node.frontmatter.minutes} min read
+              {Math.round(edge.node.fields.readingTime.minutes)} min read
             </span>
           </p>
         </div>
