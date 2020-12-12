@@ -370,4 +370,4 @@ It might seem like a small or trivial detail, but to the user, especially a visu
 - [More on contrast and color accessibility](https://webaim.org/articles/contrast/)
 - [WCAG in full](https://www.w3.org/TR/WCAG21/)
 
-Thanks for reading. Happy hacking!
+_Thanks for reading. Happy hacking!_

@@ -303,4 +303,4 @@ If you got lost along the way, check out my GitHub [repo](https://github.com/kar
 
 If you decide to deploy your React app with [Netlify](https://www.netlify.com/), read about enabling redirects on Netlify to fix client-side routing for SPAs [here](https://www.blog.karenying.com/posts/404-react-page-not-found).
 
-Thanks for reading. Happy hacking!
+_Thanks for reading. Happy hacking!_
