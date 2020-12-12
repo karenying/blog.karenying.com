@@ -36,7 +36,7 @@ I explain contrast ratio in depth [here](https://blog.karenying.com/posts/boost-
 
 ### Other Dark Mode Site Palettes
 
-I grabbed the dark mode color palettes of a couple of popular sites/apps. Every palette image shows background color, primary text color, secondary text color from left to right. I put the contrast ratio of the primary and secondary colors with the background on top of the respective color.
+I grabbed the dark mode color palettes of a couple of popular sites/apps. Every palette image shows the background color, primary text color, secondary text color from left to right. **I put the contrast ratio of the primary and secondary colors with the background on top of the respective color.**
 
 **Spotify**:
 ![spotify](/media/github-darkmode-sucks/spotify.png)
@@ -54,7 +54,7 @@ And then we have our new GitHub dark mode...
 **GitHub**:
 ![github](/media/github-darkmode-sucks/github.png)
 
-Not only do the colors look noticeably darker than their counterparts in other apps, **the secondary text fails AAA standards**!! I knew my eyes did not deceive me.
+Not only do the colors look noticeably darker than their counterparts in other apps, **the secondary text color fails AAA standards**!! I knew my eyes did not deceive me.
 
 ## Code Review Palette
 
