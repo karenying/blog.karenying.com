@@ -38,7 +38,7 @@ I explain contrast ratio in depth [here](https://blog.karenying.com/posts/boost-
 
 _I did a deep dive into the dark mode palettes of Spotify, Twitter, Facebook and more in this [post](https://blog.karenying.com/posts/50-shades-of-dark-mode-gray)._
 
-I grabbed the dark mode colors of a couple of popular sites/apps. Every palette image shows the background color, primary text color, secondary text color from left to right. **I put the contrast ratios of the primary and secondary colors with the background color on top of the respective color.**
+I grabbed the dark mode colors of a couple of popular sites/apps. Every palette image shows the background color, primary text color, and secondary text color from left to right. **I put the contrast ratios of the primary and secondary colors with the background color on top of the respective color.**
 
 **Spotify**:
 ![spotify](/media/github-darkmode-sucks/spotify.png)
@@ -78,7 +78,7 @@ These are colors that I think work well even on a darker background and don't hi
 
 ## Conclusion
 
-While there is no color thoery evidence that the GitHub's new code diff palette is worse, we did show that the text colors are not as "accessible" as many other dark mode apps we use daily.
+While there is no color thoery evidence that the GitHub's new code diff palette is worse, we did show that its text colors are not as "accessible" as many other dark mode apps we use daily.
 
 Maybe if GitHub put as much effort into researching a better dark mode palette as they did into the [promo video](https://twitter.com/github/status/1336362679506784256) they released, we wouldn't be here. This is still a beta feature so I have hope. **GitHub, give us the dark mode experience we deserve.**
 
