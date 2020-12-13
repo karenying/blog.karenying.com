@@ -65,4 +65,4 @@ I also want to shoutout Victor Zhou for always being a blogging inspiration. His
 - [Medium](https://medium.com/@karenying)
 - [GitHub](https://github.com/karenying)
 
-Thanks for reading 🙂
+_Thanks for reading!_
