@@ -147,4 +147,4 @@ Tweet your blogs, your opinions, unsolicitedly code review tech bros' shitty sni
 
 You should tweet as if you had millions of followers (I have [24](https://twitter.com/karen_ying_)). Fake it till you make it, right?
 
-Thanks for reading!
+_Thanks for reading!_

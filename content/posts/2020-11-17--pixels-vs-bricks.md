@@ -108,4 +108,4 @@ Apple's current [site](https://www.apple.com/) isn't exactly flat. It feels much
 - A similar [post](https://medium.com/@sall/the-future-of-web-design-is-hidden-in-the-history-of-architecture-1cc93ea854d0) by [Mike Sall](https://medium.com/@sall)
 - [History of Web Design](https://www.smamarketing.net/blog/the-history-of-website-design)
 
-Thanks for reading!
+_Thanks for reading!_
