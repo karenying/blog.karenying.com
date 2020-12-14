@@ -11,7 +11,7 @@ tags:
 description: 'If you hate it too this is why. Using color theory to show why GitHub dark mode is disappointing'
 socialImage: '/media/socialImages/github-darkmode-sucks.jpg'
 category: 'ahh'
-minutes: '3'
+minutes: '4'
 ---
 
 ![toggle](/media/socialImages/github-darkmode-sucks.jpg)
@@ -78,7 +78,7 @@ IMO these shades work well even on a darker background and don't hinder code rev
 
 ## Conclusion
 
-While there is no color theory evidence that GitHub's new code diff palette is worse, we did show that its text colors are not as WCAG accessible as many other dark mode apps we use daily.
+While there is no color theory justification that GitHub's new code diff palette is worse, we did show that its text colors are not as WCAG accessible as many other dark mode apps we use daily.
 
 Maybe if GitHub put as much effort into researching their dark mode palette as they did into the [promo video](https://twitter.com/github/status/1336362679506784256) they released, we wouldn't be here. This is still a beta feature so I have hope. **GitHub, please give us the dark mode experience we deserve 🥺**
 
