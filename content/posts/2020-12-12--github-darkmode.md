@@ -11,7 +11,7 @@ tags:
 description: 'If you hate it too this is why. Using color theory to show why GitHub dark mode is disappointing'
 socialImage: '/media/socialImages/github-darkmode-sucks.jpg'
 category: 'ahh'
-minutes: '3'
+minutes: '4'
 ---
 
 ![toggle](/media/socialImages/github-darkmode-sucks.jpg)
