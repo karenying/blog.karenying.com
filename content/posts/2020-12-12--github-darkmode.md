@@ -64,13 +64,13 @@ Not only do the colors look noticeably darker than their counterparts in other a
 
 Finally, my main gripe with GitHub dark mode is that the red / green for code diffs looks super off to me.
 
-On the right is the light mode colors and the on the left is the new shades. I overlaid the respective background colors on top:
+On the right is the light mode colors and left is the new shades. I overlaid the respective background colors on top:
 
 ![diff colors](/media/github-darkmode-sucks/diff.png)
 
 I did calculate the contrast ratios of both palettes and they were pretty similar (close to 1 lol). However, for some reason the lighter one is easier for me to parse at a cursory glance. Maybe I'm not used to it yet, but I really dislike how dark the new diff colors are. For something as important as code review, I'm using GitHub light mode.
 
-I investigated **VSCode's Git integration** diff colors (which I enjoy!):
+I also investigated **VSCode's Git integration** diff colors (which I enjoy!):
 
 ![vscode diff colors](/media/github-darkmode-sucks/vscode-diff.png#width=350px)
 
@@ -78,7 +78,7 @@ IMO these shades work well even on a darker background and don't hinder code rev
 
 ## Conclusion
 
-While there is no color theory justification that GitHub's new code diff palette is worse, we did show that its text colors are not as WCAG accessible as many other dark mode apps we use daily.
+While there is no color theory justification that GitHub's new code diff palette is worse, its text colors are not as WCAG accessible as other dark mode apps we use daily.
 
 Maybe if GitHub put as much effort into researching their dark mode palette as they did into the [promo video](https://twitter.com/github/status/1336362679506784256) they released, we wouldn't be here. This is still a beta feature so I have hope. **GitHub, please give us the dark mode experience we deserve 🥺**
 
