@@ -94,7 +94,7 @@ You think I'm kidding? This is the first prompt on my profile:
 
 ![My hinge profile](/media/vscode-girl/hinge.jpg)
 
-To trap the tech bros(' views), you need to mention some other buzzwords on your profile (think: climbing, boba, Elon, Robinhood) and set your location to South Bay.
+To trap the tech bros(' views), you need to mention some other buzzwords on your profile (**think**: climbing, boba, Elon, Robinhood) and set your location to South Bay.
 
 A side effect, whether you like it or not, is that you'll receive DMs like such:
 
@@ -137,7 +137,7 @@ To have a successful LinkedIn, you need a couple of things:
 - A succinct header
 - Filled out details for every section
 
-With these things in hand, pretty soon you'll have an army of LinkedIn simps. Hint: they're useful for promoting your blog posts.
+With these things in hand, pretty soon you'll have an army of LinkedIn simps. **Hint**: they're useful for promoting your blog posts.
 
 ## Twitter
 
