@@ -70,6 +70,7 @@ pre[class*='language-'] {
 }
 
 .token.punctuation,
+.token.plain-text,
 .language-html .language-css .token.punctuation,
 .language-html .language-javascript .token.punctuation {
   color: #d4d4d4;
