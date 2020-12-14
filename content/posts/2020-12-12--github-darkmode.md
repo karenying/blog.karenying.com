@@ -49,7 +49,7 @@ I grabbed the dark mode colors of a couple of popular sites/apps. Every palette 
 **YouTube**:
 ![youtube](/media/github-darkmode-sucks/youtube.png)
 
-All of these satisfy the AAA standard of a contrast ratio of at least 7.
+All of these satisfy the AAA standard of a contrast ratio of at least 7 👍🏼
 
 And then we have GitHub's new look...
 
