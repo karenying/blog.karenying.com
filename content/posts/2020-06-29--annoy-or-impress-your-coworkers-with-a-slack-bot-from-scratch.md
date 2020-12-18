@@ -7,6 +7,7 @@ slug: 'annoy-or-impress-your-coworkers-with-a-slack-bot-from-scratch'
 tags:
   - 'Tutorial'
   - 'Productivity'
+  - 'Apps'
 description: 'I made a Slack bot in under 30 lines of code to remind my coworker to eat lunch'
 socialImage: '/media/socialImages/annoy-or-impress-your-coworkers-with-a-slack-bot-from-scratch.jpeg'
 minutes: '8'
