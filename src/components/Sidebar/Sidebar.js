@@ -4,6 +4,7 @@ import Contacts from './Contacts';
 import Copyright from './Copyright';
 import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
+import SubscribeCard from '../SubscribeCard';
 
 const Sidebar = () => {
   const { author, copyright } = useSiteMetadata();
@@ -13,6 +14,9 @@ const Sidebar = () => {
       <div className={styles['sidebar__inner']}>
         <Author author={author} />
         <Contacts contacts={author.contacts} />
+        <div className={styles['sidebar__inner-subscribe']}>
+          <SubscribeCard />
+        </div>
         <Copyright copyright={copyright} />
       </div>
     </div>
