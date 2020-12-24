@@ -13,7 +13,7 @@
 
   &-small-text {
     color: $color-gray-medium;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0.5rem 0 1rem;
   }
 
@@ -59,6 +59,7 @@
     font-family: $typographic-font-text;
     padding: 0 5px;
     width: 80%;
+    font-size: 1rem;
 
     &::placeholder {
       color: $color-gray-medium;
