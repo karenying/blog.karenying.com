@@ -8,6 +8,7 @@ import Page from '../components/Page';
 import { CopyrightFooter } from '../components/Post/Post';
 import Pagination from '../components/Pagination';
 import Header from '../components/Header';
+import SubscribeCard from '../components/SubscribeCard';
 import { useSiteMetadata } from '../hooks';
 
 const IndexTemplate = ({ data, pageContext }) => {
@@ -39,6 +40,9 @@ const IndexTemplate = ({ data, pageContext }) => {
             hasPrevPage={hasPrevPage}
             hasNextPage={hasNextPage}
           />
+          <div className='subscribe-card-mobile'>
+            <SubscribeCard />
+          </div>
           <div className='copyright-footer-wrapper'>
             <CopyrightFooter />
           </div>

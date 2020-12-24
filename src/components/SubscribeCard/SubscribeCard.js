@@ -8,15 +8,18 @@ const Subscribe = ({ isPost }) => {
   if (isPost) {
     title = (
       <label for='mce-EMAIL'>
-        <span className='medium-gray-text'>Well, you made it this far</span>
-        <br />
-        Get in the loop for <span className='dark-pink-text'>new</span> posts
+        <div className={styles['Subscribe-small-text']}>
+          Well, you made it this far
+        </div>
+        Get in the loop <br />
+        for <span className='dark-pink-text'>new</span> posts
       </label>
     );
   } else {
     title = (
       <label for='mce-EMAIL'>
-        Get in the loop for <span className='dark-pink-text'>new</span> posts
+        Get in the loop <br />
+        for <span className='dark-pink-text'>new</span> posts
       </label>
     );
   }
