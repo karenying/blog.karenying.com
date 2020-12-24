@@ -14,10 +14,10 @@ const Sidebar = () => {
       <div className={styles['sidebar__inner']}>
         <Author author={author} />
         <Contacts contacts={author.contacts} />
-        <Copyright copyright={copyright} />
         <div className={styles['sidebar__inner-subscribe']}>
           <SubscribeCard />
         </div>
+        <Copyright copyright={copyright} />
       </div>
     </div>
   );
