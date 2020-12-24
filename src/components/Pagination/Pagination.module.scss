@@ -2,7 +2,7 @@
 @import '../../assets/scss/mixins';
 
 .pagination {
-  @include margin-top(2);
+  @include margin-top(1.25);
   display: flex;
   font-family: $typographic-font-basic;
 
