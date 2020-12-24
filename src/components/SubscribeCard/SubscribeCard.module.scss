@@ -25,7 +25,7 @@
     font-weight: 600;
   }
 
-  &-button {
+  button {
     margin-top: 1rem;
     background-color: transparent;
     color: $color-blue;
@@ -48,7 +48,7 @@
     }
   }
 
-  &-email {
+  input {
     color: $color-white-almost;
     background-color: #1e1e1e;
     border-radius: 5px;

@@ -41,20 +41,21 @@ const Subscribe = ({ isPost }) => {
           <input
             type='email'
             name='EMAIL'
-            class={styles['Subscribe-email']}
+            class='email'
             id='mce-EMAIL'
             placeholder='name@site.com'
             required
           />
-          <div class='clear'>
-            <input
-              type='submit'
-              value='subscribe'
-              name='subscribe'
-              id='mc-embedded-subscribe'
-              class={styles['Subscribe-button']}
-            />
-          </div>
+          <button
+            type='submit'
+            form='mc-embedded-subscribe-form'
+            value='subscribe'
+            name='subscribe'
+            id='mc-embedded-subscribe'
+            class={styles['Subscribe-button']}
+          >
+            subscribe
+          </button>
         </div>
       </form>
     </div>
