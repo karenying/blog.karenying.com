@@ -4,10 +4,9 @@ import styles from './SubscribeCard.module.scss';
 
 const Subscribe = ({ isPost }) => {
   let title;
-
   if (isPost) {
     title = (
-      <label for='mce-EMAIL'>
+      <label>
         <div className={styles['Subscribe-small-text']}>
           Well, you made it this far
         </div>
@@ -17,7 +16,7 @@ const Subscribe = ({ isPost }) => {
     );
   } else {
     title = (
-      <label for='mce-EMAIL'>
+      <label>
         Get in the loop <br />
         for <span className='dark-pink-text'>new</span> posts
       </label>
@@ -31,9 +30,9 @@ const Subscribe = ({ isPost }) => {
         method='post'
         id='mc-embedded-subscribe-form'
         name='mc-embedded-subscribe-form'
-        class={styles['Subscribe-container']}
+        className={styles['Subscribe-container']}
         target='_blank'
-        novalidate
+        noValidate
       >
         <div id='mc_embed_signup_scroll'>
           {title}
@@ -41,7 +40,7 @@ const Subscribe = ({ isPost }) => {
           <input
             type='email'
             name='EMAIL'
-            class='email'
+            className='email'
             id='mce-EMAIL'
             placeholder='name@site.com'
             required
@@ -52,7 +51,7 @@ const Subscribe = ({ isPost }) => {
             value='subscribe'
             name='subscribe'
             id='mc-embedded-subscribe'
-            class={styles['Subscribe-button']}
+            className={styles['Subscribe-button']}
           >
             subscribe
           </button>
