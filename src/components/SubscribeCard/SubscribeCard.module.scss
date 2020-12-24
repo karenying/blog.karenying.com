@@ -1,0 +1,62 @@
+@import '../../assets/scss/variables';
+
+.Subscribe {
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 1rem 0;
+  border: 1px solid $color-gray-medium;
+  box-shadow: 5px 5px 5px black;
+
+  &-container {
+    text-align: center;
+  }
+
+  label {
+    color: white;
+    font-family: $typographic-font-basic;
+    font-size: 1.2rem;
+    line-height: 0.8;
+    font-weight: 600;
+  }
+
+  &-button {
+    margin-top: 1rem;
+    background-color: transparent;
+    color: $color-blue;
+    border: solid 1px $color-blue;
+    height: 30px;
+    width: 90px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: $typographic-font-mono;
+    cursor: pointer;
+    outline: none;
+    transition: text-shadow 100ms;
+    transition: box-shadow 100ms;
+
+    &:hover,
+    &:focus {
+      text-decoration: none !important;
+      text-shadow: 5px 5px 10px black;
+      box-shadow: 5px 5px 10px black;
+    }
+  }
+
+  &-email {
+    color: $color-white-almost;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    font-family: $typographic-font-text;
+    padding: 0 5px;
+    width: 80%;
+
+    &::placeholder {
+      color: $color-gray-medium;
+      font-family: $typographic-font-text;
+    }
+  }
+}
