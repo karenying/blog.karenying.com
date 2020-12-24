@@ -8,6 +8,7 @@ import { withPrefix } from 'gatsby';
 import Copyright from '../Sidebar/Copyright';
 import Contacts from '../Sidebar/Contacts';
 import { IoIosArrowUp } from 'react-icons/io';
+import SubscribeCard from '../SubscribeCard';
 
 export const CopyrightFooter = () => (
   <div className={styles['post__copyright']}>
@@ -99,6 +100,10 @@ const Post = ({ post }) => {
 
       <div className={styles['post__tags']}>
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
+      </div>
+
+      <div className={styles['post__subscribe']}>
+        <SubscribeCard isPost />
       </div>
 
       <div className={styles['post__footer']}>
