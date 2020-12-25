@@ -6,6 +6,7 @@ import styles from './SubscribeCard.module.scss';
 
 const Subscribe = ({ isPost }) => {
   let title;
+
   if (isPost) {
     title = (
       <label>

@@ -28,7 +28,8 @@
       right: 7%;
       color: $color-gray-medium;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: $color-yellow;
       }
     }
