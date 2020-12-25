@@ -18,6 +18,22 @@
     font-weight: 400;
   }
 
+  &-buttons {
+    margin-top: 1rem;
+    position: relative;
+
+    &-rss {
+      position: absolute;
+      top: 5px;
+      right: 7%;
+      color: $color-gray-medium;
+
+      &:hover {
+        color: $color-yellow;
+      }
+    }
+  }
+
   label {
     color: white;
     font-family: $typographic-font-basic;
@@ -27,7 +43,6 @@
   }
 
   button {
-    margin-top: 1rem;
     background-color: transparent;
     color: $color-blue;
     border: solid 1px $color-blue;
@@ -56,9 +71,9 @@
     height: 30px;
     outline: none;
     border: none;
-    margin-top: 1rem;
+    margin: 1rem 10px 0;
     font-family: $typographic-font-text;
-    padding: 0 5px;
+    padding: 0 10px;
     width: 80%;
     font-size: 1rem;
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaRssSquare } from 'react-icons/fa';
+import { StyledTooltip } from '../Sidebar/Contacts/Contacts';
 
 import styles from './SubscribeCard.module.scss';
 
@@ -45,16 +47,32 @@ const Subscribe = ({ isPost }) => {
             placeholder='name@site.com'
             required
           />
-          <button
-            type='submit'
-            form='mc-embedded-subscribe-form'
-            value='subscribe'
-            name='subscribe'
-            id='mc-embedded-subscribe'
-            className={styles['Subscribe-button']}
-          >
-            subscribe
-          </button>
+          <div className={styles['Subscribe-buttons']}>
+            <button
+              type='submit'
+              form='mc-embedded-subscribe-form'
+              value='subscribe'
+              name='subscribe'
+              id='mc-embedded-subscribe'
+            >
+              subscribe
+            </button>
+            <StyledTooltip
+              title='RSS Feed'
+              aria-label='rss feed'
+              placement='top'
+              arrow
+            >
+              <a
+                href='https://blog.karenying.com/rss.xml'
+                target='_blank'
+                rel='noopener noreferrer'
+                className={styles['Subscribe-buttons-rss']}
+              >
+                <FaRssSquare size='1.05rem' />
+              </a>
+            </StyledTooltip>
+          </div>
         </div>
       </form>
     </div>
