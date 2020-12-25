@@ -13,9 +13,8 @@
 
   &-small-text {
     color: $color-gray-medium;
-    font-size: 1rem;
     margin: 0.5rem 0 1rem;
-    font-weight: 400;
+    font-family: $typographic-font-mono;
   }
 
   &-buttons {
@@ -36,7 +35,7 @@
   }
 
   label {
-    color: white;
+    color: $color-white-almost;
     font-family: $typographic-font-basic;
     font-size: 1.1rem;
     line-height: 0.8;

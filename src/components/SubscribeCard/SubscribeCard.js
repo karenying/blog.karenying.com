@@ -14,14 +14,14 @@ const Subscribe = ({ isPost }) => {
           Well, you made it this far
         </div>
         Get in the loop <br />
-        for <span className='dark-pink-text'>new</span> posts
+        for <span className='dark-pink-text'>new</span> posts!
       </label>
     );
   } else {
     title = (
       <label>
         Get in the loop <br />
-        for <span className='dark-pink-text'>new</span> posts
+        for <span className='dark-pink-text'>new</span> posts!
       </label>
     );
   }
