@@ -3,10 +3,8 @@ import styles from './Copyright.module.scss';
 
 const Copyright = () => (
   <div className={styles['copyright']}>
-    <span className='dark-pink-text'>©</span>{' '}
-    <span className='light-pink-text'>karen ying</span>{' '}
-    <span className={`light-gray-text ${styles['copyright__dot']}`}>•</span>{' '}
-    <span className='blue-text'>all rights reserved</span>
+    © karen ying <span className={styles['copyright__dot']}>•</span> all rights
+    reserved
   </div>
 );
 

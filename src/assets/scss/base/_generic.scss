@@ -217,12 +217,28 @@ figcaption {
   color: $color-gray-light;
 }
 
+.medium-gray-text {
+  color: $color-gray-medium;
+}
+
 .copyright-footer-wrapper {
   margin-top: 20px;
 }
 
+.subscribe-card-mobile {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+
+  > * {
+    width: 85%;
+    min-width: 300px;
+  }
+}
+
 @include breakpoint-sm {
-  .copyright-footer-wrapper {
+  .copyright-footer-wrapper,
+  .subscribe-card-mobile {
     display: none;
   }
 }
