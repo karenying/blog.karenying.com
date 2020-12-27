@@ -45,3 +45,24 @@
     }
   }
 }
+
+.mood {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .colorblind {
+    display: none;
+  }
+
+  &:hover {
+    .colorblind {
+      display: block;
+      z-index: 10;
+    }
+
+    .color {
+      display: none;
+    }
+  }
+}
