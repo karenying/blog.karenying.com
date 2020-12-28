@@ -7,7 +7,7 @@ slug: 'tracked-my-mood-daily-2020'
 tags:
   - '2020'
   - 'Apps'
-description: '...using a web app I coded. A look at trends that came out of it. Color blind friendly visuals included!'
+description: '...using a web app I coded. A look at trends that came out of it. Color blind friendly visuals included'
 socialImage: '/media/socialImages/tracked-my-mood-daily-2020.png'
 category: 'ahh'
 minutes: '5'
@@ -90,7 +90,7 @@ I have a self-diagnosed mild case of seasonal depression. Being outside and gett
 
 <span style="color:#FF2600">[YEAR VIEW]</span>
 
-### Bad Days Get Better
+### Bad Days Get Better!
 
 On 3/3, I went through a breakup which was definitely the lowest point of the year. I wallowed in misery for a solid two days -- didn't leave my room, couldn't eat, constantly crying etc. I tracked every day during this period:
 
@@ -101,7 +101,7 @@ On 3/3, I went through a breakup which was definitely the lowest point of the ye
 
 In the moment, it felt like I'd never be happy again. But with every passing day, it hurt a little less and the graph above reflects that.
 
-Now, when I feel down, I think about those days in March, and remind myself that Great days are just around the corner. Time truly heals all wounds and I can get through it.
+Now, when I feel down, I think about those days in March, and remind myself that Great days are just around the corner.
 
 ## Conclusion
 
@@ -111,18 +111,18 @@ First, I absolutely adored coding a full stack app from scratch -- I learned ton
 
 If I could make Dayz from scratch, I would implement:
 
-- Have Express serve my React app -- might solve some CORS / HTTP vs HTTPS issues
-- Structure components differently
-- Use Typescript and Sass
+- Express serving my React app -- might solve some CORS / HTTP vs HTTPS issues
+- Different / more organized React component structure
+- Typescript and Sass
 - State management
-- Responsiveness
+- Responsiveness, or just full send into mobile only
 - Passwords + account management / general account security
 
 The fact that Dayz currently doesn't have these things really demotivates me from working on the app...
 
-So where does that leave this experiment and app?
+So where does that leave this project?
 
-I'm definitely **not** releasing Dayz to the public in its current state (@ the last bullet) but I think I'll continue to track daily. Hopefully catch ya at "I Tracked My Mood for Every Day of 2021"!
+I'm definitely **not** releasing Dayz to the public in its current state (@ the last bullet) but I think I'll continue to track daily. If I get enough interest, I _could_ be convinced to rebuild it from scratch, with those aforementioned features. Regardless, hopefully catch ya at "I Tracked My Mood for Every Day of 2021".
 
 Happy New Year and here's to many Great days that will come 🥂
 
