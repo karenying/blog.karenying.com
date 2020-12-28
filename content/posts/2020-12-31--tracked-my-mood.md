@@ -15,9 +15,9 @@ minutes: '5'
 
 <span style="color:#FF2600">[SCREENSHOT OF THE YEAR VIEW AS SOCIAL IMAGE PIC]</span>
 
-In December 2019, I saw a [Reddit post](https://www.reddit.com/r/CasualConversation/comments/ehz6di/i_decided_to_keep_track_of_how_each_day_in_2019/?utm_source=share&utm_medium=web2x) titled "I decided to keep track of how each day in 2019 went for me" and thought I too wanted to keep track of my days for 2020. So I made a similar [Google Sheets](https://docs.google.com/spreadsheets/d/1D9-rCOvZ2aekkK3pYQw-7tHW3TcxV0UnGJZm_DeWiXk/edit?usp=sharing).
+In December 2019, I saw a [Reddit post](https://www.reddit.com/r/CasualConversation/comments/ehz6di/i_decided_to_keep_track_of_how_each_day_in_2019/?utm_source=share&utm_medium=web2x) titled "I decided to keep track of how each day in 2019 went for me" and thought I too wanted to keep track of my days for 2020. So I made a similar [Google Sheet](https://docs.google.com/spreadsheets/d/1D9-rCOvZ2aekkK3pYQw-7tHW3TcxV0UnGJZm_DeWiXk/edit?usp=sharing).
 
-Around that time I was also starting my web dev journey~ and what better way to learn than to build a full-stack mood tracker web app instead of using a spreadsheet? This is how Dayz and this post came to be.
+Around that time I was also starting my web dev journey~ and what better way to learn than to build a full-stack mood tracker web app instead of using the spreadsheet? This is how Dayz and this post came to be.
 
 ## Dayz
 
@@ -49,9 +49,9 @@ From the way I defined the scale, theoretically my ratings should be a **symmetr
 
 <span style="color:#FF2600">[PIC OF YEAR COUNTS]</span>
 
-Let's give numeric values to each type of day: **Bad = 0, Off = 1, Normal = 2, Good = 3, Great = 4**. And take the average. We get <span style="color:#FF2600">[SOME QUICK MATHS]</span>, greater than 2 (normal). I had an inflated view of what my days were actually like.
+Let's give numeric values to each type of day: **Bad = 0, Off = 1, Normal = 2, Good = 3, Great = 4**. And take the average. We get <span style="color:#FF2600">[SOME QUICK MATHS]</span>, greater than 2 (normal). I had an inflated perception of what each day was actually like.
 
-This makes sense with my personality -- I generally have a positive outlook on life so on average, I was more generous with my ratings, thinking I had a better day than what the scale defined.
+This makes sense with my personality -- I generally have a positive outlook on life. Therefore, on average, I was more generous with my ratings, thinking I had a better day than what the scale defined.
 
 I rated so few days as Bad that I can distinctly remember what went down in those 6 days. I can't say the same about my 25 Great days though.
 
@@ -61,7 +61,7 @@ I chose an interesting year to start this experiment huh. It's not every year a 
 
 <span style="color:#FF2600">[NYT PIC]</span>
 
-My mood generally correlated with case counts / restrictions -- When cases are lower and restrictions were looser, I was happier.
+My mood generally correlated with case counts / restrictions. When cases are lower and restrictions were looser, I was happier.
 
 This is the month of April where all I did was cross stitch while binge-watching [Bon Appetite](https://www.youtube.com/user/BonAppetitDotCom) videos:
 
@@ -70,14 +70,14 @@ This is the month of April where all I did was cross stitch while binge-watching
   <img class="colorblind" src="https://i.imgur.com/h0mzfFI.png" alt="april">
 </div>
 
-Not a single Great day. Compare that to July when I got to see friends:
+Not a single Great day and 2/3 of the month were Normal. Compare that to July when Covid restrictions eased up and I got to see friends:
 
 <div class="mood">
   <img class="color" src="https://i.imgur.com/x2na4Vh.png" alt="july">
   <img class="colorblind" src="https://i.imgur.com/z72HG7c.png" alt="july">
 </div>
 
-Cases started rising again in the fall and my mood adjusted accordingly -- less Good days.
+Cases started rising again in the fall and my mood adjusted accordingly -- no more Great days and less Good days:
 
 <div class="mood">
   <img class="color" src="https://i.imgur.com/mRQtSuI.png" alt="nov">
@@ -86,20 +86,30 @@ Cases started rising again in the fall and my mood adjusted accordingly -- less 
 
 ### Seasonal Depression
 
-I also probably have a mild case of seasonal depression. Being outside and getting sun makes me happy. Summer is my favorite season by far. Thus, I had way more Great days when the weather was warmer.
+I have a self-diagnosed mild case of seasonal depression. Being outside and getting sun makes me happy. Summer is my favorite season by far. Thus, I had way more Great days when the weather was warmer:
+
+<span style="color:#FF2600">[YEAR VIEW]</span>
 
 ### Bad Days Get Better
+
+On 3/3, I went through a breakup which was definitely the lowest point of the year. I wallowed in misery for a solid two days -- didn't leave my room, couldn't eat, constantly crying etc. I tracked every day during this period:
 
 <div class="mood">
   <img class="color" src="https://i.imgur.com/5LqcDs4.png" alt="bad days">
   <img class="colorblind" src="https://i.imgur.com/iNNaYBE.png" alt="bad days">
 </div>
 
+In the moment, it felt like I'd never be happy again. But with every passing day, it hurt a little less and the graph above reflects that.
+
+Now, when I feel down, I think about those days in March, and remind myself that Great days are just around the corner. Time truly heals all wounds and I can get through it.
+
 ## Conclusion
 
-<span style="color:#FF2600">more reflection</span>
+What a year! I'm so glad I conducted this experiment.
 
-If I could make Dayz from scratch, I would implement these things:
+First, I absolutely adored coding a full stack app from scratch -- I learned tons in the process. And second, I appreciated how I got to reflect on my day every night, as well as on the entire year through this post. I can't believe I'm saying this but overall, **2020 was a Good year for me**. Lotsa growth and development, both skill-wise and personal-wise.
+
+If I could make Dayz from scratch, I would implement:
 
 - Have Express serve my React app -- might solve some CORS / HTTP vs HTTPS issues
 - Structure components differently
