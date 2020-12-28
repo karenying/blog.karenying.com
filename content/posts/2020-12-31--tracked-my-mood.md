@@ -97,15 +97,23 @@ I also probably have a mild case of seasonal depression. Being outside and getti
 
 ## Conclusion
 
+<span style="color:#FF2600">more reflection</span>
+
 If I could make Dayz from scratch, I would implement these things:
 
 - Have Express serve my React app -- might solve some CORS / HTTP vs HTTPS issues
 - Structure components differently
 - Use Typescript and Sass
 - State management
-- Passwords + account management / general account security
 - Responsiveness
+- Passwords + account management / general account security
 
 The fact that Dayz currently doesn't have these things really demotivates me from working on the app...
 
-So where does that leave this experiment? I think I'll continue to track daily. Hopefully catch ya at "I Tracked My Mood for Every Day of 2021"!
+So where does that leave this experiment and app?
+
+I'm definitely **not** releasing Dayz to the public in its current state (@ the last bullet) but I think I'll continue to track daily. Hopefully catch ya at "I Tracked My Mood for Every Day of 2021"!
+
+Here's to many Great days that will come 🥂
+
+_Thanks for reading!_
