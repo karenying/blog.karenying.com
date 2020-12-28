@@ -114,6 +114,6 @@ So where does that leave this experiment and app?
 
 I'm definitely **not** releasing Dayz to the public in its current state (@ the last bullet) but I think I'll continue to track daily. Hopefully catch ya at "I Tracked My Mood for Every Day of 2021"!
 
-Here's to many Great days that will come 🥂
+Happy New Year and here's to many Great days that will come 🥂
 
 _Thanks for reading!_
