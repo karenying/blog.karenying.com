@@ -21,7 +21,7 @@ const Author = ({ author }) => (
     </div>
 
     <div className={styles['author__creds']}>
-      cs <span className='yellow-text'>@</span> princeton
+      cs '21 <span className='yellow-text'>@</span> princeton
       <br />
       swe <span className='yellow-text'>@</span>{' '}
       <a href='https://www.wellsheet.com/'>wellsheet</a>
