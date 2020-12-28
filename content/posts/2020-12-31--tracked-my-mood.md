@@ -25,7 +25,7 @@ Around that time I was also starting my web dev journey~ and what better way to 
 
 The backend is [Express](https://expressjs.com/) on top of a [MongoDB](https://www.mongodb.com/) database with a [Mongoose](https://mongoosejs.com/) ODM. It's a [ReactJS](https://reactjs.org/) frontend, bootstrapped with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app). I deployed it with [Heroku](https://www.heroku.com/) free-tier and ran a [cron job](https://cron-job.org/en/) that pinged the site every half hour to prevent the app from [falling asleep](https://blog.heroku.com/app_sleeping_on_heroku).
 
-There are 4 **timeframe views**: day, week, month, and year. In week view only (I got lazy / the app is unfinished), you could click a day and rate it on this **scale**: Bad day, Off day, Normal day, Good day, and Great day -- like the original spreadsheet I made.
+There are 4 **timeframe views**: Day, Week, Month, and Year. In Week view only (I got lazy / the app is unfinished), you could click a day and rate it on this **scale**: Bad day, Off day, Normal day, Good day, and Great day -- like the original spreadsheet I made.
 
 I got the app to a usable state and sorta gave up working on it. But I set a daily reminder to rate my day at night:
 
@@ -96,3 +96,16 @@ I also probably have a mild case of seasonal depression. Being outside and getti
 </div>
 
 ## Conclusion
+
+If I could make Dayz from scratch, I would implement these things:
+
+- Have Express serve my React app -- might solve some CORS / HTTP vs HTTPS issues
+- Structure components differently
+- Use Typescript and Sass
+- State management
+- Passwords + account management / general account security
+- Responsiveness
+
+The fact that Dayz currently doesn't have these things really demotivates me from working on the app...
+
+So where does that leave this experiment? I think I'll continue to track daily. Hopefully catch ya at "I Tracked My Mood for Every Day of 2021"!
