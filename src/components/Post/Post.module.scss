@@ -77,10 +77,11 @@
     }
 
     &-right {
-      margin: 15px 15px 10px;
+      margin: 15px 5px 10px;
       display: flex;
       align-items: center;
       padding-bottom: 10px;
+      max-width: 375px;
 
       &-details {
         display: flex;
@@ -127,10 +128,9 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     padding-bottom: 75px;
-    padding-right: 10px;
 
     &-contacts {
-      margin: 10px 0px 0px 5px;
+      margin-top: 10px;
       width: 150px;
     }
   }
@@ -180,13 +180,22 @@
 
 @media screen and (max-width: $layout-breakpoint-sm) {
   .post {
-    &__footer-contacts {
-      display: none;
+    &__footer {
+      justify-content: center;
+
+      &-right {
+        width: 100%;
+        justify-content: space-around;
+      }
+
+      &-contacts {
+        display: none;
+      }
     }
 
-    &__footer-right {
-      width: 100%;
-      justify-content: space-around;
+    &__copyright-container,
+    &__footer {
+      margin: 0 1.25rem;
     }
   }
 }

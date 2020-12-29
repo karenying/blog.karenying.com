@@ -135,7 +135,9 @@ const Post = ({ post }) => {
           <Contacts />
         </div>
       </div>
-      <CopyrightFooter />
+      <div className={styles['post__copyright-container']}>
+        <CopyrightFooter />
+      </div>
     </div>
   );
 };
