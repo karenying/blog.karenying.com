@@ -13,14 +13,16 @@ const Subscribe = ({ isPost }) => {
         <div className={styles['Subscribe-small-text']}>
           Well, you made it this far
         </div>
-        Get in the loop <br />
+        Get in the <span className='dark-pink-text'>loop</span>
+        <br />
         for <span className='dark-pink-text'>new</span> posts!
       </label>
     );
   } else {
     title = (
       <label>
-        Get in the loop <br />
+        Get in the <span className='dark-pink-text'>loop</span>
+        <br />
         for <span className='dark-pink-text'>new</span> posts!
       </label>
     );
