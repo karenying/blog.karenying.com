@@ -21,7 +21,7 @@ Around that time I was also starting my web dev ~journey~. What better way to le
 
 ## Dayz ☀️
 
-<span style="color:#FF2600">[APP SCREENSHOT]</span>
+![](/media/tracked-my-mood-daily-2020/dayz.png)
 
 The backend is [Express](https://expressjs.com/) on top of a [MongoDB](https://www.mongodb.com/) database with a [Mongoose](https://mongoosejs.com/) ODM. It's a [ReactJS](https://reactjs.org/) frontend, bootstrapped with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app). I deployed it with free-tier [Heroku](https://www.heroku.com/) and ran a [cron job](https://cron-job.org/en/) that pinged the site every half hour to prevent the app from [falling asleep](https://blog.heroku.com/app_sleeping_on_heroku).
 
