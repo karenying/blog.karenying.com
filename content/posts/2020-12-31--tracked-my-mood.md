@@ -15,7 +15,7 @@ minutes: '5'
 
 <span style="color:#FF2600">[SCREENSHOT OF THE YEAR VIEW AS SOCIAL IMAGE PIC]</span>
 
-In December 2019, I saw a [Reddit post](https://www.reddit.com/r/CasualConversation/comments/ehz6di/i_decided_to_keep_track_of_how_each_day_in_2019/?utm_source=share&utm_medium=web2x) titled "I decided to keep track of how each day in 2019 went for me" and thought I too wanted to keep track of my days for 2020. So I made a similar [Google Sheet](https://docs.google.com/spreadsheets/d/1D9-rCOvZ2aekkK3pYQw-7tHW3TcxV0UnGJZm_DeWiXk/edit?usp=sharing).
+In **December 2019**, I saw a [Reddit post](https://www.reddit.com/r/CasualConversation/comments/ehz6di/i_decided_to_keep_track_of_how_each_day_in_2019/?utm_source=share&utm_medium=web2x) titled "I decided to keep track of how each day in 2019 went for me" and thought I too wanted to keep track of my days for 2020. So I made a similar [Google Sheet](https://docs.google.com/spreadsheets/d/1D9-rCOvZ2aekkK3pYQw-7tHW3TcxV0UnGJZm_DeWiXk/edit?usp=sharing).
 
 Around that time I was also starting my web dev ~journey~. What better way to learn than to build a full-stack mood tracker web app to replace the spreadsheet? That's exactly how Dayz and this post came to be.
 
