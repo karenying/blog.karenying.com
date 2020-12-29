@@ -88,7 +88,7 @@ Cases started rising again in the fall and my mood adjusted accordingly -- goodb
 
 ### Seasonal Depression
 
-I have a self-diagnosed mild case of seasonal depression. Being outside and getting sun makes me happy. Summer is my favorite season by far. Thus, I had way more Great days when the weather was warmer:
+I've self-diagnosed myself with a mild case of seasonal depression. Being outside and getting sun makes me happy. Summer is my favorite season by far. Thus, I had way more Great days when the weather was warmer:
 
 <span style="color:#FF2600">[YEAR VIEW]</span>
 
@@ -115,10 +115,11 @@ I can't believe I'm saying this but overall, **2020 was a Good year for me**. Lo
 
 ---
 
-If I could make Dayz from scratch, I would implement:
+If I could make Dayz from scratch, I would implement these structural changes:
 
 - Express serving my React app -- might solve some CORS / HTTP vs HTTPS issues
 - Different / more organized React component structure
+- [Luxon](https://moment.github.io/luxon/) to handle dates
 - Typescript and Sass
 - State management
 - Responsiveness, or just full send into mobile only
@@ -126,7 +127,7 @@ If I could make Dayz from scratch, I would implement:
 
 The fact that it currently doesn't have these things really demotivates me from working on the app.
 
-So where does that leave this project?
+**So where does that leave this project?**
 
 I'm definitely **not** releasing Dayz to the public in its current state (@ the last bullet) but I think I'll continue to track daily. If I get enough interest, I _could_ be convinced to rebuild it from scratch, with those aforementioned features. Or if you're wanna take over the project, [email me](mailto:karenying7@gmail.com). Regardless, hopefully catch ya at "I Tracked My Mood for Every Day of 2021".
 
