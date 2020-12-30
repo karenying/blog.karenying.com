@@ -29,7 +29,7 @@ There are 4 **timeframe views**: Day, Week, Month, and Year. In Week view only (
 
 I got the app to a usable state and gave up working on it. But I set a daily reminder to rate my day at night:
 
-![](/media/tracked-my-mood-daily-2020/reminder.png#width=300px)
+![reminder](/media/tracked-my-mood-daily-2020/reminder.png#width=300px)
 
 And that's how I ended up tracking my mood for every day of 2020. Here's what the data told me.
 
@@ -62,7 +62,7 @@ I rated so few days as Bad that I can distinctly remember what went down in thos
 
 I chose an interesting year to start this experiment huh. It's not every year a global pandemic hits. Covid for sure had an impact on the data. This is how cases trended in Massachusetts where I've been living for the majority of the year:
 
-<span style="color:#FF2600">[NYT PIC]</span>
+![nyt](/media/tracked-my-mood-daily-2020/nyt.png)
 
 _**Source**: [New York Times](https://www.nytimes.com/interactive/2020/us/massachusetts-coronavirus-cases.html#cases)_
 
