@@ -13,7 +13,7 @@ category: 'ahh'
 minutes: '5'
 ---
 
-<span style="color:#FF2600">[SCREENSHOT OF THE YEAR VIEW AS SOCIAL IMAGE PIC]</span>
+![2020 year](/media/socialImages/tracked-my-mood-daily-2020.png)
 
 In **December 2019**, I saw a [Reddit post](https://www.reddit.com/r/CasualConversation/comments/ehz6di/i_decided_to_keep_track_of_how_each_day_in_2019/?utm_source=share&utm_medium=web2x) titled "I decided to keep track of how each day in 2019 went for me" and thought I too wanted to keep track of my days for 2020. So I made a similar [Google Sheet](https://docs.google.com/spreadsheets/d/1D9-rCOvZ2aekkK3pYQw-7tHW3TcxV0UnGJZm_DeWiXk/edit?usp=sharing).
 
@@ -47,9 +47,12 @@ _I also recognize these are NOT the easiest colors to distinguish and not the be
 
 From the way I defined the scale, theoretically my ratings should be a **symmetric distribution**, centered around Normal day. This was not the case at all:
 
-<span style="color:#FF2600">[PIC OF YEAR COUNTS]</span>
+<div class="mood">
+  <img class="color" src="https://i.imgur.com/4G6LRMQ.png" alt="counts" width>
+  <img class="colorblind" src="https://i.imgur.com/ZSPcSpB.png" alt="april">
+</div>
 
-Let's give numeric values to each type of day: **Bad = 0, Off = 1, Normal = 2, Good = 3, Great = 4**. And take the average. We get <span style="color:#FF2600">[SOME QUICK MATHS]</span>, greater than 2 (normal). I had an inflated perception of what each day was actually like.
+Let's give numeric values to each type of day: **Bad = 0, Off = 1, Normal = 2, Good = 3, Great = 4**. And take the average: **2.36**, much greater than 2 (normal). I had an inflated perception of what each day was actually like.
 
 This makes sense with my personality -- I generally have a positive outlook on life. Therefore, on average, I was more generous with my ratings, thinking I had a better day than what the scale defined.
 
@@ -90,7 +93,10 @@ Cases started rising again in the fall and my mood adjusted accordingly -- goodb
 
 I've self-diagnosed myself with a mild case of seasonal depression. Being outside and getting sun makes me happy. Summer is my favorite season by far. Thus, I had way more Great days when the weather was warmer:
 
-<span style="color:#FF2600">[YEAR VIEW]</span>
+<div class="mood">
+  <img class="color" src="https://i.imgur.com/D0zaKiG.png" alt="counts">
+  <img class="colorblind" src="https://i.imgur.com/VIbZfHt.png" alt="april">
+</div>
 
 ### Bad Days Get Better!
 
