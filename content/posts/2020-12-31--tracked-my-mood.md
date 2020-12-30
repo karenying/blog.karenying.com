@@ -1,9 +1,9 @@
 ---
-title: 'I Tracked My Mood for Every Day of 2020'
+title: 'I Tracked My Mood Every Day of 2020'
 date: '2020-12-31T12:48:35-0500'
 template: 'post'
 draft: false
-slug: 'tracked-my-mood-daily-2020'
+slug: 'tracking-my-mood-daily-2020'
 tags:
   - '2020'
   - 'Apps'
@@ -131,6 +131,6 @@ The fact that it currently doesn't have these things really demotivates me from 
 
 I'm definitely **not** releasing Dayz to the public in its current state (@ the last bullet) but I think I'll continue to track daily. If I get enough interest, I _could_ be convinced to rebuild it from scratch, with those aforementioned features. Or if you're wanna take over the project, [email me](mailto:karenying7@gmail.com). Anyway, hopefully catch ya at "I Tracked My Mood for Every Day of 2021".
 
-Happy New Year and here's to many Great days that will come 🥂
+Happy New Year! Here's to many Great days that will come 🥂
 
 _Thanks for reading!_
