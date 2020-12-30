@@ -24,7 +24,13 @@ const Author = ({ author }) => (
       cs '21 <span className='yellow-text'>@</span> princeton
       <br />
       swe <span className='yellow-text'>@</span>{' '}
-      <a href='https://www.wellsheet.com/'>wellsheet</a>
+      <a
+        href='https://www.wellsheet.com/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        wellsheet
+      </a>
     </div>
   </div>
 );

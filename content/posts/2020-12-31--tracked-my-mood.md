@@ -129,7 +129,7 @@ The fact that it currently doesn't have these things really demotivates me from 
 
 **So where does that leave this project?**
 
-I'm definitely **not** releasing Dayz to the public in its current state (@ the last bullet) but I think I'll continue to track daily. If I get enough interest, I _could_ be convinced to rebuild it from scratch, with those aforementioned features. Or if you're wanna take over the project, [email me](mailto:karenying7@gmail.com). Regardless, hopefully catch ya at "I Tracked My Mood for Every Day of 2021".
+I'm definitely **not** releasing Dayz to the public in its current state (@ the last bullet) but I think I'll continue to track daily. If I get enough interest, I _could_ be convinced to rebuild it from scratch, with those aforementioned features. Or if you're wanna take over the project, [email me](mailto:karenying7@gmail.com). Anyway, hopefully catch ya at "I Tracked My Mood for Every Day of 2021".
 
 Happy New Year and here's to many Great days that will come 🥂
 
