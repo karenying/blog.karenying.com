@@ -25,7 +25,7 @@ Around that time I was also starting my web dev ~journey~. What better way to le
 
 The backend is [Express](https://expressjs.com/) on top of a [MongoDB](https://www.mongodb.com/) database with a [Mongoose](https://mongoosejs.com/) ODM. It's a [ReactJS](https://reactjs.org/) frontend, bootstrapped with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app). I deployed it with free-tier [Heroku](https://www.heroku.com/) and ran a [cron job](https://cron-job.org/en/) that pinged the site every half hour to prevent the app from [falling asleep](https://blog.heroku.com/app_sleeping_on_heroku).
 
-There are 4 **timeframe views**: Day, Week, Month, and Year. In Week view only (I got lazy / the app is unfinished), you could click a day and rate it on this **scale**: Bad day, Off day, Normal day, Good day, and Great day -- like the original spreadsheet I made.
+There are 4 **timeframe views**: Day, Week, Month, and Year. In Week view only (I got lazy / the app is unfinished), you could click a day and rate it on this **scale**: Bad day, Off day, Normal day, Good day, and Great day -- like the OG spreadsheet I made.
 
 I got the app to a usable state and gave up working on it. But I set a daily reminder to rate my day at night:
 
@@ -94,8 +94,8 @@ Cases started rising again in the fall and my mood adjusted accordingly -- goodb
 I've self-diagnosed myself with a mild case of seasonal depression. Being outside and getting sun makes me happy. Summer is my favorite season by far. Thus, I had way more Great days when the weather was warmer:
 
 <div class="mood">
-  <img class="color" src="https://i.imgur.com/D0zaKiG.png" alt="counts">
-  <img class="colorblind" src="https://i.imgur.com/VIbZfHt.png" alt="april">
+  <img class="color" src="https://i.imgur.com/fiLBIqf.png" alt="counts">
+  <img class="colorblind" src="https://i.imgur.com/GwMv7RP.png" alt="april">
 </div>
 
 ### Bad Days Get Better!
