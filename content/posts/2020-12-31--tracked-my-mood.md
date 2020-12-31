@@ -13,7 +13,7 @@ category: 'ahh'
 minutes: '6'
 ---
 
-![2020 year](/media/socialImages/tracked-my-mood-daily-2020.png)
+![2020 year](/media/socialImages/tracked-my-mood-daily-2020.png)_Color blind friendly version of this cover image [here](https://i.imgur.com/EYVoqO8.png)_
 
 In **December 2019**, I saw a [Reddit post](https://www.reddit.com/r/CasualConversation/comments/ehz6di/i_decided_to_keep_track_of_how_each_day_in_2019/?utm_source=share&utm_medium=web2x) titled "I decided to keep track of how each day in 2019 went for me" and thought I too wanted to keep track of my days for 2020. So I made a similar [Google Sheet](https://docs.google.com/spreadsheets/d/1D9-rCOvZ2aekkK3pYQw-7tHW3TcxV0UnGJZm_DeWiXk/edit?usp=sharing).
 
