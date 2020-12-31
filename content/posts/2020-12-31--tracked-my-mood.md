@@ -10,7 +10,7 @@ tags:
 description: '...using a web app I coded. A look at trends that came out of it. Color blind friendly visuals included'
 socialImage: '/media/socialImages/tracked-my-mood-daily-2020.png'
 category: 'ahh'
-minutes: '5'
+minutes: '6'
 ---
 
 ![2020 year](/media/socialImages/tracked-my-mood-daily-2020.png)
