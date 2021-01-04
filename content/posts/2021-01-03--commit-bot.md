@@ -7,7 +7,7 @@ slug: 'github-commit-bot'
 tags:
   - 'Apps'
   - 'Shitpost'
-description: 'How to become the guy she told you not to worry about'
+description: 'How to become the guy she tells you not to worry about'
 socialImage: '/media/socialImages/github-commit-bot.jpg'
 category: 'ahh'
 minutes: '4'
@@ -141,6 +141,6 @@ Security vulnerabilities aside, this commit bot will stack your contributions gr
 
 I personally don't use this bot because **1.** the aforementioned security issues and **2.** I think I [already](https://github.com/karenying) look like I code 😉
 
-Anyway, congrats! You are now officially on your way to becoming **the guy she told you not to worry about**.
+Anyway, congrats! You are now officially on your way to becoming **the guy she tells you not to worry about**.
 
 _Thanks for reading. Happy hacking!_
