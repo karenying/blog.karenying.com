@@ -21,7 +21,7 @@ Are you trying to impress recruiters and / or that cute coworker you noticed on 
 
 ## Implementation
 
-_**⚠️ Warning**: This bot was configured on macOS Catalina. It has **NOT** been tested on anything else. It could also create security issues. **Implement at your own risk.** ⚠️_
+_**⚠️ Warning**: This bot was configured on macOS Catalina. It has **NOT** been tested on anything else. Setting it up can also cause security vulnerabilities. **Implement at your own risk.** ⚠️_
 
 We use a python script to randomize and execute the commits -- it'd be weird if you committed the same amount of times every day. Then we run a daily local cron job to execute the script.
 
@@ -87,9 +87,23 @@ Great. Now if you visit your new repo on GitHub, you should see `app.py` and `ou
 
 We need to give cron access to your files in order for it to run `app.py`.
 
-_**⚠️ Warning**: This is **NOT** a great security practice. A malicious person / program could create cron jobs that also have Full Disk Access. ⚠️_
+_**⚠️ Warning**: This is **NOT** a great security practice. A malicious person / program could create cron jobs that also have Full Disk Access and modify your data. ⚠️_
+
+Navigate to **System Preferences > Security & Privacy > Privacy > Full Disk Access**:
+
+![full disk access](/media/github-commit-bot/full_disk_access.png)
+
+Click the 🔒 and then the + sign. Open _Go to Folder_ with `⌘ + ⇧ + G` and enter the path `/usr/sbin/cron`. Select the cron program and click _Open_. Click the lock again.
 
 ### 4. Save GitHub credentials on disk
+
+Cron also needs access to your GitHub credentials.
+
+_**⚠️ Warning**: This is **NOT** a great security practice. It stores your GitHub credentials as plaintext on your computer. This means that everyone on your computer can access them like malicious NPM packages._
+
+```bash
+git config credential.helper store
+```
 
 ### 5. Create a cron job
 
