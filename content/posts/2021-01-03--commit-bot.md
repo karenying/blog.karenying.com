@@ -65,7 +65,7 @@ In order to randomize, we generate a random integer between 0 and 10 and check i
 
 ### 2. Create a new private repo
 
-Go to [GitHub](https://github.com) and create a new repo. Name it whatever you want but make sure you hit **private** (unless you want everyone to see that you're a fraud 🤪):
+Go to [GitHub](https://github.com) and create a new repo. Name it whatever you want but make sure you hit **private** (unless you want everyone to see your shenanigans 🤪):
 
 ![private repo](/media/github-commit-bot/private_repo.png)
 
