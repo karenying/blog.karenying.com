@@ -1,6 +1,6 @@
 ---
 title: 'GitHub Commit Bot to Stack Your Contributions Graph'
-date: '2021-01-03T13:33:07-0500'
+date: '2021-01-03T19:45:07-0500'
 template: 'post'
 draft: false
 slug: 'github-commit-bot'
@@ -10,7 +10,7 @@ tags:
 description: 'How to become the guy she told you not to worry about'
 socialImage: '/media/socialImages/github-commit-bot.jpg'
 category: 'ahh'
-minutes: '6'
+minutes: '4'
 ---
 
 ![meme](/media/socialImages/github-commit-bot.jpg)
@@ -97,9 +97,9 @@ Click the 🔒 and then the + sign. Open _Go to Folder_ with `⌘ + ⇧ + G` and
 
 ### 4. Save GitHub credentials on disk
 
-Cron also needs access to your GitHub credentials.
+Cron also needs access to your GitHub credentials. So we're gonna cache them on your computer.
 
-_**⚠️ Warning**: This is **NOT** a great security practice. It stores your GitHub credentials as plaintext on your computer. This means that everyone on your computer can access them like malicious NPM packages._
+_**⚠️ Warning**: This is **NOT** a great security practice. It stores your GitHub credentials as plaintext on your computer. This means that everyone on your computer can access them including malicious NPM packages. ⚠️_
 
 ```bash
 git config credential.helper store
@@ -107,4 +107,34 @@ git config credential.helper store
 
 ### 5. Create a cron job
 
+Finally, we're ready to schedule our cron job. We'll be using crontab which is native to macOS / linux.
+
+First, pick when you want the cron job to run. For example, I picked 10:30 AM every day because I know my computer will most likely be active then. You can see this [site](https://crontab.guru/) if you're unfamiliar with cron syntax. For 10:30 AM daily, the cron job time prefix would be `30 10 * * *`.
+
+Then following this prefix, we have the command that we want the job to execute: `cd [PATH TO FOLDER] && python3 app.py`.
+
+Here's my job with the time and command together:
+
+```bash
+30 10 * * * cd ~/Documents/commit-bot && python3 app.py
+```
+
+Now we need to add this job.
+
+In your terminal:
+
+```bash
+crontab -e
+```
+
+This will open up a Vim editor. Paste the one line from above into the file. Write and quit with `:wq`.
+
+And that's it! Hopefully after these steps, you've successfully set up your commit bot.
+
 ## Conclusion
+
+Security vulnerabilities aside, this commit bot will stack your contributions graph. You're welcome. Now when people see your GitHub profile, they will think _damn this person codes_.
+
+Congrats, you are now officially the guy she told you not to worry about.
+
+_Thanks for reading. Happy hacking!_
