@@ -6,7 +6,7 @@ import { DateTime } from 'luxon';
 
 const Content = ({ body, title, description, date, minutes }) => (
   <div className={styles['content']}>
-    <h1 className={styles['content__title']}>{title}</h1>
+    <h2 className={styles['content__title']}>{title}</h2>
     <p className={styles['content__description']}>{description}</p>
     <div
       className={`${feedStyles['feed__item-details']} ${styles['content__details']}`}

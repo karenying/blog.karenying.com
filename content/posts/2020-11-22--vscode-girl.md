@@ -36,7 +36,7 @@ Ah yes, the social media platform for brogrammers.
 
 ![meme](https://img.devrant.com/devrant/rant/r_957017_r4A2p.jpg)
 
-You need to become "the guy she tells me not to worry about".
+You need to become "the guy she tells me not to worry about". Luckily for you. I wrote a [post](https://blog.karenying.com/posts/github-commit-bot) on how to stack your contributions graph.
 
 ### Repos
 

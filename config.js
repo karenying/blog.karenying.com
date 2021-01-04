@@ -7,7 +7,7 @@ module.exports = {
   subtitle: 'I beep boop and write about it',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
+  postsPerPage: 6,
   googleAnalyticsId: 'UA-170086604-2',
   useKatex: true,
   menu: [
