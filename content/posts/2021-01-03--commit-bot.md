@@ -23,7 +23,9 @@ Are you trying to impress recruiters and / or that cute coworker you noticed on 
 
 _**⚠️ Warning**: This bot was configured on macOS Catalina. It has **NOT** been tested on anything else. Setting it up can also cause security vulnerabilities. **Implement at your own risk.** ⚠️_
 
-We use a python script to randomize and execute the commits -- it'd be weird if you committed the same amount of times every day. Then we run a daily local cron job to execute the script.
+### The TL;DR
+
+We'll use a python script to randomize and execute the commits -- it'd be weird if you committed the same amount of times every day. Then we'll run a daily local cron job to execute the script.
 
 ### 1. Clone my repo
 
@@ -55,15 +57,15 @@ if (randint(0, 10) > THRESHOLD):
     commit()
 ```
 
-We use the `os` module to execute bash commands. The `commit` function writes the current datetime to `output.txt`, adds, commits, and pushes the change.
+The `commit` function writes the current datetime to `output.txt`. It then adds, commits, and pushes the change. We use the `os` module to execute the git commands via terminal.
 
-In order to randomize, we generate a random integer between 0 and 10, check if it's greater than a set threshold; The larger the threshold, the **less** frequently the commits will occur. If it so happens that the random int passes the threshold on this certain day, we generate another random int between 0 and `MAX_COMMITS`, and commit that many times.
+In order to randomize, we generate a random integer between 0 and 10 and check if it's greater than a set threshold; The larger the threshold, the **less** frequently the commits will occur. If it so happens that the random int passes the threshold, we generate another random int between 0 and `MAX_COMMITS`, and commit that many times.
 
 **Change `THRESHOLD` and `MAX_COMMITS` to suit your needs.** Feel free to change the commit message as well.
 
 ### 2. Create a new private repo
 
-Go to https://github.com/ and create a new repo. Name it whatever you want but make sure you hit private:
+Go to https://github.com and create a new repo. Name it whatever you want but make sure you hit private:
 
 ![private repo](/media/github-commit-bot/private_repo.png)
 
@@ -93,13 +95,15 @@ Navigate to **System Preferences > Security & Privacy > Privacy > Full Disk Acce
 
 ![full disk access](/media/github-commit-bot/full_disk_access.png)
 
-Click the 🔒 and then the + sign. Open _Go to Folder_ with `⌘ + ⇧ + G` and enter the path `/usr/sbin/cron`. Select the cron program and click _Open_. Click the lock again.
+Click the 🔒 and then the **+** sign. Open _Go to Folder_ with `⌘ + ⇧ + G` and enter the path `/usr/sbin/cron`. Select the cron program and click _Open_. Click the lock again.
 
 ### 4. Save GitHub credentials on disk
 
 Cron also needs access to your GitHub credentials. So we're gonna cache them on your computer.
 
-_**⚠️ Warning**: This is **NOT** a great security practice. It stores your GitHub credentials as plaintext on your computer. This means that everyone on your computer can access them including malicious NPM packages. ⚠️_
+_**⚠️ Warning**: This is **NOT** a great security practice. It stores your GitHub credentials as plaintext on your computer. This means that malicious NPM packages can access them. ⚠️_
+
+If you can sleep at night knowing that:
 
 ```bash
 git config credential.helper store
@@ -109,7 +113,9 @@ git config credential.helper store
 
 Finally, we're ready to schedule our cron job. We'll be using crontab which is native to macOS / linux.
 
-First, pick when you want the cron job to run. For example, I picked 10:30 AM every day because I know my computer will most likely be active then. You can see this [site](https://crontab.guru/) if you're unfamiliar with cron syntax. For 10:30 AM daily, the cron job time prefix would be `30 10 * * *`.
+First, pick **when** you want the cron job to run. For example, I picked 10:30 AM every day because I know my computer will most likely be active then. See this [site](https://crontab.guru/) if you're unfamiliar with cron syntax.
+
+For 10:30 AM daily, the cron job time prefix would be `30 10 * * *`.
 
 Then following this prefix, we have the command that we want the job to execute: `cd [PATH TO FOLDER] && python3 app.py`.
 
@@ -119,9 +125,7 @@ Here's my job with the time and command together:
 30 10 * * * cd ~/Documents/commit-bot && python3 app.py
 ```
 
-Now we need to add this job.
-
-In your terminal:
+Now we need to add this job. In your terminal:
 
 ```bash
 crontab -e
@@ -129,7 +133,7 @@ crontab -e
 
 This will open up a Vim editor. Paste the one line from above into the file. Write and quit with `:wq`.
 
-And that's it! Hopefully after these steps, you've successfully set up your commit bot.
+**And that's it!** Hopefully after these steps, you've successfully set up your commit bot.
 
 ## Conclusion
 
