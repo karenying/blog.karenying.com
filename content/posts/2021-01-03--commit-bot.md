@@ -15,9 +15,9 @@ minutes: '4'
 
 ![meme](/media/socialImages/github-commit-bot.jpg)
 
-_**Disclaimer**: This is a dumb post. I like making useless things. No one cares what your contributions graph looks like._
+_**Disclaimer**: This is a dumb post, partly due to security vulnerabilities but also because no one actually cares what your contributions graph looks like._
 
-Are you trying to impress recruiters and / or that cute coworker you noticed on a company-wide Zoom call last week? Do you feel inadequate when you have a dick-measuring contest with the boys via how many commits you push up daily? Or do you just have commitment issues? Don't worry, I'm not here to judge.
+Are you trying to impress recruiters and / or that cute coworker you noticed on a company-wide Zoom call last week? Do you feel inadequate when you have a ~~dick~~ commit-measuring contest with ~the boys~? Or do you just have commitment issues? Don't worry, I'm not here to judge but I am here to fix your woes.
 
 ## Implementation
 
@@ -25,7 +25,7 @@ _**⚠️ Warning**: This bot was configured on macOS Catalina. It has **NOT** b
 
 ### The TL;DR
 
-We'll use a python script to randomize and execute the commits -- it'd be weird if you committed the same amount of times every day. Then we'll run a daily local cron job to execute the script.
+We'll use a python script to randomize and execute the commits -- it'd be weird if you committed the same amount of times every day. Then we'll run a local cron job to execute the script.
 
 ### 1. Clone my repo
 
@@ -59,17 +59,17 @@ if (randint(0, 10) > THRESHOLD):
 
 The `commit` function writes the current datetime to `output.txt`. It then adds, commits, and pushes the change. We use the `os` module to execute the git commands via terminal.
 
-In order to randomize, we generate a random integer between 0 and 10 and check if it's greater than a set threshold; The larger the threshold, the **less** frequently the commits will occur. If it so happens that the random int passes the threshold, we generate another random int between 0 and `MAX_COMMITS`, and commit that many times.
+In order to randomize, we generate a random integer between 0 and 10 and check if it's greater than a set threshold; The **larger** the threshold, the **less** frequently the commits will occur. If it so happens that the random int passes the threshold, we generate another random int between 0 and `MAX_COMMITS`, and commit that many times.
 
 **Change `THRESHOLD` and `MAX_COMMITS` to suit your needs.** Feel free to change the commit message as well.
 
 ### 2. Create a new private repo
 
-Go to https://github.com and create a new repo. Name it whatever you want but make sure you hit private:
+Go to https://github.com and create a new repo. Name it whatever you want but make sure you hit **private** (unless you want everyone to see that you're a fraud 🤪):
 
 ![private repo](/media/github-commit-bot/private_repo.png)
 
-Now we need to connect our cloned repo to this newly created repo repo:
+Next, we need to connect our cloned repo to this newly created repo:
 
 ```bash
 rm -rf .git
@@ -103,7 +103,7 @@ Cron also needs access to your GitHub credentials. So we're gonna cache them on 
 
 _**⚠️ Warning**: This is **NOT** a great security practice. It stores your GitHub credentials as plaintext on your computer. This means that malicious NPM packages can access them. ⚠️_
 
-If you can sleep at night knowing that:
+If you can sleep at night knowing that, then proceed with:
 
 ```bash
 git config credential.helper store
@@ -113,7 +113,7 @@ git config credential.helper store
 
 Finally, we're ready to schedule our cron job. We'll be using crontab which is native to macOS / linux.
 
-First, pick **when** you want the cron job to run. For example, I picked 10:30 AM every day because I know my computer will most likely be active then. See this [site](https://crontab.guru/) if you're unfamiliar with cron syntax.
+First, pick **when** you want the cron job to run. For example, I chose 10:30 AM every day because I know my computer will most likely be active then. See this [site](https://crontab.guru/) if you're unfamiliar with cron syntax.
 
 For 10:30 AM daily, the cron job time prefix would be `30 10 * * *`.
 
@@ -139,6 +139,8 @@ This will open up a Vim editor. Paste the one line from above into the file. Wri
 
 Security vulnerabilities aside, this commit bot will stack your contributions graph. You're welcome. Now when people see your GitHub profile, they will think _damn this person codes_.
 
-Congrats, you are now officially the guy she told you not to worry about.
+I personally don't use this bot because **1.** the aforementioned security issues and **2.** I think I [already](https://github.com/karenying) look like I code 😉
+
+Anyway, congrats! You are now officially on your way to becoming **the guy she told you not to worry about**.
 
 _Thanks for reading. Happy hacking!_
