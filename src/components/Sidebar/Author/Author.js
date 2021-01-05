@@ -23,13 +23,9 @@ const Author = ({ author }) => (
     <div className={styles['author__creds']}>
       cs '21 <span className='yellow-text'>@</span> princeton
       <br />
-      swe <span className='yellow-text'>@</span>{' '}
-      <a
-        href='https://www.wellsheet.com/'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        wellsheet
+      frontend <span className='yellow-text'>@</span>{' '}
+      <a href='https://gather.town/' target='_blank' rel='noopener noreferrer'>
+        gather
       </a>
     </div>
   </div>
