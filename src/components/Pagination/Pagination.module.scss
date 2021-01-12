@@ -33,10 +33,7 @@
       }
 
       &--disable {
-        pointer-events: none;
-        color: lighten($color-gray, 20%);
-        display: flex;
-        align-items: center;
+        display: none;
       }
     }
   }
