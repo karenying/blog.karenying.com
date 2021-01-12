@@ -18,7 +18,7 @@ minutes: '4'
 
 _**Disclaimer**: This is a dumb post, partly due to security vulnerabilities but mostly because no one cares what your contributions graph looks like._
 
-Are you trying to impress recruiters and/or that cute coworker you noticed on a company-wide Zoom call last week? Do you feel inadequate when you have a ~~dick~~ commit-measuring contest with ~the boys~? Or do you just have commitment issues? Don't worry, I'm not here to judge. I am here to fix your woes.
+Are you trying to impress recruiters and/or that cute coworker you noticed on a company-wide Zoom call last week? Do you feel inadequate when you have a ~~dick~~ commit-measuring contest with ~the boys~? Or do you just have commitment issues? Don't worry, I won't judge because I'm here to fix your woes.
 
 ## Implementation
 
