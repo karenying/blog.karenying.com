@@ -14,6 +14,8 @@ category: 'ahh'
 minutes: '4'
 ---
 
+<i>Shared on [Hacker News](https://news.ycombinator.com/item?id=25400139) and [Twitter](https://twitter.com/karen_ying_/status/1337824281129082880)</i>
+
 ![toggle](/media/socialImages/github-darkmode-sucks.jpg)
 
 This past week, GitHub [released](https://twitter.com/github/status/1336362679506784256) a long-awaited feature -- dark mode. Like many devs around the world, I was hype. In 2020, a dark mode toggle for anything remotely related to tech seems like a requirement.
