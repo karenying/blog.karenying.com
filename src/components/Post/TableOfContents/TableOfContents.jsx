@@ -12,10 +12,14 @@ const TableOfContents = ({ headings }) => {
       const slug = toSlug(value);
 
       if (depth === 2) {
-        return <a href={`#${slug}`}>{value}</a>;
+        return (
+          <a style={{ paddingLeft: 5 }} href={`#${slug}`}>
+            {value}
+          </a>
+        );
       } else if (depth === 3) {
         return (
-          <a style={{ marginLeft: 20 }} href={`#${slug}`}>
+          <a style={{ paddingLeft: 20 }} href={`#${slug}`}>
             {value}
           </a>
         );

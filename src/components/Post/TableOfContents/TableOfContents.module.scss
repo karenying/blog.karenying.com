@@ -28,6 +28,12 @@
       font-size: 15px;
       margin-bottom: 8px;
       line-height: normal;
+      border-left: 2px solid transparent;
+
+      &:hover {
+        border-left: 2px solid $color-pink-light;
+        text-decoration: none !important;
+      }
     }
   }
 }
