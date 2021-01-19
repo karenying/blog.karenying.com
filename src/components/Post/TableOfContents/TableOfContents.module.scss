@@ -1,0 +1,39 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.toc {
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  right: calc(((100vw - 640px) / 2) - 330px);
+  color: white;
+  width: 275px;
+  max-height: 500px;
+  overflow-y: scroll;
+
+  &__title {
+    font-family: $typographic-font-mono;
+    color: $color-pink-light;
+    font-size: 1.2rem;
+    margin: 0px;
+    font-weight: bold;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: $color-gray-light;
+      font-size: 15px;
+      margin-bottom: 8px;
+      line-height: normal;
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-lg) {
+  .toc {
+    display: none;
+  }
+}

@@ -7,7 +7,6 @@ import { useSiteMetadata } from '../hooks';
 const PostTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   const { frontmatter, headings } = data.markdownRemark;
-  console.log(headings);
 
   const {
     title: postTitle,
@@ -23,7 +22,7 @@ const PostTemplate = ({ data }) => {
       description={metaDescription}
       socialImage={socialImageUrl}
     >
-      <Post post={data.markdownRemark} />
+      <Post post={data.markdownRemark} headings={headings} />
     </Layout>
   );
 };
