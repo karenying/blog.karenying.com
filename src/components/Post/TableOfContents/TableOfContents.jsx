@@ -16,7 +16,9 @@ const TableOfContents = ({ headings }) => {
     return headingSlugs.findIndex((h) => window.location.href.includes(h));
   };
 
-  const [currNode, setCurrNode] = useState(getUrlPos());
+  const [currNode, setCurrNode] = useState(
+    typeof window !== 'undefined' ? getUrlPos() : -1
+  );
   const headerOffetsRef = useRef(); // array of offsets of the header
 
   useEffect(() => {
@@ -67,7 +69,7 @@ const TableOfContents = ({ headings }) => {
 
   useEffect(() => {
     setCurrNode(getUrlPos());
-  }, [window.location.href]);
+  }, [typeof window !== 'undefined' ? window.location.href : null]);
 
   const renderHeadings = useCallback(() => {
     slugs.reset();
