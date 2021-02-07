@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 const slugs = require(`github-slugger`)();
 
 import styles from './TableOfContents.module.scss';
@@ -17,8 +17,6 @@ const TableOfContents = ({ headings }) => {
   };
 
   const [currNode, setCurrNode] = useState(getUrlPos());
-  const [isScrollingUp, setScrollDir] = useState(false);
-  const [isScrolling, setIsScrolling] = useState(true);
   const headerOffetsRef = useRef();
 
   useEffect(() => {
@@ -29,57 +27,22 @@ const TableOfContents = ({ headings }) => {
       return (element && element.offsetTop) || 0;
     });
 
-    // Scroll direction logic
-    let lastScrollY = window.pageYOffset;
-    let requestID;
-
-    const updateScrollDir = () => {
-      const scrollY = window.pageYOffset;
-
-      setScrollDir(scrollY < lastScrollY);
-      lastScrollY = scrollY;
-      setIsScrolling(true);
-    };
-
     const onScroll = () => {
-      if (isScrolling) {
-        requestID = window.requestAnimationFrame(updateScrollDir);
-        setIsScrolling(false);
-      }
-    };
+      const currPos = window.pageYOffset;
 
-    window.addEventListener('scroll', onScroll);
+      const checkRelativePos = (i) => {
+        if (
+          currPos > headerOffetsRef.current[i] - 100 &&
+          currPos <= headerOffetsRef.current[i]
+        ) {
+          setCurrNode(i);
+          return true;
+        }
 
-    return () => {
-      cancelAnimationFrame(requestID);
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
+        return false;
+      };
 
-  useEffect(() => {
-    setCurrNode(getUrlPos());
-  }, [window.location.href]);
-
-  useEffect(() => {
-    if (!isScrolling) {
-      return;
-    }
-
-    const currPos = window.pageYOffset;
-
-    const checkRelativePos = (i) => {
-      if (
-        currPos > headerOffetsRef.current[i] - 100 &&
-        currPos <= headerOffetsRef.current[i]
-      ) {
-        setCurrNode(i);
-        return true;
-      }
-      return false;
-    };
-
-    if (isScrollingUp) {
-      for (let i = currNode; i >= 0; i--) {
+      for (let i = 0; i < headerOffetsRef.current.length; i++) {
         if (currPos < headerOffetsRef.current[0] - 100) {
           setCurrNode(-1);
           break;
@@ -89,16 +52,21 @@ const TableOfContents = ({ headings }) => {
           break;
         }
       }
-    } else {
-      for (let i = currNode; i < headerOffetsRef.current.length; i++) {
-        if (checkRelativePos(i)) {
-          break;
-        }
-      }
-    }
-  }, [isScrolling, isScrollingUp]);
+    };
 
-  const renderHeadings = () => {
+    window.addEventListener('scroll', onScroll);
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    setCurrNode(getUrlPos());
+    console.log(window.location.href);
+  }, [window.location.href]);
+
+  const renderHeadings = useCallback(() => {
     slugs.reset();
 
     return headings.map((heading, i) => {
@@ -116,7 +84,7 @@ const TableOfContents = ({ headings }) => {
         </a>
       );
     });
-  };
+  }, [currNode]);
 
   return (
     <div className={styles['toc']}>
