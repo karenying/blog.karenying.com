@@ -94,7 +94,11 @@ const TableOfContents = ({ headings }) => {
   return (
     <div className={styles['toc']}>
       <div className={styles['toc__title']}>Contents</div>
-      <div className={styles['toc__content']}>{renderHeadings()}</div>
+      <div className={styles['toc__content']}>
+        <div className={styles['toc__content-overlay-top']} />
+        {renderHeadings()}
+        <div className={styles['toc__content-overlay-bottom']} />
+      </div>
     </div>
   );
 };

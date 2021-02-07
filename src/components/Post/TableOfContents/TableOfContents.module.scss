@@ -4,12 +4,10 @@
 .toc {
   position: fixed;
   z-index: 1;
-  top: 150px;
+  top: 100px;
   right: calc(((100vw - 640px) / 2) - 330px);
   color: white;
   width: 275px;
-  max-height: 500px;
-  overflow-y: scroll;
 
   &__title {
     font-family: $typographic-font-mono;
@@ -20,8 +18,32 @@
   }
 
   &__content {
+    max-height: 500px;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
+    margin: 0 0 16px;
+
+    &-overlay {
+      &-top,
+      &-bottom {
+        content: '';
+        width: 100%;
+        min-height: 16px;
+        position: sticky;
+        left: 0;
+      }
+
+      &-top {
+        background: linear-gradient(180deg, #2a2b2e 0%, transparent 100%);
+        top: 0;
+      }
+
+      &-bottom {
+        bottom: 0;
+        background: linear-gradient(180deg, transparent 0%, #2a2b2e 100%);
+      }
+    }
 
     a {
       color: $color-gray-light;
