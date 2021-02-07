@@ -27,9 +27,8 @@
     &-overlay {
       &-top,
       &-bottom {
-        content: '';
         width: 100%;
-        min-height: 16px;
+        min-height: 13px;
         position: sticky;
         left: 0;
       }
