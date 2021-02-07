@@ -8,14 +8,13 @@ const toSlug = (value) => {
 };
 
 const TableOfContents = ({ headings }) => {
+  // returns the node index based on window.location.href
   const getUrlPos = () => {
     slugs.reset();
     const headingSlugs = headings.map((h) => toSlug(h.value));
 
     return headingSlugs.findIndex((h) => window.location.href.includes(h));
   };
-
-  console.log(getUrlPos());
 
   const [currNode, setCurrNode] = useState(getUrlPos());
   const [isScrollingUp, setScrollDir] = useState(false);
@@ -74,7 +73,9 @@ const TableOfContents = ({ headings }) => {
         currPos <= headerOffetsRef.current[i]
       ) {
         setCurrNode(i);
+        return true;
       }
+      return false;
     };
 
     if (isScrollingUp) {
@@ -84,11 +85,15 @@ const TableOfContents = ({ headings }) => {
           break;
         }
 
-        checkRelativePos(i);
+        if (checkRelativePos(i)) {
+          break;
+        }
       }
     } else {
       for (let i = currNode; i < headerOffetsRef.current.length; i++) {
-        checkRelativePos(i);
+        if (checkRelativePos(i)) {
+          break;
+        }
       }
     }
   }, [isScrolling, isScrollingUp]);
