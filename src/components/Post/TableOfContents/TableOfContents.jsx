@@ -17,7 +17,7 @@ const TableOfContents = ({ headings }) => {
   };
 
   const [currNode, setCurrNode] = useState(getUrlPos());
-  const headerOffetsRef = useRef();
+  const headerOffetsRef = useRef(); // array of offsets of the header
 
   useEffect(() => {
     if (window.screen.width < 1100) {
