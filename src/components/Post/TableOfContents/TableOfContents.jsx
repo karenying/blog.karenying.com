@@ -20,6 +20,10 @@ const TableOfContents = ({ headings }) => {
   const headerOffetsRef = useRef();
 
   useEffect(() => {
+    if (window.screen.width < 1100) {
+      return;
+    }
+
     slugs.reset();
 
     headerOffetsRef.current = headings.map(({ value }) => {
@@ -63,7 +67,6 @@ const TableOfContents = ({ headings }) => {
 
   useEffect(() => {
     setCurrNode(getUrlPos());
-    console.log(window.location.href);
   }, [window.location.href]);
 
   const renderHeadings = useCallback(() => {
