@@ -4,17 +4,27 @@ const slugs = require(`github-slugger`)();
 import styles from './TableOfContents.module.scss';
 
 const toSlug = (value) => {
-  slugs.reset();
   return slugs.slug(value, false);
 };
 
 const TableOfContents = ({ headings }) => {
-  const [currNode, setCurrNode] = useState(-1);
+  const getUrlPos = () => {
+    slugs.reset();
+    const headingSlugs = headings.map((h) => toSlug(h.value));
+
+    return headingSlugs.findIndex((h) => window.location.href.includes(h));
+  };
+
+  console.log(getUrlPos());
+
+  const [currNode, setCurrNode] = useState(getUrlPos());
   const [isScrollingUp, setScrollDir] = useState(false);
   const [isScrolling, setIsScrolling] = useState(true);
   const headerOffetsRef = useRef();
 
   useEffect(() => {
+    slugs.reset();
+
     headerOffetsRef.current = headings.map(({ value }) => {
       const element = document.getElementById(toSlug(value));
       return (element && element.offsetTop) || 0;
@@ -48,62 +58,60 @@ const TableOfContents = ({ headings }) => {
   }, []);
 
   useEffect(() => {
+    setCurrNode(getUrlPos());
+  }, [window.location.href]);
+
+  useEffect(() => {
     if (!isScrolling) {
       return;
     }
 
-    const curr = window.pageYOffset;
-    let prev = currNode;
+    const currPos = window.pageYOffset;
 
-    console.log(headerOffetsRef.current);
-    console.log(curr);
+    const checkRelativePos = (i) => {
+      if (
+        currPos > headerOffetsRef.current[i] - 100 &&
+        currPos <= headerOffetsRef.current[i]
+      ) {
+        setCurrNode(i);
+      }
+    };
 
     if (isScrollingUp) {
       for (let i = currNode; i >= 0; i--) {
-        if (
-          curr > headerOffetsRef.current[i] &&
-          curr <= headerOffetsRef.current[prev]
-        ) {
-          setCurrNode(prev);
-          break;
-        }
-        prev = i;
-      }
-    } else {
-      for (let i = currNode; i < headerOffetsRef.current.length; i++) {
-        if (
-          curr <= headerOffetsRef.current[i] &&
-          curr > headerOffetsRef.current[prev]
-        ) {
-          setCurrNode(i);
+        if (currPos < headerOffetsRef.current[0] - 100) {
+          setCurrNode(-1);
           break;
         }
 
-        prev = i;
+        checkRelativePos(i);
+      }
+    } else {
+      for (let i = currNode; i < headerOffetsRef.current.length; i++) {
+        checkRelativePos(i);
       }
     }
   }, [isScrolling, isScrollingUp]);
 
-  const activeStyle = { borderLeft: '2px solid #ffb6b9' };
+  const renderHeadings = () => {
+    slugs.reset();
 
-  const renderHeadings = () =>
-    headings.map((heading, i) => {
+    return headings.map((heading, i) => {
       const { depth, value } = heading;
       const slug = toSlug(value);
       const active = i === currNode ? styles['toc__content-active'] : '';
 
-      if (depth === 2 || depth === 3) {
-        return (
-          <a
-            className={`${styles[`toc__content-h${depth}`]} ${active}`}
-            href={`#${slug}`}
-            key={slug}
-          >
-            {value}
-          </a>
-        );
-      }
+      return (
+        <a
+          className={`${styles[`toc__content-h${depth}`]} ${active}`}
+          href={`#${slug}`}
+          key={slug}
+        >
+          {value}
+        </a>
+      );
     });
+  };
 
   return (
     <div className={styles['toc']}>

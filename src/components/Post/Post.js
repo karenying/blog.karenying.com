@@ -89,7 +89,7 @@ const Post = ({ post, headings }) => {
       >
         <IoIosArrowUp className={styles['shadow']} />
       </div>
-      <TableOfContents headings={headings} />
+      <TableOfContents headings={headings.filter((h) => h.depth <= 3)} />
       <div className={styles['post__content']}>
         <Content
           body={html}
