@@ -6,7 +6,8 @@ import { useSiteMetadata } from '../hooks';
 
 const PostTemplate = ({ data }) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter, headings } = data.markdownRemark;
+
   const {
     title: postTitle,
     description: postDescription,
@@ -21,7 +22,7 @@ const PostTemplate = ({ data }) => {
       description={metaDescription}
       socialImage={socialImageUrl}
     >
-      <Post post={data.markdownRemark} />
+      <Post post={data.markdownRemark} headings={headings} />
     </Layout>
   );
 };
@@ -44,6 +45,10 @@ export const query = graphql`
         socialImage {
           publicURL
         }
+      }
+      headings {
+        depth
+        value
       }
     }
   }

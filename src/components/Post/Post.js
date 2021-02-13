@@ -9,6 +9,7 @@ import Copyright from '../Sidebar/Copyright';
 import Contacts from '../Sidebar/Contacts';
 import { IoIosArrowUp } from 'react-icons/io';
 import SubscribeCard from '../SubscribeCard';
+import TableOfContents from './TableOfContents';
 
 export const CopyrightFooter = () => (
   <div className={styles['post__copyright']}>
@@ -31,7 +32,7 @@ const HomeButton = ({ className, opacity }) => (
   </Link>
 );
 
-const Post = ({ post }) => {
+const Post = ({ post, headings }) => {
   const { html } = post;
   const { tagSlugs } = post.fields;
   const { tags, title, description, date, minutes } = post.frontmatter;
@@ -88,6 +89,7 @@ const Post = ({ post }) => {
       >
         <IoIosArrowUp className={styles['shadow']} />
       </div>
+      <TableOfContents headings={headings.filter((h) => h.depth <= 3)} />
       <div className={styles['post__content']}>
         <Content
           body={html}
