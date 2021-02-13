@@ -11,7 +11,7 @@
 
   &__title {
     font-family: $typographic-font-mono;
-    color: $color-pink-light;
+    color: $color-blue;
     font-size: 1.2rem;
     margin: 0px;
     font-weight: bold;
@@ -52,7 +52,7 @@
       border-left: 2px solid transparent;
 
       &:hover {
-        border-left: 2px solid $color-pink-light;
+        border-left: 2px solid $color-pink-dark;
         text-decoration: none !important;
       }
     }
@@ -66,7 +66,7 @@
     }
 
     &-active {
-      border-left: 2px solid $color-pink-light !important;
+      border-left: 2px solid $color-pink-dark !important;
     }
   }
 }
