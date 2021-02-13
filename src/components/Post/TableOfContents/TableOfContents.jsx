@@ -3,6 +3,9 @@ const slugs = require(`github-slugger`)();
 
 import styles from './TableOfContents.module.scss';
 
+const TOP_BUFFER = 50;
+const MIN_SCREEN_SIZE = 1100;
+
 const toSlug = (value) => {
   return slugs.slug(value, false);
 };
@@ -22,7 +25,7 @@ const TableOfContents = ({ headings }) => {
   const headerOffetsRef = useRef(); // array of offsets of the header
 
   useEffect(() => {
-    if (window.screen.width < 1100) {
+    if (window.screen.width < MIN_SCREEN_SIZE) {
       return;
     }
 
@@ -38,7 +41,7 @@ const TableOfContents = ({ headings }) => {
 
       const checkRelativePos = (i) => {
         if (
-          currPos > headerOffetsRef.current[i] - 100 &&
+          currPos > headerOffetsRef.current[i] - TOP_BUFFER &&
           currPos <= headerOffetsRef.current[i]
         ) {
           setCurrNode(i);
@@ -49,7 +52,7 @@ const TableOfContents = ({ headings }) => {
       };
 
       for (let i = 0; i < headerOffetsRef.current.length; i++) {
-        if (currPos < headerOffetsRef.current[0] - 100) {
+        if (currPos < headerOffetsRef.current[0] - TOP_BUFFER) {
           setCurrNode(-1);
           break;
         }
@@ -67,10 +70,6 @@ const TableOfContents = ({ headings }) => {
     };
   }, []);
 
-  useEffect(() => {
-    setCurrNode(getUrlPos());
-  }, [typeof window !== 'undefined' ? window.location.href : null]);
-
   const renderHeadings = useCallback(() => {
     slugs.reset();
 
@@ -84,6 +83,7 @@ const TableOfContents = ({ headings }) => {
           className={`${styles[`toc__content-h${depth}`]} ${active}`}
           href={`#${slug}`}
           key={slug}
+          onClick={() => setCurrNode(i)}
         >
           {value}
         </a>

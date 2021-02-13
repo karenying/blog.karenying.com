@@ -50,8 +50,8 @@
       margin-bottom: 8px;
       line-height: normal;
       border-left: 2px solid transparent;
-      transition: border-left 400ms;
-
+      /*       transition: border-left 200ms;
+ */
       &:hover {
         border-left: 2px solid $color-pink-light;
         text-decoration: none !important;
