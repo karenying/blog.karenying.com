@@ -39,25 +39,17 @@ const TableOfContents = ({ headings }) => {
     const onScroll = () => {
       const currPos = window.pageYOffset;
 
-      const checkRelativePos = (i) => {
-        if (
-          currPos > headerOffetsRef.current[i] - TOP_BUFFER &&
-          currPos <= headerOffetsRef.current[i]
-        ) {
-          setCurrNode(i);
-          return true;
-        }
-
-        return false;
-      };
-
       for (let i = 0; i < headerOffetsRef.current.length; i++) {
         if (currPos < headerOffetsRef.current[0] - TOP_BUFFER) {
           setCurrNode(-1);
           break;
         }
 
-        if (checkRelativePos(i)) {
+        if (
+          currPos > headerOffetsRef.current[i] - TOP_BUFFER &&
+          currPos <= headerOffetsRef.current[i]
+        ) {
+          setCurrNode(i);
           break;
         }
       }
