@@ -33,22 +33,24 @@ const TableOfContents = ({ headings }) => {
 
     headerOffetsRef.current = headings.map(({ value }) => {
       const element = document.getElementById(toSlug(value));
+
       return (element && element.offsetTop) || 0;
     });
 
     const onScroll = () => {
       const currPos = window.pageYOffset;
+      const len = headerOffetsRef.current.length;
+      const firstHeader = headerOffetsRef.current[0];
 
-      for (let i = 0; i < headerOffetsRef.current.length; i++) {
-        if (currPos < headerOffetsRef.current[0] - TOP_BUFFER) {
+      for (let i = 0; i < len; i++) {
+        if (currPos < firstHeader - TOP_BUFFER) {
           setCurrNode(-1);
           break;
         }
 
-        if (
-          currPos > headerOffetsRef.current[i] - TOP_BUFFER &&
-          currPos <= headerOffetsRef.current[i]
-        ) {
+        const currHeader = headerOffetsRef.current[i];
+
+        if (currPos > currHeader - TOP_BUFFER && currPos <= currHeader) {
           setCurrNode(i);
           break;
         }
