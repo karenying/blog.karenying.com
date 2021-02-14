@@ -99,15 +99,12 @@ const Post = ({ post, headings }) => {
           minutes={minutes}
         />
       </div>
-
       <div className={styles['post__tags']}>
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
       </div>
-
       <div className={styles['post__subscribe']}>
         <SubscribeCard isPost />
       </div>
-
       <div className={styles['post__footer']}>
         <div className={styles['post__footer-right']}>
           <img
@@ -117,7 +114,6 @@ const Post = ({ post, headings }) => {
             height='65'
             alt={author.name}
           />
-
           <div className={styles['post__footer-right-details']}>
             <Link className={styles['post__footer-right-details-home']} to='/'>
               blog
