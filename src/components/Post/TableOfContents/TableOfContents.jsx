@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 const slugs = require(`github-slugger`)();
 
 import styles from './TableOfContents.module.scss';
@@ -64,7 +64,7 @@ const TableOfContents = ({ headings }) => {
     };
   }, []);
 
-  const renderHeadings = useCallback(() => {
+  const renderHeadings = () => {
     slugs.reset();
 
     return headings.map((heading, i) => {
@@ -83,7 +83,7 @@ const TableOfContents = ({ headings }) => {
         </a>
       );
     });
-  }, [currNode]);
+  };
 
   return (
     <div className={styles['toc']}>
