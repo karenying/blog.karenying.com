@@ -23,9 +23,9 @@ const Author = ({ author }) => (
     <div className={styles['author__creds']}>
       cs '21 <span className='yellow-text'>@</span> princeton
       <br />
-      frontend <span className='yellow-text'>@</span>{' '}
+      swe <span className='yellow-text'>@</span>{' '}
       <a href='https://gather.town/' target='_blank' rel='noopener noreferrer'>
-        gather
+        gather town
       </a>
     </div>
   </div>
