@@ -179,6 +179,10 @@
 
 @media screen and (max-width: $layout-breakpoint-sm) {
   .post {
+    &__tags {
+      padding: 0 15px;
+    }
+
     &__footer {
       justify-content: center;
 
