@@ -7,7 +7,7 @@ slug: 'moderate-case-of-imposter-syndrome'
 tags:
   - 'Life'
 description: 'A reflective midterm essay for Princeton’s EGR 495: Special Topics in Entrepreneurship: Blazing A Path: Understanding Gender In Startup World'
-socialImage: '/media/preview.png'
+socialImage: '/preview.png'
 category: 'ahh'
 minutes: '5'
 ---
