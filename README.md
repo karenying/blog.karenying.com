@@ -14,4 +14,5 @@ It is statically hosted on [Netlify](http://netlify.com/).
 
 1. Clone this repo
 2. `npm install`
-3. `gatsby develop`
+3. `npm install gatsby-cli` to install [Gatsby CLI](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)
+4. `gatsby develop`
